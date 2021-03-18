@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta property="og:title" content="minglecup">
+<meta property="og:type" content="website">
+<meta property="og:description" content="1 on 1 Talk Make Global freinds">
+<meta property="og:image" content="images/og.jpg">
+<title>minglecup</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/font.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery.rateit.js"></script>
+<link rel="stylesheet" type="text/css" href="css/rateit.css"/>
+
+
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+
+	<!-- Header -->
+	<div id="header">
+		<h1><a href="#"><img src="images/logo.png" alt="minglecup"></a></h1>
+		<button type="button" class="btn-menu"><span>Menu</span></button>
+		<div class="gnb">
+			<div class="inner">
+				<ul>
+					<li><a href="#">SIGNUP</a></li>
+					<li><a href="#">LOGIN</a></li>
+					<li><a href="#" class="not-login">PARTNERS</a></li>
+					<li><a href="#">GALLERY</a></li>
+					<li class="menu-service">
+						<a href="#">SERVICE</a>
+						<ul>
+							<li><a href="#">Make new friend</a></li>
+							<li><a href="#">Language Exchange</a></li>
+							<li><a href="#">More Service</a></li>
+						</ul>
+					</li>
+					<li><a href="#">ABOUT</a></li>
+				</ul>
+				<div class="m-show">
+					<a href="#">새친구 만들기</a>
+					<a href="#">언어교환</a>
+					<a href="#">세계여행정보</a>
+				</div>
+			</div>
+		</div>
+		<div class="language-wrap">
+			<a href="#" class="on">한국어<em>한</em></a>
+			<a href="#">English<em>A</em></a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			languageToggle();//모바일 언어 선택 토글
+		});
+
+		//모바일 언어 선택 토글
+		function languageToggle(){
+			$('.language-wrap').on('click', function(){
+				var winW = $(window).width();
+				if(winW < 800){
+					var Idx = $(this).find('a.on').index();
+					$(this).find('a').removeClass('on');
+					$(this).find('a').not(':eq('+ Idx +')').addClass('on');
+				}
+			});
+		}
+	</script>
+	<!-- //Header -->
+
+	<!-- Container -->
+	<div id="container">
+
+	</div>
+	<script>
+		$( function() {
+			popOpen('.pop-alert');
+			$( "#datepicker" ).datepicker({
+			dateFormat: 'yy-mm-dd',
+			});
+
+			//평가 버튼 클릭
+			$('.btn-yes').click(function(){
+				popOpen('.pop-alert');
+			});
+		});
+	</script>
+	<!-- //Container -->
+
+
+
+</div>
+
+<div class="dialog on">
+	<div class="pop-wrap">
+		<div class="pop-header">
+			<h1>Jake's reive</h1>
+			<button type="button" class="btn-close" onclick="popClose('.dialog');"></button>
+		</div>
+		<div class="pop-cont">
+			<div class="grade-item star-input">
+				<div class="rateit bigstars" data-rateit-starwidth="39" data-rateit-starheight="39"></div>
+				<style>
+
+				</style>
+				<!--
+				<a href="javascript:void(0)" class="btn-grade on">&nbsp;</a>
+				<a href="javascript:void(0)" class="btn-grade on">&nbsp;</a>
+				<a href="javascript:void(0)" class="btn-grade on">&nbsp;</a>
+				<a href="javascript:void(0)" class="btn-grade on">&nbsp;</a>
+				<a href="javascript:void(0)" class="btn-grade on">&nbsp;</a>
+				-->
+			</div>
+			<textarea class="textarea"></textarea>
+			<div class="btn-wrap">
+				<a href="#" class="btn-style1 btn-medium"><span>Send</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+    var starRating = function(){
+        var $star = $(".star-input"),
+            $result = $star.find("output>b");
+        $(document)
+            .on("focusin", ".star-input>.input", function(){
+                $(this).addClass("focus");
+            })
+            .on("focusout", ".star-input>.input", function(){
+                var $this = $(this);
+                setTimeout(function(){
+                    if($this.find(":focus").length === 0){
+                        $this.removeClass("focus");
+                    }
+                }, 100);
+            })
+            .on("change", ".star-input :radio", function(){
+                $result.text($(this).next().text());
+            })
+            .on("mouseover", ".star-input label", function(){
+                $result.text($(this).text());
+            })
+            .on("mouseleave", ".star-input>.input", function(){
+                var $checked = $star.find(":checked");
+                if($checked.length === 0){
+                    $result.text("0");
+                } else {
+                    $result.text($checked.next().text());
+                }
+            });
+    };
+    starRating();
+</script>
+</body>
+</html>

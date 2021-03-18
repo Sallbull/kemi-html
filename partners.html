@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta property="og:title" content="minglecup">
+<meta property="og:type" content="website">
+<meta property="og:description" content="1 on 1 Talk Make Global freinds">
+<meta property="og:image" content="images/og.jpg">
+<title>minglecup</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/font.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+
+	<!-- Header -->
+	<div id="header">
+		<h1><a href="#"><img src="images/logo.png" alt="minglecup"></a></h1>
+		<button type="button" class="btn-menu"><span>Menu</span></button>
+		<div class="gnb">
+			<div class="inner">
+				<ul>
+					<li><a href="#">SIGNUP</a></li>
+					<li><a href="#">LOGIN</a></li>
+					<li><a href="#" class="not-login">PARTNERS</a></li>
+					<li><a href="#">GALLERY</a></li>
+					<li class="menu-service">
+						<a href="#">SERVICE</a>
+						<ul>
+							<li><a href="#">Make new friend</a></li>
+							<li><a href="#">Language Exchange</a></li>
+							<li><a href="#">More Service</a></li>
+						</ul>
+					</li>
+					<li><a href="#">ABOUT</a></li>
+				</ul>
+				<div class="m-show">
+					<a href="#">새친구 만들기</a>
+					<a href="#">언어교환</a>
+					<a href="#">세계여행정보</a>
+				</div>
+			</div>
+		</div>
+		<div class="language-wrap">
+			<a href="#" class="on">한국어<em>한</em></a>
+			<a href="#">English<em>A</em></a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			languageToggle();//모바일 언어 선택 토글
+		});
+
+		//모바일 언어 선택 토글
+		function languageToggle(){
+			$('.language-wrap').on('click', function(){
+				var winW = $(window).width();
+				if(winW < 800){
+					var Idx = $(this).find('a.on').index();
+					$(this).find('a').removeClass('on');
+					$(this).find('a').not(':eq('+ Idx +')').addClass('on');
+				}
+			});
+		}
+	</script>
+	<!-- //Header -->
+
+	<!-- Container -->
+	<div id="container">
+		<h2 class="blind">본문 내용</h2>
+		<div class="partners">
+			<dl class="tit-wrp">
+				<dt>Partners</dt>
+				<dd>These partner from meetup</dd>
+			</dl>
+
+			<div class="content">
+
+				<div class="tab">
+					<a href="javascript:void(0);" class="on">History</a>
+					<a href="javascript:void(0);">Great<span>&#40;following&#41;</span></a>
+					<a href="javascript:void(0);">Bad</a>
+				</div>
+
+				<div class="tab-cont-wrp">
+					<div class="tab-cont on">
+						<p>Click Great or bad, when you feel really good or not.</p>
+						<div class="appraisal-wrp">
+							<strong class="tit">Today</strong>
+							<div class="sec">
+								<span class="time">30"</span>
+								<div class="in">
+									<span class="user">YOO<em>member</em></span>
+									<div class="btn-goodbad">
+										<label>
+											<input type="radio" name="goodbad1">
+											<strong class="btn-smallist btn-style8"><span>Great</span></strong>
+										</label>
+										<label>
+											<input type="radio" name="goodbad1">
+											<strong class="btn-smallist btn-style9"><span>Bad</span></strong>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="sec">
+								<span class="time">30"</span>
+								<div class="in">
+									<span class="user">YOO<em>member</em></span>
+									<div class="btn-goodbad">
+										<label>
+											<input type="radio" name="goodbad2">
+											<strong class="btn-smallist btn-style8"><span>Great</span></strong>
+										</label>
+										<label>
+											<input type="radio" name="goodbad2">
+											<strong class="btn-smallist btn-style9"><span>Bad</span></strong>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="sec">
+								<span class="time">30"</span>
+								<div class="in">
+									<span class="user">YOO</span>
+									<div class="btn-goodbad">
+										<label>
+											<input type="radio" name="goodbad3">
+											<strong class="btn-smallist btn-style8"><span>Great</span></strong>
+										</label>
+										<label>
+											<input type="radio" name="goodbad3">
+											<strong class="btn-smallist btn-style9"><span>Bad</span></strong>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="sec">
+								<span class="time">30"</span>
+								<div class="in">
+									<span class="user">YOO</span>
+									<div class="btn-goodbad">
+										<label>
+											<input type="radio" name="goodbad4">
+											<strong class="btn-smallist btn-style8"><span>Great</span></strong>
+										</label>
+										<label>
+											<input type="radio" name="goodbad4">
+											<strong class="btn-smallist btn-style9"><span>Bad</span></strong>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="appraisal-wrp">
+							<strong class="tit">13th (Fre)</strong>
+							<div class="sec">
+								<span class="time">30"</span>
+								<div class="in">
+									<span class="user">YOO<em>member</em></span>
+									<div class="btn-goodbad">
+										<label>
+											<input type="radio" name="goodbad5">
+											<strong class="btn-smallist btn-style8"><span>Great</span></strong>
+										</label>
+										<label>
+											<input type="radio" name="goodbad5">
+											<strong class="btn-smallist btn-style9"><span>Bad</span></strong>
+										</label>
+									</div>
+								</div>
+								<div class="in">
+									<span class="user">YOO<em>member</em></span>
+									<div class="btn-goodbad">
+										<label>
+											<input type="radio" name="goodbad6">
+											<strong class="btn-smallist btn-style8"><span>Great</span></strong>
+										</label>
+										<label>
+											<input type="radio" name="goodbad6">
+											<strong class="btn-smallist btn-style9"><span>Bad</span></strong>
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="sec">
+								<span class="time">30"</span>
+								<div class="in">
+									<span class="user">YOO</span>
+									<div class="btn-goodbad">
+										<label>
+											<input type="radio" name="goodbad7">
+											<strong class="btn-smallist btn-style8"><span>Great</span></strong>
+										</label>
+										<label>
+											<input type="radio" name="goodbad7">
+											<strong class="btn-smallist btn-style9"><span>Bad</span></strong>
+										</label>
+									</div>
+								</div>
+								<div class="in">
+									<span class="user">YOO</span>
+									<div class="btn-goodbad">
+										<label>
+											<input type="radio" name="goodbad8">
+											<strong class="btn-smallist btn-style8"><span>Great</span></strong>
+										</label>
+										<label>
+											<input type="radio" name="goodbad8">
+											<strong class="btn-smallist btn-style9"><span>Bad</span></strong>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="tab-cont">
+						<p>Great의 리스트는 무제한입니다.</p>
+						<button type="button" class="btn-edit" onclick="popOpen('.pop-edit-alarm');">설정</button>
+						<div class="great-list">
+							<ul>
+								<li>
+									<a href="javascript:void(0);" class="btn-smallist btn-style10" onclick="popOpen('.pop-edit-relation');"><span>관계 재설정</span></a>
+									<strong>Sophie</strong>
+									<button type="button">삭제</button>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="btn-smallist btn-style10" onclick="popOpen('.pop-edit-relation');"><span>관계 재설정</span></a>
+									<strong>Sophie</strong>
+									<button type="button">삭제</button>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="btn-smallist btn-style10" onclick="popOpen('.pop-edit-relation');"><span>관계 재설정</span></a>
+									<strong>Sophie</strong>
+									<button type="button">삭제</button>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="btn-smallist btn-style10" onclick="popOpen('.pop-edit-relation');"><span>관계 재설정</span></a>
+									<strong>Sophie</strong>
+									<button type="button">삭제</button>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="btn-smallist btn-style10" onclick="popOpen('.pop-edit-relation');"><span>관계 재설정</span></a>
+									<strong>Sophie</strong>
+									<button type="button">삭제</button>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="btn-smallist btn-style10" onclick="popOpen('.pop-edit-relation');"><span>관계 재설정</span></a>
+									<strong>Sophie</strong>
+									<button type="button">삭제</button>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="btn-smallist btn-style10" onclick="popOpen('.pop-edit-relation');"><span>관계 재설정</span></a>
+									<strong>Sophie</strong>
+									<button type="button">삭제</button>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="btn-smallist btn-style10" onclick="popOpen('.pop-edit-relation');"><span>관계 재설정</span></a>
+									<strong>Sophie</strong>
+									<button type="button">삭제</button>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="btn-smallist btn-style10" onclick="popOpen('.pop-edit-relation');"><span>관계 재설정</span></a>
+									<strong>Sophie</strong>
+									<button type="button">삭제</button>
+								</li>
+								<li>
+									<a href="javascript:void(0);" class="btn-smallist btn-style10" onclick="popOpen('.pop-edit-relation');"><span>관계 재설정</span></a>
+									<strong>Sophie</strong>
+									<button type="button">삭제</button>
+								</li>
+							</ul>
+							<a href="#" class="btn-more">더보기</a>
+						</div>
+					</div>
+					<div class="tab-cont">
+						<p>BAD는 5명 까지만 할 수 있습니다.</p>
+						<a href="#" class="btn-today">오늘 참여 확인</a>
+						<div class="bad-list">
+							<ul>
+								<li>
+									<strong>Sophie</strong>
+									<button type="button">삭제</button>
+								</li>
+								<li>
+									<strong>Sophie</strong>
+									<button type="button">삭제</button>
+								</li>
+								<li>
+									<strong>Sophie</strong>
+									<button type="button">삭제</button>
+								</li>
+								<li>
+									<strong>Sophie</strong>
+									<button type="button">삭제</button>
+								</li>
+								<li>
+									<strong>Sophie</strong>
+									<button type="button">삭제</button>
+								</li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<a href="#" class="btn-more">더보기</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- //Container -->
+	<script type="text/javascript">
+	$(function(){
+		tabEvent();//탭이벤트
+
+		//평가 버튼 클릭
+		$('.btn-goodbad').each(function(){
+			$(this).find('input').on('change', function(){
+				$(this).closest('.btn-goodbad').addClass('disabled');
+				$(this).closest('.btn-goodbad').find('input').attr('disabled', true);
+				if(!$(this).next().hasClass('btn-style8')){
+					popOpen('.pop-bad');
+				} else {
+					popOpen('.pop-great');
+				}
+			});
+		});
+	});
+	function tabEvent(){
+		$('.tab a').on('click', function(){
+			var Idx = $(this).index();
+
+			$(this).closest('.tab').find('a').removeClass('on');
+			$(this).addClass('on');
+
+			$('.tab-cont-wrp').find('.tab-cont').removeClass('on');
+			$('.tab-cont-wrp').find('.tab-cont').eq(Idx).addClass('on');
+		});
+	}
+	</script>
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="inner">
+			<h2><img src="images/logo.png" alt="minglecup"></h2>
+			<div class="content">
+				<dl>
+					<dt>E-mail </dt>
+					<dd>cs@talklang.com</dd>
+				</dl>
+				<dl>
+					<dt>Kakao</dt>
+					<dd>abcdefg</dd>
+				</dl>
+				<dl>
+					<dt>Phone</dt>
+					<dd>02 6124 1227 , 010 3233 1234</dd>
+				</dl>
+			</div>
+			<p>Copyright©2018 Talklang</p>
+		</div>
+	</div>
+	<!-- //Footer -->
+
+</div>
+
+<div class="popup pop-great">
+	<div class="table">
+		<div class="table-cell">
+			<div class="pop-cont">
+				<h2>Great!</h2>
+				<p>다음에 이 사람과 다시 <br>매칭해 드릴께요! </p>
+				<button type="button" class="btn-close" onclick="popClose(this);">닫기</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup pop-bad">
+	<div class="table">
+		<div class="table-cell">
+			<div class="pop-cont">
+				<h2>Bad..</h2>
+				<p>다음에 이 사람과 <br>매칭하지 않을꺼에요!</p>
+				<button type="button" class="btn-close" onclick="popClose(this);">닫기</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup pop-edit-relation">
+	<div class="table">
+		<div class="table-cell">
+			<div class="pop-cont">
+				<h2>관계 재설정</h2>
+				<div class="action-area">
+					<ul>
+						<li>
+							<strong>친해지고 보니 별로예요</strong>
+							<a href="javascript:void(0);" class="btn-smallist btn-style9"><span>Bad</span></a>
+						</li>
+						<li>
+							<strong>대쉬하고 싶어요</strong>
+							<a href="javascript:void(0);" class="btn-smallist btn-style5" onclick="alert('준비중입니다');"><span>Heart</span></a>
+						</li>
+					</ul>
+				</div>
+				<ul class="notice">
+					<li>- 대쉬 기능은 한달에 한번만 사용 가능</li>
+					<li>- 밍글컵에서는 모두 친구가 되길 원하지만, 정말 이 사람이 마음에 든다면 커플이 되어보세요.</li>
+					<li>- 익명으로 고백하고, 서로 관심이 있을 때만 서로에게 알려줘요.</li>
+					<li>- 익명이기 때문에 거절당해서 부끄러울 일 없어요.</li>
+				</ul>
+				<button type="button" class="btn-close" onclick="popClose(this);">닫기</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="popup pop-edit-alarm">
+	<div class="table">
+		<div class="table-cell">
+			<div class="pop-cont">
+				<h2>알림 설정</h2>
+				<div class="action-area">
+					<ul>
+						<li>
+							<div class="txt-wrap">
+								<strong>내 참여 여부 follower들에게 알림</strong>
+								<span>끄더라도 서로가 Great한 경우에는 상대에게 알림이 갑니다<br>상대가 Great를 했더라도, 내가 Bad를 하면 알림이 안가니 안심하세요</span>
+							</div>
+
+							<div class="toggle-checkbox">
+								<label>
+									<input type="checkbox" checked="checked">
+									<span></span>
+								</label>
+							</div>
+						</li>
+						<li>
+							<div class="txt-wrap">
+								<strong>누군가 당신에게 대쉬하면 알림</strong>
+								<span>껐을 경우, 상대가 대쉬 해도 전혀 알 수 없습니다.</span>
+							</div>
+
+							<div class="toggle-checkbox">
+								<label>
+									<input type="checkbox" checked="checked">
+									<span></span>
+								</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<button type="button" class="btn-close" onclick="popClose(this);">닫기</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

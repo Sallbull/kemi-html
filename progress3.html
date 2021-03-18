@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta property="og:title" content="minglecup">
+<meta property="og:type" content="website">
+<meta property="og:description" content="1 on 1 Talk Make Global freinds">
+<meta property="og:image" content="images/og.jpg">
+<title>minglecup</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/font.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+
+	<!-- Header -->
+	<div id="header">
+		<h1><a href="#"><img src="images/logo.png" alt="minglecup"></a></h1>
+		<button type="button" class="btn-menu"><span>Menu</span></button>
+		<div class="gnb">
+			<div class="inner">
+				<ul>
+					<li><a href="#">SIGNUP</a></li>
+					<li><a href="#">LOGIN</a></li>
+					<li><a href="#" class="not-login">PARTNERS</a></li>
+					<li><a href="#">GALLERY</a></li>
+					<li class="menu-service">
+						<a href="#">SERVICE</a>
+						<ul>
+							<li><a href="#">Make new friend</a></li>
+							<li><a href="#">Language Exchange</a></li>
+							<li><a href="#">More Service</a></li>
+						</ul>
+					</li>
+					<li><a href="#">ABOUT</a></li>
+				</ul>
+				<div class="m-show">
+					<a href="#">새친구 만들기</a>
+					<a href="#">언어교환</a>
+					<a href="#">세계여행정보</a>
+				</div>
+			</div>
+		</div>
+		<div class="language-wrap">
+			<a href="#" class="on">한국어<em>한</em></a>
+			<a href="#">English<em>A</em></a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			languageToggle();//모바일 언어 선택 토글
+		});
+
+		//모바일 언어 선택 토글
+		function languageToggle(){
+			$('.language-wrap').on('click', function(){
+				var winW = $(window).width();
+				if(winW < 800){
+					var Idx = $(this).find('a.on').index();
+					$(this).find('a').removeClass('on');
+					$(this).find('a').not(':eq('+ Idx +')').addClass('on');
+				}
+			});
+		}
+	</script>
+	<!-- //Header -->
+
+	<!-- Container -->
+	<div id="container">
+		<h2 class="blind">본문 내용</h2>
+		<div class="progress step3">
+			<h3>Short talk</h3>
+			<div class="contents">
+				<dl>
+					<dt>10분내로 연락 드리겠습니다.<br>연락을 받지 않으시면 취소됩니다.</dt>
+					<dd>
+						<p>혹시 10분내로 연락이 없다면 연락 주세요!</p>
+						<span>010-9922-3157</span><em>/</em><span>카톡 ID : sallbull</span>
+					</dd>
+				</dl>
+				<div class="reserve-info">
+					<dl>
+						<dt>예약시간 :</dt>
+						<dd>오후 1:00 – 1:30  30분 대화</dd>
+					</dl>
+					<dl>
+						<dt>대화언어 :</dt>
+						<dd>프랑스어</dd>
+					</dl>
+					<dl>
+						<dt>결제금액 :</dt>
+						<dd>6,000</dd>
+					</dl>
+					<p>직접 오셔서 현금 또는 계좌이체</p>
+					<span class="phone">연락처 : 010-9922-3157</span>
+				</div>
+
+
+				<div class="btn-wrap">
+					<a href="#" class="btn-style5 btn-medium"><span>이전</span></a>
+					<a href="#" class="btn-style1 btn-medium"><span>처음으로 가기</span></a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- //Container -->
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="inner">
+			<h2><img src="images/logo.png" alt="minglecup"></h2>
+			<div class="content">
+				<dl>
+					<dt>E-mail </dt>
+					<dd>cs@talklang.com</dd>
+				</dl>
+				<dl>
+					<dt>Kakao</dt>
+					<dd>abcdefg</dd>
+				</dl>
+				<dl>
+					<dt>Phone</dt>
+					<dd>02 6124 1227 , 010 3233 1234</dd>
+				</dl>
+			</div>
+			<p>Copyright©2018 Talklang</p>
+		</div>
+	</div>
+	<!-- //Footer -->
+
+</div>
+
+</body>
+</html>

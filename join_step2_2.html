@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta property="og:title" content="minglecup">
+<meta property="og:type" content="website">
+<meta property="og:description" content="1 on 1 Talk Make Global freinds">
+<meta property="og:image" content="images/og.jpg">
+<title>minglecup</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/font.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+
+	<!-- Header -->
+	<div id="header">
+		<h1><a href="#"><img src="images/logo.png" alt="minglecup"></a></h1>
+		<button type="button" class="btn-menu"><span>Menu</span></button>
+		<div class="gnb">
+			<div class="inner">
+				<ul>
+					<li><a href="#">SIGNUP</a></li>
+					<li><a href="#">LOGIN</a></li>
+					<li><a href="#" class="not-login">PARTNERS</a></li>
+					<li><a href="#">GALLERY</a></li>
+					<li class="menu-service">
+						<a href="#">SERVICE</a>
+						<ul>
+							<li><a href="#">Make new friend</a></li>
+							<li><a href="#">Language Exchange</a></li>
+							<li><a href="#">More Service</a></li>
+						</ul>
+					</li>
+					<li><a href="#">ABOUT</a></li>
+				</ul>
+				<div class="m-show">
+					<a href="#">새친구 만들기</a>
+					<a href="#">언어교환</a>
+					<a href="#">세계여행정보</a>
+				</div>
+			</div>
+		</div>
+		<div class="language-wrap">
+			<a href="#" class="on">한국어<em>한</em></a>
+			<a href="#">English<em>A</em></a>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			languageToggle();//모바일 언어 선택 토글
+		});
+
+		//모바일 언어 선택 토글
+		function languageToggle(){
+			$('.language-wrap').on('click', function(){
+				var winW = $(window).width();
+				if(winW < 800){
+					var Idx = $(this).find('a.on').index();
+					$(this).find('a').removeClass('on');
+					$(this).find('a').not(':eq('+ Idx +')').addClass('on');
+				}
+			});
+		}
+	</script>
+	<!-- //Header -->
+
+	<!-- Container -->
+	<div id="container">
+		<h2 class="blind">본문 내용</h2>
+		<div class="join-step join-step2-2">
+			<div class="step">step <span>2</span><em>/3</em></div>
+			<div class="step-contents">
+				<dl>
+					<dt>카카오톡 아이디를 입력해주세요.</dt>
+					<dd>
+						<div class="input-txt">
+							<label><input type="text" placeholder="아이디를 입력"></label>
+						</div>
+					</dd>
+				</dl>
+				<p>카카오톡 아이디가 없으면 <a href="#">여기</a>를 클릭</p>
+			</div>
+			<div class="btn-wrap">
+				<a href="#" class="btn-style1 btn-medium"><span>다음</span></a>
+			</div>
+		</div>
+	</div>
+	<!-- //Container -->
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="inner">
+			<h2><img src="images/logo.png" alt="minglecup"></h2>
+			<div class="content">
+				<dl>
+					<dt>E-mail </dt>
+					<dd>cs@talklang.com</dd>
+				</dl>
+				<dl>
+					<dt>Kakao</dt>
+					<dd>abcdefg</dd>
+				</dl>
+				<dl>
+					<dt>Phone</dt>
+					<dd>02 6124 1227 , 010 3233 1234</dd>
+				</dl>
+			</div>
+			<p>Copyright©2018 Talklang</p>
+		</div>
+	</div>
+	<!-- //Footer -->
+
+</div>
+
+</body>
+</html>
