@@ -16,10 +16,9 @@
 <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/common.css"/>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-
+<script type="text/javascript" src="js/common.js"></script>
 </head>
 <body>
 
@@ -78,102 +77,30 @@
 	<!-- //Header -->
 
 	<!-- Container -->
-	<div id="container">
+	<div id="container" class="sub43_1">
 		<h2 class="blind">본문 내용</h2>
-		<div class="main">
-			<div class="title">
-				<p class="oswald">International Cafe&Pub</p>
-				<h3><img src="images/img_minglecup2.png" alt="minglecup"></h3>
-			</div>
-			<div class="owl-carousel">
-				<div class="item">
-					<img src="images/tmp_img1.jpg" alt="">
-					<div class="content">
-						<p>Language Exchange - Meetup</p>
-					</div>
+		<div class="login">
+			<h3>Log In</h3>
+			<div class="contents">
+				<p class="description">Please enter your email you signed up before</p>
+				<div class="input-txt">
+					<label><input type="text" placeholder="Your email address"></label>
 				</div>
-				<div class="item">
-					<img src="images/tmp_img2.jpg" alt="">
-					<div class="content">
-						<p>Language Exchange - Meetup</p>
-					</div>
-				</div>
-				<div class="item">
-					<img src="images/tmp_img3.jpg" alt="">
-					<div class="content">
-						<p>Language Exchange - Meetup</p>
-					</div>
-				</div>
-				<div class="item">
-					<img src="images/tmp_img1.jpg" alt="">
-					<div class="content">
-						<p>Language Exchange - Meetup</p>
-					</div>
-				</div>
-				<div class="item">
-					<img src="images/tmp_img2.jpg" alt="">
-					<div class="content">
-						<p>Language Exchange - Meetup</p>
-					</div>
-				</div>
-				<div class="item">
-					<img src="images/tmp_img3.jpg" alt="">
-					<div class="content">
-						<p>Language Exchange - Meetup</p>
-					</div>
+				<p class="notice">If you do net remember email, Please sign up again</p>
+
+				<div class="btn-wrap">
+					<a href="#" class="btn-style11 btn-large"><span>Start</span></a>
 				</div>
 			</div>
-			<div class="btn-wrap">
-				<a href="#" class="btn-style7 btn-large"><span>Make New Friends</span></a>
-				<a href="#" class="btn-style7 btn-large"><span>Language Exchange</span></a>
-				<a href="#" class="btn-style7 btn-large"><span>More Service</span></a>
-			</div>
+
 		</div>
 	</div>
 	<!-- //Container -->
-	<script type="text/javascript">
-		var owlTouchDir = 0;
-		$(function(){
-			slide();
-		});
-
-		function slide(){
-			$('.owl-carousel').owlCarousel({
-				dots: false,
-			    loop: true,
-				autoWidth: true,
-				center: true,
-				nav: true,
-				margin: 18,
-				items: 10
-			});
-
-			if($('body').hasClass('ios')){
-				$('.owl-carousel').on('touchstart', function(e){
-					owlTouchDir = e.pageX;
-				});
-
-				$('.owl-carousel').on('touchmove', function(e){
-					var touchStartPos = e.pageX;
-
-					if (owlTouchDir + 10 < touchStartPos || owlTouchDir - 10 > touchStartPos){
-						e.preventDefault();
-					} else {
-						return true;
-					}
-				});
-
-				$('.owl-carousel').on('touchend', function(e){
-					return true;
-				});
-			}
-		}
-	</script>
 
 	<!-- Footer -->
 	<div id="footer">
 		<div class="inner">
-			<h2><img src="images/logo.png" alt="minglecup"></h2>
+			<h2><img src="images/logo_kemi.png" alt="kemi"></h2>
 			<div class="content">
 				<dl>
 					<dt>E-mail </dt>
@@ -193,27 +120,6 @@
 	</div>
 	<!-- //Footer -->
 
-</div>
-
-<script type="text/javascript">
-$(function(){
-	$('.not-login').click(function(){
-		popOpen('.pop-login');
-	});
-});
-</script>
-<div class="popup pop-login pop-alert">
-	<div class="table">
-		<div class="table-cell">
-			<div class="pop-cont">
-				<p>로그인 후<br>이용이 가능합니다</p>
-				<!-- <button type="button" class="btn-close" onclick="popClose(this);">닫기</button> -->
-				<div class="btn-wrap">
-					<a href="#" class="btn-style1 btn-medium" onclick="popClose(this);"><span>확인</span></a>
-				</div>
-			</div>
-		</div>
-	</div>
 </div>
 
 </body>
