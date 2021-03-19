@@ -199,6 +199,7 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 #container.sub43_1 {background: #222;}
 #container.sub44_1 {background: #222;}
 #container.support {background: #222;}
+#container.terms {background: #222;}
 .tit-wrp{text-align:center;}
 .tit-wrp dt{margin-bottom:3px;font-size:32px;font-weight:bold;color:#fff;line-height:1.2;}
 .tit-wrp dd{font-size:22px;color:#ff5784;}
@@ -438,6 +439,32 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .support_wrap  .textarea-txt textarea {width:100%;min-height:300px;margin-top: 20px; padding:10px 30px;background:rgba(0,0,0,.1);border:2px solid #747474;border-radius:2px;box-sizing:border-box;font-size:20px;color:#c6c6c6;line-height:1.5;}
 .support_wrap .contents .btn-wrap a{}
 
+/* Terms */
+.terms_wrap {max-width:850px;margin:0 auto;padding:60px 40px 200px;}
+.terms_wrap h3{margin-bottom:45px;padding-bottom:35px;border-bottom:1px solid #fff;font-size:32px;font-weight:bold;color:#fff;text-align:center;}
+.terms_wrap .contents{max-width:90%;margin:0 auto;text-align: left;color:#fff;}
+.terms_wrap .contents p {margin-bottom: 20px;}
+.terms_wrap .contents p b {font-weight: bold;margin-right: 5px;}
+.terms_wrap .contents p i {font-weight: bold;font-style: italic;}
+.terms_wrap .contents p a {text-decoration: underline;color:#0058f8}
+.terms_wrap .contents .t1 {font-size: 30px;font-weight: bold;}
+.terms_wrap .contents .t2 {font-size: 20px;font-weight: bold;}
+.terms_wrap .contents ul {margin-bottom: 20px;padding:0 20px;}
+.terms_wrap .contents ol {margin-bottom: 20px;padding:0 20px;}
+.terms_wrap .contents ul li {position: relative;padding-left: 20px;margin-bottom: 10px;}
+.terms_wrap .contents ul li::before {content:'•';position: absolute;left:0px;top:0px;}
+.terms_wrap .contents ol li {position: relative;padding-left: 20px;margin-bottom: 10px;}
+.terms_wrap .contents ol li::before {position: absolute;left:0px;top:0px;}
+.terms_wrap .contents ol li:nth-child(1):before {content:'1.'}
+.terms_wrap .contents ol li:nth-child(2):before {content:'2.'}
+.terms_wrap .contents ol li:nth-child(3):before {content:'3.'}
+.terms_wrap .contents ol li:nth-child(4):before {content:'4.'}
+.terms_wrap .contents ol li:nth-child(5):before {content:'5.'}
+.terms_wrap .contents ol li:nth-child(6):before {content:'6.'}
+.terms_wrap .contents ol li:nth-child(7):before {content:'7.'}
+.terms_wrap .contents ol li:nth-child(8):before {content:'8.'}
+.terms_wrap .contents ol li:nth-child(9):before {content:'9.'}
+.terms_wrap .contents ol li:nth-child(10):before {content:'10.'}
 
 /* order */
 .order{max-width:850px;margin:0 auto;padding:60px 40px 200px;}
@@ -759,6 +786,30 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 	.support_wrap {max-width:850px;margin:0 auto;padding:60px 40px;}
 	.support_wrap  .textarea-txt textarea {width:100%;min-height:300px;margin-top: 20px; padding:10px 15px;background:rgba(0,0,0,.1);border:2px solid #747474;border-radius:2px;box-sizing:border-box;font-size:14px;color:#c6c6c6;line-height:1.5;}
 	.support_wrap .contents .btn-wrap a{}
+
+	/* Terms */
+	.terms_wrap {max-width:850px;margin:0 auto;padding:60px 20px;}
+	.terms_wrap h3{margin-bottom:45px;padding-bottom:35px;border-bottom:1px solid #fff;font-size:32px;font-weight:bold;color:#fff;text-align:center;}
+	.terms_wrap .contents{max-width:90%;margin:0 auto;text-align: left;color:#fff;}
+	.terms_wrap .contents p {margin-bottom: 20px;}
+	.terms_wrap .contents .t1 {font-size: 20px;font-weight: bold;}
+	.terms_wrap .contents .t2 {font-size: 16px;font-weight: bold;}
+	.terms_wrap .contents ul {margin-bottom: 20px;padding:0;}
+	.terms_wrap .contents ol {margin-bottom: 20px;padding:0;}
+	.terms_wrap .contents ul li {position: relative;padding-left: 20px;margin-bottom: 10px;}
+	.terms_wrap .contents ul li::before {content:'•';position: absolute;left:0px;top:0px;}
+	.terms_wrap .contents ol li {position: relative;padding-left: 20px;margin-bottom: 10px;}
+	.terms_wrap .contents ol li::before {position: absolute;left:0px;top:0px;}
+	.terms_wrap .contents ol li:nth-child(1):before {content:'1.'}
+	.terms_wrap .contents ol li:nth-child(2):before {content:'2.'}
+	.terms_wrap .contents ol li:nth-child(3):before {content:'3.'}
+	.terms_wrap .contents ol li:nth-child(4):before {content:'4.'}
+	.terms_wrap .contents ol li:nth-child(5):before {content:'5.'}
+	.terms_wrap .contents ol li:nth-child(6):before {content:'6.'}
+	.terms_wrap .contents ol li:nth-child(7):before {content:'7.'}
+	.terms_wrap .contents ol li:nth-child(8):before {content:'8.'}
+	.terms_wrap .contents ol li:nth-child(9):before {content:'9.'}
+	.terms_wrap .contents ol li:nth-child(10):before {content:'10.'}
 
 	/* Progress */
 	.progress{padding:30px 20px 80px;}
