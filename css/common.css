@@ -929,9 +929,13 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .dialog .pop-wrap .pop-cont .textarea{height:240px;font-size:24px;color:#fff;width:calc( 100% - 32px );padding:15px;border:1px solid #979797;border-radius:8px;background:rgba(255, 255, 255, 0.02);;}
 .dialog .pop-wrap .pop-cont .textarea.t01{margin-top:28px;}
 .dialog .pop-wrap .pop-cont .btn-wrap{width:400px;height:auto;overflow:hidden;margin:0 auto;padding:30px 0 35px 0;}
+.dialog .pop-wrap .pop-cont .t1 {font-size: 18px;color: #fff;text-align: center;margin-top: 20px;}
+.dialog .pop-wrap .pop-cont .icon_box {text-align: center;margin:30px auto 20px;}
+.dialog .pop-wrap .pop-cont .icon_box img {width: 150px;}
 .dialog .pop-wrap .btn-grade{display:flex;justify-content:center;align-items:center;margin:0 5px;width:39px;height:39px;overflow:hidden;background:url(../images/ico-star05-off.svg) no-repeat center center;}
 .dialog .pop-wrap .btn-grade.on{background:url(../images/ico-star05-on.svg) no-repeat center center;}
 .dialog .pop-wrap.type01 .pop-cont .btn-wrap a{border-radius:40px !important;border-image-source:none;margin-bottom:26px;}
+.dialog .pop-wrap.type01 .pop-cont .btn-wrap .rectangle {border-radius: 0 !important;color:#222;}
 .dialog .pop-wrap.type01 .pop-cont .btn-wrap a span{}
 .dialog .pop-wrap.type01 .pop-header{height:auto;padding:42px 0 10px 0;border-bottom:0;}
 
