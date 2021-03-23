@@ -1053,4 +1053,7 @@ div.bigstars div.rateit-reset:hover{background: url(../images/ico-star05-on.svg)
 	.dialog .pop-wrap .pop-cont .btn-wrap{width:100%;}
 	.dialog .pop-wrap.type01 .pop-cont .btn-wrap a{height:50px;border-radius:25px !important;}
 	.dialog .pop-wrap.type01 .pop-cont .btn-wrap a span{font-size:16px;}
+	.dialog .pop-wrap .pop-cont .t1 {font-size: 14px;margin-top: 10px;}
+	.dialog .pop-wrap .pop-cont .icon_box {text-align: center;margin:10px auto 0;}
+	.dialog .pop-wrap .pop-cont .icon_box img {width: 100px;}
 }
