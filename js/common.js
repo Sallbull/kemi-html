@@ -34,7 +34,7 @@ function accodionEvent(){
 
 //셀렉트 디자인
 function selectEvent(){
-	$('select').selectmenu({
+	$('.select').selectmenu({
 	
 	});
 }
