@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta property="og:title" content="minglecup">
+<meta property="og:type" content="website">
+<meta property="og:description" content="1 on 1 Talk Make Global freinds">
+<meta property="og:image" content="images/og.jpg">
+<title>kemi</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/font.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+
+	<!-- Header -->
+	<div id="header">
+		<h1><a href="#"><img src="images/logo_kemi.png" alt="kemi"></a></h1>
+		<button type="button" class="btn-menu"><span>Menu</span></button>
+		<div class="gnb">
+			<div class="inner">
+				<ul>
+					<li><a href="#">SIGNUP</a></li>
+					<li><a href="#">LOGIN</a></li>
+					<li><a href="#" class="not-login">PARTNERS</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			languageToggle();//모바일 언어 선택 토글
+		});
+
+		//모바일 언어 선택 토글
+		function languageToggle(){
+			$('.language-wrap').on('click', function(){
+				var winW = $(window).width();
+				if(winW < 800){
+					var Idx = $(this).find('a.on').index();
+					$(this).find('a').removeClass('on');
+					$(this).find('a').not(':eq('+ Idx +')').addClass('on');
+				}
+			});
+		}
+	</script>
+	<!-- //Header -->
+
+	<!-- Container -->
+	<div id="container" class="sub52_1">
+		<h2 class="blind">본문 내용</h2>
+		<div class="profile">
+			<h3>Profile</h3>
+			<div class="contents">
+                <div class="profile_img">
+                    <img src="images/ico_profile_big.svg" alt="">
+                    <button class="btn_add_img"><img src="images/ico_profile_plus.svg" alt=""></button>
+                </div>
+                <div class="profile_form write">
+                    <div class="input_box">
+                        <label for="i1">Name</label>
+                        <input type="text" id="i1" placeholder="Jean" class="box">
+                    </div>
+                    <div class="input_box">
+                        <label for="i2">Can speak</label>
+                        <input type="text" id="i2" placeholder="English(5) , Korean(3)" class="box">
+                    </div>
+                    <div class="input_box">
+                        <label for="i3">Want to learn</label>
+                        <input type="text" id="i3" placeholder="English(5) , Korean(3)" class="box">
+                    </div>
+                    <p class="textarea_tit">Want I want to talk is</p>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Hello! My name is Daria and I’m gonna study Korean language …"></textarea>
+                    <div class="select_wrap">
+                        <div>
+                            <label for="s1">Age</label>
+                            <input type="text" placeholder="22">
+                        </div>
+                        <div>
+                            <label for="s2">Gender</label>
+                            <input type="text" placeholder="Male">
+                        </div>
+                    </div>
+                    <div class="btn-wrap">
+                        <a href="#" class="btn-style11 btn-large"><span>SAVE</span></a>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+	<!-- //Container -->
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="inner">
+			<ul class="content">
+				<li><a href="privacy.html">Privacy policy</a></li>
+				<li><a href="terms.html">Temrs & Use</a></li>
+				<li><a href="support.html">Support</a></li>
+			</ul>
+			<p>©2021 Bgoos</p>
+		</div>
+	</div>
+	<!-- //Footer -->
+
+</div>
+</body>
+</html>

@@ -4,6 +4,7 @@ $(function(){
 	accodionEvent();//아코디언 리스트 이벤트
 	selectEvent();//셀렉트 디자인
 	engOnly();//영어만 입력
+	profileMenu();
 });
 
 //모바일 메뉴 이벤트
@@ -79,4 +80,10 @@ function popClose(o){
     setTimeout(function(){
         $(o).removeClass("ing");
     },500)
+}
+
+function profileMenu(){
+	$('.my_profile').on('click',function(){
+		$('.profile_box').toggleClass('on');
+	});
 }
