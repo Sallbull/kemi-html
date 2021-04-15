@@ -5,6 +5,7 @@ $(function(){
 	selectEvent();//셀렉트 디자인
 	engOnly();//영어만 입력
 	profileMenu();
+	scrollLock();// dialog open 스크롤 방지
 });
 
 //모바일 메뉴 이벤트
@@ -34,7 +35,7 @@ function accodionEvent(){
 
 //셀렉트 디자인
 function selectEvent(){
-	$('.select').selectmenu({
+	$('select').selectmenu({
 	
 	});
 }
@@ -87,3 +88,11 @@ function profileMenu(){
 		$('.profile_box').toggleClass('on');
 	});
 }
+
+function scrollLock(){
+	if ( $('.dialog').hasClass('on') ){
+		$('html').css('height','100vh');
+		$('html').css('overflow-y','hidden');
+	}
+}
+

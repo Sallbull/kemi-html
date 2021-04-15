@@ -65,7 +65,7 @@
 			<div class="contents">
 				<p class="description">How many meetup do you want to join a month?</p>
 				<div class="select-txt">
-					<select name="" id="" class="select">
+					<select name="" id="" class="">
                         <option value="">1</option>
                         <option value="">2</option>
                         <option value="">3</option>
@@ -120,30 +120,70 @@
         </div>
         <div class="pop-cont">
             <div class="select_add_wrap">
-                <div class="add_wrap">
-                    <p class="add_txt">Can speak</p>
-                    <div>
-                        <select name="" id="" class="cus_select">
-                            <option value="">Select</option>
-                        </select>
-                        <select name="" id="" class="cus_select">
-                            <option value="">Select</option>
-                        </select>
-						<button><img src="images/ico_plus.png" alt=""></button>
-						<button><img src="images/ico_minus.png" alt=""></button>
-                    </div>
-                </div>
-				<div class="add_wrap">
-					<p class="add_txt">Want to learn</p>
-					<div>
-						<select name="" id="" class="cus_select">
-							<option value="">Select</option>
-						</select>
-						<select name="" id="" class="cus_select">
-							<option value="">Select</option>
-						</select>
-						<button><img src="images/ico_plus.png" alt=""></button>
-						<button><img src="images/ico_minus.png" alt=""></button>
+                <div>
+					<p class="description al">Can Speak</p>
+					<div class="form-item">
+						<ul>
+							<li>
+								<div class="item">
+									<select id="can_lang1" name="can_lang1">
+										<option value="">Select</option>
+										<option value="en">English - English</option>
+									</select>
+								</div>
+								<div class="item">
+									<select name="can_lang1_level">
+										<option value="0">Select</option>
+										<option value="1">Beginner-low</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+						<div class="ctrl-wrap">
+							<button type="button" class="btn-plus" name="can_plus"><img src="images/ico_plus.png"></button>
+							<button type="button" class="btn-minus" name="can_minus"><img src="images/ico_minus.png"></button>
+						</div>
+					</div>
+
+					<p class="description al">Want to learn</p>
+					<div class="form-item">
+						<ul>
+							<li>
+								<div class="item">
+									<select id="wish_lang1" name="wish_lang1">
+										<option value="">Select</option>
+									</select>
+								</div>
+								<div class="item">
+									<select name="wish_lang1_level">
+										<option value="0">Select</option>
+										<option value="1">Beginner-low</option>
+										<option value="2">Beginner</option>
+										<option value="3">Intermediate-low</option>
+										<option value="4">Intermediate</option>
+										<option value="5">Advanced</option>
+										<option value="6">Native</option>
+										<option value="0">Select</option>
+										<option value="1">Beginner-low</option>
+										<option value="2">Beginner</option>
+										<option value="3">Intermediate-low</option>
+										<option value="4">Intermediate</option>
+										<option value="5">Advanced</option>
+										<option value="6">Native</option>
+										<option value="0">Select</option>
+										<option value="1">Beginner-low</option>
+										<option value="2">Beginner</option>
+										<option value="3">Intermediate-low</option>
+										<option value="4">Intermediate</option>
+										<option value="5">Advanced</option>
+									</select>
+								</div>
+							</li>
+						</ul>
+						<div class="ctrl-wrap">
+							<button type="button" class="btn-plus" name="can_plus"><img src="images/ico_plus.png"></button>
+							<button type="button" class="btn-minus" name="can_minus"><img src="images/ico_minus.png"></button>
+						</div>
 					</div>
 				</div>
             </div>
@@ -153,5 +193,102 @@
         </div>
     </div>
 </div>
+<script>
+
+	var can_count = 1;
+	var wish_count = 1;
+	
+	var countryList = '';
+	var countryPreferList = '';
+
+	$( function() {
+		
+		$("body").on("click", ".ctrl-wrap .btn-plus", function(e){
+
+			var eventTarget = '';
+			if(e.target.name == 'can_plus')
+			{
+				if(can_count >= 2)
+					return false;
+				can_count += 1;
+				eventTarget = 'can_lang' + can_count;
+			}
+			else
+			{
+				if(wish_count >= 2)
+					return false;
+				wish_count += 1;
+				eventTarget = 'wish_lang' + wish_count;
+			}
+	
+	
+			var item = '<li>' +
+							'<div class="item">' +
+							'	<select id="'+eventTarget+'" name="'+eventTarget+'">' +
+				'				</select>' +
+				'			</div>' +
+				'			<div class="item">' +
+				'				<select name="'+eventTarget+'_level">' +
+				'					<option value="0">Select</option>' +
+				'					<option value="1">Beginner-low</option>' +
+				'					<option value="2">Beginner</option>' +
+				'					<option value="3">Intermediate-low</option>' +
+				'					<option value="4">Intermediate</option>' +
+				'					<option value="5">Advanced</option>' +
+				'					<option value="6">Native</option>' +
+				'				</select>' +
+				'			</div>' +
+				'		</li>';
+			
+			$(this).parents(".form-item").eq(0).find("ul").append(item);
+			selectEvent();//셀렉트 디자인
+	
+			addCountryOption(eventTarget);
+			// console.log($( "#" + eventTarget ).selectmenu().selectmenu( "menuWidget" ));
+			$( "#" + eventTarget ).selectmenu().selectmenu( "menuWidget" ).addClass( "overflow" );
+		});
+		
+		$("body").on("click", ".ctrl-wrap .btn-minus", function(e){
+			var _ul = $(this).parents(".form-item").eq(0);
+			if(_ul.find("li").length>1){
+					_ul.find("li:last").remove();
+					if(e.target.name == 'can_minus')
+						can_count -= 1;
+					else
+						wish_count -=1;
+			}else{
+				//
+			}
+		});
+	});
+	function addCountryOption(tagName){
+		var option = document.createElement("option");
+		var tag = document.getElementById(tagName);
+		// tag.add(option);
+	
+		for(var i in countryPreferList)
+		{
+			var option = document.createElement("option");
+			option.text = countryPreferList[i].name + " - " + countryPreferList[i].native;
+			option.value = countryPreferList[i].code;
+			tag.add(option);
+		}
+	
+		var option = document.createElement("option");
+		option.text = "------------------------";
+		option.disabled = true;
+		tag.add(option);
+	
+		for(var i in countryList)
+		{
+			var option = document.createElement("option");
+			option.text = countryList[i].name + " - " + countryList[i].native;
+			option.value = countryList[i].code;
+			tag.add(option);
+		}
+	}
+</script>
 </body>
 </html>
+
+
