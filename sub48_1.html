@@ -72,14 +72,62 @@
                         <label for="i1">Name</label>
                         <input type="text" id="i1" placeholder="Jean" class="box">
                     </div>
-                    <div class="input_box">
-                        <label for="i2">Can speak</label>
+
+
+					<div class="profile_form_select">
+						<p class="description al">Can speak</p>
+						<div class="form-item">
+							<ul>
+								<li>
+									<div class="item">
+										<select class="select">
+											<option>select</option>
+										</select>
+									</div>
+									<div class="item">
+										<select class="select">
+											<option>select</option>
+										</select>
+									</div>
+								</li>
+							</ul>
+	
+							<div class="ctrl-wrap">
+								<button type="button" class="btn-plus"><img src="./images/ico-plus.png" /></button>
+								<button type="button" class="btn-mius"><img src="./images/ico-mius.png" /></button>
+							</div>
+						</div>
+						<p class="description al">Want to learn</p>
+						<div class="form-item">
+							<ul>
+								<li>
+									<div class="item">
+										<select class="select">
+											<option>select</option>
+										</select>
+									</div>
+									<div class="item">
+										<select class="select">
+											<option>select</option>
+										</select>
+									</div>
+								</li>
+							</ul>
+							<div class="ctrl-wrap">
+								<button type="button" class="btn-plus"><img src="./images/ico-plus.png" /></button>
+								<button type="button" class="btn-mius"><img src="./images/ico-mius.png" /></button>
+							</div>
+						</div>
+					</div>
+
+                    <!-- <div class="input_box">
+                        <label for="i2">Can speak</label>description
                         <input type="text" id="i2" placeholder="English(5) , Korean(3)" class="box" readonly>
                     </div>
                     <div class="input_box">
                         <label for="i3">Want to learn</label>
                         <input type="text" id="i3" placeholder="English(5) , Korean(3)" class="box" readonly>
-                    </div>
+                    </div> -->
                     <p class="textarea_tit">Want I want to talk is</p>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Hello! My name is Daria and I’m gonna study Korean language …"></textarea>
                     <div class="select_wrap">
@@ -115,5 +163,21 @@
 	<!-- //Footer -->
 
 </div>
+<script>
+	$("body").on("click", ".ctrl-wrap .btn-plus", function(){
+		var item = '<li><div class="item"><select><option>select</option></select></div><div class="item"><select><option>select</option></select></div></li>';
+		$(this).parents(".form-item").eq(0).find("ul").append(item);
+		selectEvent();//셀렉트 디자인
+	});
+	$("body").on("click", ".ctrl-wrap .btn-mius", function(){
+		var _ul = $(this).parents(".form-item").eq(0);
+		console.log(_ul.find("li").length);
+		if(_ul.find("li").length>1){
+			_ul.find("li:last").remove();
+		}else{
+			//
+		}
+	});
+</script>
 </body>
 </html>

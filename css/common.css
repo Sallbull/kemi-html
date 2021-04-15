@@ -604,6 +604,18 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .profile .select_wrap label {font-size: 18px;color:#fff;}
 .profile .select_wrap input {width: 40%;border: 0 solid #000;background:transparent;text-align: right;padding:0;font-size: 20px;}
 
+.profile .contents .description.al{clear:both;text-align:left;margin-bottom:10px;color:#fff;font-size: 20px;}
+.profile .contents .form-item{margin-bottom:23px;width:100%;height:auto;position:relative;clear:both;}
+.profile .contents .form-item ul{width:100%;height:auto;}
+.profile .contents .form-item ul li{display:flex;justify-content:space-between;align-items:center;width:100%;margin-bottom:20px;height:auto;}
+.profile .contents .form-item ul li .item{width:calc( 50% - 10px );height:auto;overflow:hidden;}
+.profile .contents .form-item select{border:1px solid rgba(255, 255, 255, 0.2);width:100%;}
+.profile .contents .form-item .t01+span{margin-left:28px;}
+.profile .ctrl-wrap{position:absolute;right:-110px;top:15px;display:flex;justify-content:flex-start;align-items:center;}
+.profile .ctrl-wrap button{margin-right:10px;font-size:30px;color:#fff;display:flex;justify-content:center;align-items:center;border: solid 1.8px rgba(255, 255, 255, 0.2);width:37px;height:37px;border-radius:50%;}
+.profile .ctrl-wrap button img{width:50%;}
+
+
 /* friend */
 .friend {max-width:800px;margin:0 auto;padding:60px 40px 0;}
 .friend h3 {margin-bottom:45px;font-size:32px;font-weight:500;color:#fff;text-align:center;}
@@ -1023,6 +1035,16 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 	.profile .select_wrap label {font-size: 18px;color:#fff;}
 	.profile .select_wrap input {width: 40%;border: 0 solid #000;background:transparent;text-align: right;padding:0;font-size: 15px;}
 
+	.profile .contents .description.al{clear:both;text-align:left;margin-bottom:10px;color:#fff;font-size: 20px;}
+	.profile .contents .form-item{margin-bottom:23px;width:100%;height:auto;position:relative;clear:both;}
+	.profile .contents .form-item ul{width:100%;height:auto;}
+	.profile .contents .form-item ul li{display:flex;justify-content:space-between;align-items:center;width:100%;margin-bottom:20px;height:auto;}
+	.profile .contents .form-item ul li .item{width:calc( 50% - 10px );height:auto;overflow:hidden;}
+	.profile .contents .form-item select{border:1px solid rgba(255, 255, 255, 0.2);width:100%;}
+	.profile .contents .form-item .t01+span{margin-left:28px;}
+	.profile .ctrl-wrap{position:static;display:flex !important;justify-content:flex-end;align-items:center;width: auto !important;}
+	.profile .ctrl-wrap button{margin-right:10px;font-size:30px;color:#fff;display:flex;justify-content:center;align-items:center;border: solid 1.8px rgba(255, 255, 255, 0.2);width:37px;height:37px;border-radius:50%;}
+	.profile .ctrl-wrap button img{width:50%;}
 
 	/* friend */
 	.friend {max-width:100%;margin:0 auto;padding:60px 40px 0;}
@@ -1084,6 +1106,13 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 	.login .contents .description.al{font-size:16px;margin-bottom:15px;}
 	.swiper-container{margin-right:-20px;margin-left:-20px;}
 	.swiper-container .swiper-slide{width:360px;}
+
+	.profile_form .form-item{width:calc( 100% -  70px );}
+	.profile_form .ctrl-wrap{top:5px;display:block;width:70px;right:-75px;}
+	.profile_form .ctrl-wrap button{font-family:'dotdum';overflow:hidden;padding:0;width:30px;height:30px;line-height:30px;text-align:center;display:flex;justify-content:center;align-items:center;float:left;margin:0;margin-left:5px;}
+	.lprofile_form .form-item ul li{margin-bottom:10px;}
+	.lprofile_form .form-item ul li .item{width:calc( 50% - 5px );}
+	.lprofile_form .description.al{font-size:16px;margin-bottom:15px;}
 }
 
 /*추가 0226*/
