@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta property="og:title" content="minglecup">
+<meta property="og:type" content="website">
+<meta property="og:description" content="1 on 1 Talk Make Global freinds">
+<meta property="og:image" content="images/og.jpg">
+<title>kemi</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/font.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+
+	<!-- Header -->
+	<div id="header">
+		<h1><a href="#"><img src="images/logo_kemi.png" alt="kemi"></a></h1>
+		<button type="button" class="btn-menu"><span>Menu</span></button>
+		<div class="gnb">
+			<div class="inner">
+				<ul>
+					<li><a href="#">SIGNUP</a></li>
+					<li><a href="#">LOGIN</a></li>
+					<li><a href="#" class="not-login">PARTNERS</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			languageToggle();//모바일 언어 선택 토글
+		});
+
+		//모바일 언어 선택 토글
+		function languageToggle(){
+			$('.language-wrap').on('click', function(){
+				var winW = $(window).width();
+				if(winW < 800){
+					var Idx = $(this).find('a.on').index();
+					$(this).find('a').removeClass('on');
+					$(this).find('a').not(':eq('+ Idx +')').addClass('on');
+				}
+			});
+		}
+	</script>
+	<!-- //Header -->
+
+	<!-- Container -->
+	<div id="container" class="sub52_1">
+		<h2 class="blind">본문 내용</h2>
+		<div class="billing">
+			<h3>BILLING</h3>
+			<div class="contents">
+                <div class="alert_wrap on">
+                    <img src="images/ico_alert.svg" alt=""> 
+                    <p>We had a problem billing your account. Please resolve this issue to ensure uninterrupted service.</p>
+                </div>
+                <div class="billing_info">
+                    <ul>
+                        <li><strong>My plan : Pro</strong></li>
+                        <li>$18,99 (8times)</li>
+                        <li><span>5 times left</span></li>
+                        <li>
+                            <span>Renew</span>
+                            <span>Apr 30,2021</span>
+                        </li>
+                    </ul>
+                    <div class="link_page">
+                        <a href="#a" id="downgrade_free" onclick="popOpen('.dialog');">Downgrade to Free</a>
+                        <a href="#a"">Change the plan</a>
+                    </div>
+                </div>
+                <div class="billing_list">
+                    <ul>
+                        <li>
+                            <img src="images/ico_card.svg" alt="">
+                            <span>Mastercard ending in6917</span>
+                            <div class="status_box">
+                                <span>Default</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/ico_card.svg" alt="">
+                            <span>Mastercard ending in6917</span>
+                            <div class="status_box">
+                                <button class="default">Make a Default</button>
+                                <button class="remove">remove</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#a">Add payment method</a>
+                </div>
+                <div class="tbl_wrap scroll_wrap">
+                    <table>
+                        <colgroup>
+                            <col style="width:25%;">
+                            <col style="width:15%;">
+                            <col style="width:25%;">
+                            <col style="width:35%;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>Invoice</th>
+                                <th>Date</th>
+                                <th>Invoice Amount</th>
+                                <th>Payment Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    ADE2F33A
+                                    <img src="images/ico_pdf.svg" alt="">
+                                </td>
+                                <td>2021.2.8</td>
+                                <td>$3.99</td>
+                                <td>Failed</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ADE2F33A
+                                    <img src="images/ico_pdf.svg" alt="">
+                                </td>
+                                <td>2021.2.8</td>
+                                <td>$3.99</td>
+                                <td>Paid on 2021.2.8 07:00:02 PM</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ADE2F33A
+                                    <img src="images/ico_pdf.svg" alt="">
+                                </td>
+                                <td>2021.2.8</td>
+                                <td>$3.99</td>
+                                <td>Paid on 2021.2.8 07:00:02 PM</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ADE2F33A
+                                    <img src="images/ico_pdf.svg" alt="">
+                                </td>
+                                <td>2021.2.8</td>
+                                <td>$3.99</td>
+                                <td>Paid on 2021.2.8 07:00:02 PM</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    ADE2F33A
+                                    <img src="images/ico_pdf.svg" alt="">
+                                </td>
+                                <td>2021.2.8</td>
+                                <td>$3.99</td>
+                                <td>Paid on 2021.2.8 07:00:02 PM</td>
+                            </tr>
+                        </tbody>
+                    </table>                    
+                </div>
+                <div class="paging_wrap">
+                    <a href="#a" class="btn_prev"><img src="images/btn_left1.png" alt=""></a>
+                    <a href="#a" class="btn_next"><img src="images/btn_right1.png" alt=""></a>
+                </div>
+                <p class="question_txt">
+                    Questions about your bill Email <a href="mailto:support@kemi.ai">support@kemi.ai</a> for support
+                </p>
+			</div>
+		</div>
+	</div>
+	<!-- //Container -->
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="inner">
+			<ul class="content">
+				<li><a href="privacy.html">Privacy policy</a></li>
+				<li><a href="terms.html">Temrs & Use</a></li>
+				<li><a href="support.html">Support</a></li>
+			</ul>
+			<p>©2021 Bgoos</p>
+		</div>
+	</div>
+	<!-- //Footer -->
+
+</div>
+<div class="dialog on">
+    <div class="pop-wrap type01">
+        <div class="pop-header">
+            <button type="button" class="btn-close" onclick="popClose('.dialog');"></button>
+        </div>
+        <div class="pop-cont">
+            <p class="t2">
+                Your subscription is paid until Apr 30, 2021. If you would like to proceed with cancelling today. The cancellation will not go into effect until the date listed above.
+            </p>
+            <div class="btn-wrap billing">
+                <a href="#" class="btn-style11 btn-large rectangle" onclick="popClose('.dialog');"><span>Downgrade</span></a>
+                <a href="#" class="btn-style4 btn-large rectangle" onclick="popClose('.dialog');"><span>Cancel</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+	$('button.default').on('click',function(){
+        $(this).parent('.status_box').empty().append('<span>Default</span>');
+    });
+    $('button.remove').on('click',function(){
+        $(this).closest('li').remove();
+    });
+</script>
+</body>
+</html>

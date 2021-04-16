@@ -646,6 +646,51 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .friend .message_list li.t_right .img_box {order:2;margin:0 0 0 33px;}
 
 
+/* billing */
+.billing {max-width:1074px;margin:0 auto;padding:60px 40px 90px;color:#fff;}
+.billing h3 {margin-bottom:45px;padding-bottom:35px;font-size:32px;font-weight:500;text-align:center;border-bottom:1px solid #fff;}
+.billing .contents {margin:0 auto;max-width: ;}
+.billing .question_txt {margin-top: 30px; font-size: 18px;padding-left: 15px;}
+.billing .question_txt a {color:#ffcc2a;text-decoration: underline;}
+
+.billing .alert_wrap {display: none;align-items: center; background-color: #ffcc2a;width: 1060px;padding: 12px 0 14px 27px;box-sizing: border-box;margin:0 auto;}
+.billing .alert_wrap.on {display: flex;}
+.billing .alert_wrap p {color:#d92424;font-size: 18px;margin-left: 12px;}
+.billing .billing_info {margin: 55px auto 0;width: 1060px;}
+.billing .billing_info ul {display: flex;flex-wrap: wrap;}
+.billing .billing_info ul li {font-size: 26px;width: 50%;display: flex;}
+.billing .billing_info ul li strong {font-weight: 700;}
+.billing .billing_info ul li span {font-size: 18px;}
+.billing .billing_info ul li span + span {margin-left: 40px;}
+.billing .billing_info ul li:nth-child(even) {margin-left: auto;justify-content: flex-end;}
+.billing .billing_info ul li:nth-child(-n + 2) {margin-bottom: 20px;}
+.billing .link_page {margin-top: 35px;}
+.billing .link_page a {font-size: 18px; color:#ffcc2a;}
+#downgrade_free::after {display: inline-block;content: '';width: 1px;height: 24px;background-color: #fff;margin:0 20px;transform: translateY(5px);}
+.billing .billing_list {margin-top: 60px;padding:45px 80px; border-radius: 2px;border: solid 0.3px rgba(255, 255, 255, 0.2);}
+.billing .billing_list ul {margin-bottom: 60px;}
+.billing .billing_list li {display: flex;margin-bottom: 40px;}
+.billing .billing_list li img {margin-right: 20px;}
+.billing .billing_list li:last-child {margin-bottom: 0;}
+.billing .billing_list li .status_box {margin-left: auto;}
+.billing .billing_list li .default {color:#ffcc2a;font-size: 18px;}
+.billing .billing_list li .remove {color:#f65a5a;font-size: 18px;margin-left: 20px;}
+.billing .billing_list a {font-size: 18px;color:#ffcc2a;}
+.billing .tbl_wrap {margin-top: 45px;border-radius: 2px;border: solid 0.3px rgba(255, 255, 255, 0.2);border-bottom-left-radius: 0;border-bottom-right-radius: 0;}
+.billing .tbl_wrap table {width: 100%;table-layout: fixed;}
+.billing .tbl_wrap table th,
+.billing .tbl_wrap table td {padding:30px 30px; text-align: left;border-bottom: 0.3px solid rgba(255, 255, 255, 0.2);font-size: 18px;}
+.billing .tbl_wrap table th:first-child,
+.billing .tbl_wrap table td:first-child {padding-left: 80px;}
+.billing .tbl_wrap table td:first-child img {margin-left: 5px;transform: translateY(3px);}
+
+.billing .paging_wrap {display: flex;justify-content: space-between;padding:20px 60px;border: 0.3px solid rgba(255, 255, 255, 0.2);border-top: 0 solid #000;}
+.billing .paging_wrap a {display: flex;justify-content: center;align-items: center;width: 50px;height: 50px;}
+.billing .paging_wrap a img {width: 36px;}
+
+.billing.btn-wrap {display: flex;justify-content: space-between;}
+.billing.btn-wrap a {width: 48%;}
+.billing.btn-wrap .btn-style4 {color:#c6c6c6 !important;}
 
 
 /* =================================================
@@ -1075,6 +1120,51 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 	.friend .message_list .time {color:#868e96;margin-top: 10px;}
 	.friend .message_list .text_box {width:calc(100% - 56px);}
 	.friend .message_list li.t_right .img_box {order:2;margin:0 0 0 16px;}
+
+	/* billing */
+	.billing {max-width:100%;margin:0 auto;padding:60px 40px 0;}
+	.billing h3 {margin-bottom:45px;padding-bottom:35px;font-size:32px;font-weight:500;text-align:center;border-bottom:1px solid #fff;}
+	.billing .contents {margin:0 auto;}
+	.billing .question_txt {margin-top: 10px; font-size: 14px;padding-left: 5px;}
+
+	.billing .alert_wrap {display: none;background-color: #ffcc2a;width: 100%;padding: 5px;text-align: center;}
+	.billing .alert_wrap.on {display: block;}
+	.billing .alert_wrap p {color:#d92424;font-size: 16px;margin:5px 0;}
+
+	.billing .billing_info {margin: 20px auto 0;width: 100%;}
+	.billing .billing_info ul {display: flex;flex-wrap: wrap;}
+	.billing .billing_info ul li {font-size: 18px;width: 50%;display: flex;}
+	.billing .billing_info ul li span {font-size: 14px;}
+	.billing .billing_info ul li span + span {margin-left: 10px;}
+	.billing .billing_info ul li:nth-child(even) {margin-left: auto;justify-content: flex-end;}
+	.billing .billing_info ul li:nth-child(-n + 2) {margin-bottom: 10px;}
+	.billing .link_page {margin-top: 20px;}
+	.billing .link_page a {font-size: 14px; color:#ffcc2a;}
+	#downgrade_free::after {display: inline-block;content: '';width: 1px;height: 20px;background-color: #fff;margin:0 15px;transform: translateY(5px);}
+	
+	.billing .billing_list {margin-top: 30px;padding:15px 20px; border-radius: 2px;border: solid 0.3px rgba(255, 255, 255, 0.2);}
+	.billing .billing_list ul {margin-bottom: 30px;}
+	.billing .billing_list li {display: flex;margin-bottom: 30px;flex-wrap: wrap;border-bottom: 1px solid rgba(255, 255, 255, .4);padding-bottom: 5px;}
+	.billing .billing_list li img {margin-right: 10px;width: 20px;}
+	.billing .billing_list li:last-child {margin-bottom: 0;}
+	.billing .billing_list li .status_box {margin-left: auto;width: 100%;margin-top: 10px;display: flex;justify-content: space-between;}
+	.billing .billing_list li .default {color:#ffcc2a;font-size: 14px;}
+	.billing .billing_list li .remove {color:#f65a5a;font-size: 14px;margin-left: 0;}
+	.billing .billing_list a {font-size: 14px;color:#ffcc2a;}
+	.billing .tbl_wrap {margin-top: 45px;border-radius: 2px;border: solid 0.3px rgba(255, 255, 255, 0.2);}
+	.billing .scroll_wrap {overflow-x: auto;}
+	.billing .tbl_wrap table {width: 640px;table-layout: fixed;}
+	.billing .tbl_wrap table th,
+	.billing .tbl_wrap table td {padding:10px 10px; text-align: left;border-bottom: 0.3px solid rgba(255, 255, 255, 0.2);font-size: 14px;}
+	.billing .tbl_wrap table th:first-child,
+	.billing .tbl_wrap table td:first-child {padding-left: 20px;}
+	.billing .tbl_wrap table td:first-child img {margin-left: 5px;transform: translateY(3px);}
+	.billing .paging_wrap {display: flex;justify-content: space-between;padding:10px;width: 100%;box-sizing: border-box;}
+	.billing .paging_wrap a {display: flex;justify-content: center;align-items: center;width: 30px;height: 30px;}
+	.billing .paging_wrap a img {width: 36px;}
+	.billing.btn-wrap {display: flex;justify-content: space-between;}
+	.billing.btn-wrap a {width: 48%;}
+	.billing.btn-wrap .btn-style4 {color:#c6c6c6 !important;}
 }
 
 /*추가*/

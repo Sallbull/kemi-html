@@ -75,12 +75,16 @@ function popOpen(o){
     setTimeout(function(){
         $(o).addClass("on");
     },200);
+	$('html').css('height','100vh');
+	$('html').css('overflow-y','hidden');
 }
 function popClose(o){
     $(o).removeClass("on");
     setTimeout(function(){
         $(o).removeClass("ing");
     },500)
+	$('html').css('height','auto');
+	$('html').css('overflow-y','auto');
 }
 
 function profileMenu(){
