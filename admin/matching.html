@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="dimmed"></div>
+    <div class="container">
+        <div class="contents">
+            <div class="tab_wrap">
+                <a href="#a">타입</a>
+                <a href="#a" class="on">매칭</a>
+            </div>
+            <div class="excel_download">
+                <a href="#a">CVS 다운로드</a>
+            </div>
+            <div class="table">
+                <table>
+                    <colgroup>
+                        <col style="width: 5%;">
+                        <col style="width: 10%;">
+                        <col style="width: 8.5%;">
+                        <col style="width: 8.5%;">
+                        <col style="width: 8.5%;">
+                        <col style="width: 8.5%;">
+                        <col style="width: 8.5%;">
+                        <col style="width: 8.5%;">
+                        <col style="width: 8.5%;">
+                        <col style="width: 8.5%;">
+                        <col style="width: 8.5%;">
+                        <col style="width: 8.5%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>Type Name</th>
+                            <th>waiting</th>
+                            <th>10%</th>
+                            <th>20%</th>
+                            <th>30%</th>
+                            <th>40%</th>
+                            <th>50%</th>
+                            <th>60%</th>
+                            <th>70%</th>
+                            <th>80%</th>
+                            <th>90%</th>
+                            <th>100%</th>
+                        </tr>
+                    </thead>
+                    <tbody id="sortable">
+                        <tr>
+                            <td>A1</td>
+                            <td></td>
+                            <td>
+                                <button class="btn_add">+</button>
+                                C2, C3, C4, C5, B1, B2, B3, B4, B6, A1, A2
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                                B1
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>    
+                        </tr>
+                        <tr>
+                            <td>A2</td>
+                            <td></td>
+                            <td>
+                                <button class="btn_add">+</button>
+                                C2, C3, C4, C5, B1, B2, B3, B4, B6, A1, A2
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                                B1
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>
+                            <td>
+                                <button class="btn_add">+</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="paging" style="display: none;">
+                <ul>
+                    <li class="img off"><a href="#a"><img src="./img/btn_left.png" alt=""></a></li>
+                    <li class="img"><a href="#a"><img src="./img/btn_left.png" alt=""></a></li>
+                    <li class="num on"><a href="#a">1</a></li>
+                    <li class="num"><a href="#a">2</a></li>
+                    <li class="num"><a href="#a">3</a></li>
+                    <li class="num"><a href="#a">4</a></li>
+                    <li class="num"><a href="#a">5</a></li>
+                    <li class="num"><a href="#a">6</a></li>
+                    <li class="num"><a href="#a">7</a></li>
+                    <li class="num"><a href="#a">8</a></li>
+                    <li class="num"><a href="#a">9</a></li>
+                    <li class="num"><a href="#a">10</a></li>
+                    <li class="img"><a href="#a"><img src="./img/btn_right.png" alt=""></a></li>
+                    <li class="img off"><a href="#a"><img src="./img/btn_right.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <p>© copyright. All rights reserved.</p>
+        </footer>
+        <div class="popup_box">
+            <input type="text" value="A1, A2, C1">
+            <div class="inner">
+                
+                <ul>
+                    <li>A1</li>
+                    <li>A2</li>
+                    <li>A3</li>
+                    <li>A4</li>
+                    <li>A5</li>
+                    <li>B1</li>
+                    <li>B2</li>
+                    <li>B3</li>
+                    <li>B4</li>
+                    <li>B5</li>
+                </ul>                
+            </div>
+            <div class="btn_wrap">
+                <button class="btn_cancel">CANCEL</button>
+                <button class="btn_ok">OK</button>
+            </div>
+            <button class="btn_closed"><img src="./img/btn_close.png" alt=""></button>
+        </div>
+    </div>
+    <script>
+        $( function() {
+            var fixHelper = function(e, ui) {
+                ui.children().each(function() {
+                    $(this).width($(this).width());
+                });
+                return ui;
+            };
+            $( "#sortable" ).sortable({
+                helper: fixHelper
+            }).disableSelection();
+        } );
+        $('.paging .num').on('click',function(){
+            $('.paging .num').removeClass('on');
+            $(this).addClass('on');
+        });
+        $('.popup_box li').on('click',function(){
+            $(this).toggleClass('on');
+        });
+        $('.btn_add').on('click',function(){
+            $('.dimmed').show();
+            $('.popup_box').fadeIn();
+        });
+        $('.popup_box .btn_wrap button').on('click',function(){
+            $('.dimmed').fadeOut();
+            $('.popup_box').hide();
+        });
+        $('.popup_box .btn_closed').on('click',function(){
+            $('.dimmed').fadeOut();
+            $('.popup_box').hide();
+        });
+    </script>
+</body>
+
+</html>
