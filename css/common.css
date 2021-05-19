@@ -696,6 +696,21 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .billing.btn-wrap a {width: 48%;}
 .billing.btn-wrap .btn-style4 {color:#c6c6c6 !important;}
 
+.wait_infomation {padding: 130px 0 120px;}
+.wait_infomation .text_wrap {text-align: center;color: #111;font-weight: 500;}
+.wait_infomation .text_wrap .t1 { font-size: 70px;font-weight: bold;}
+.wait_infomation .text_wrap .t2 { margin-top: 8px; font-size: 46px; }
+.wait_infomation .text_wrap .t2 b { color: #e81615; font-weight: bold;}
+.wait_infomation .text_wrap .t3 { margin-top: 22px; font-size: 38px;}
+.wait_infomation .tbl_wrap {width: 1580px;margin:155px auto 0;}
+.wait_infomation .tbl_wrap table {table-layout: fixed;width: 100%;border: solid 4px #111;}
+.wait_infomation .tbl_wrap table th,
+.wait_infomation .tbl_wrap table td {border: solid 2px #111;padding:15px 0 20px;}
+.wait_infomation .tbl_wrap table th {font-size: 32px;font-weight: bold;color:#fff;background-color: #2b3353;}
+.wait_infomation .tbl_wrap table tbody th {font-size: 28px;font-weight: 500;}
+.wait_infomation .tbl_wrap table td {font-size: 28px;font-weight: 500; text-align: center;}
+.wait_infomation .tbl_wrap .match {background-color: #7ad57b;}
+.wait_infomation .tbl_wrap .others { padding:60px 0;}
 
 /* =================================================
 	* Footer
@@ -1174,6 +1189,20 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 	.billing.btn-wrap {display: flex;justify-content: space-between;}
 	.billing.btn-wrap a {width: 48%;}
 	.billing.btn-wrap .btn-style4 {color:#c6c6c6 !important;}
+
+	.wait_infomation {padding: 6.771vw 20px 6.250vw;}
+	.wait_infomation .text_wrap .t1 { font-size: 32px;}
+	.wait_infomation .text_wrap .t2 { margin-top: 0.417vw; font-size: 18px; }
+	.wait_infomation .text_wrap .t3 { margin-top: 1.146vw; font-size: 18px;}
+	.wait_infomation .tbl_wrap {width: 100%;margin:8.073vw auto 0;}
+	.wait_infomation .tbl_wrap table {table-layout: fixed;width: 100%;border: solid 0.104vw #111;}
+	.wait_infomation .tbl_wrap table th,
+	.wait_infomation .tbl_wrap table td {border: solid 0.104vw #111;padding:15px 0;}
+	.wait_infomation .tbl_wrap table th {font-size: 13px;font-weight: 500;color:#fff;background-color: #2b3353;}
+	.wait_infomation .tbl_wrap table tbody th {font-size: 12px;font-weight: 500;}
+	.wait_infomation .tbl_wrap table td {font-size: 14px;font-weight: 500; text-align: center;}
+	.wait_infomation .tbl_wrap .match {background-color: #7ad57b;}
+	.wait_infomation .tbl_wrap .others { padding:30px 0;}
 }
 
 /*추가*/
@@ -1258,22 +1287,6 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .price-select-list ul li button{outline:none;margin:0 auto;font-size:18px;color:#fff;font-weight:500;display:flex;justify-content:center;align-items:center;width:270px;height:56px;overflow:hidden;border-radius:2px;background:#e9517a;opacity:.9;}
 .price-select-list ul li button.on{border:1px solid #d57205;color:#f8e274;background:transparent;border-image-source: linear-gradient(101deg, #f8e274, #d57205 104%);border-image-slice: 1;}
 .price-tabs{display:none;}
-
-.wait_infomation {padding: 130px 0 120px;}
-.wait_infomation .text_wrap {text-align: center;color: #111;font-weight: 500;}
-.wait_infomation .text_wrap .t1 { font-size: 70px;font-weight: bold;}
-.wait_infomation .text_wrap .t2 { margin-top: 8px; font-size: 46px; }
-.wait_infomation .text_wrap .t2 b { color: #e81615; font-weight: bold;}
-.wait_infomation .text_wrap .t3 { margin-top: 22px; font-size: 38px;}
-.wait_infomation .tbl_wrap {width: 1580px;margin:155px auto 0;}
-.wait_infomation .tbl_wrap table {table-layout: fixed;width: 100%;border: solid 4px #111;}
-.wait_infomation .tbl_wrap table th,
-.wait_infomation .tbl_wrap table td {border: solid 2px #111;padding:15px 0 20px;}
-.wait_infomation .tbl_wrap table th {font-size: 32px;font-weight: bold;color:#fff;background-color: #2b3353;}
-.wait_infomation .tbl_wrap table tbody th {font-size: 28px;font-weight: 500;}
-.wait_infomation .tbl_wrap table td {font-size: 28px;font-weight: 500; text-align: center;}
-.wait_infomation .tbl_wrap .match {background-color: #7ad57b;}
-.wait_infomation .tbl_wrap .others { padding:60px 0;}
 
 
 @media only screen and (max-width:1024px) {
