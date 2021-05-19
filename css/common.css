@@ -1258,6 +1258,24 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .price-select-list ul li button{outline:none;margin:0 auto;font-size:18px;color:#fff;font-weight:500;display:flex;justify-content:center;align-items:center;width:270px;height:56px;overflow:hidden;border-radius:2px;background:#e9517a;opacity:.9;}
 .price-select-list ul li button.on{border:1px solid #d57205;color:#f8e274;background:transparent;border-image-source: linear-gradient(101deg, #f8e274, #d57205 104%);border-image-slice: 1;}
 .price-tabs{display:none;}
+
+.wait_infomation {padding: 130px 0 120px;}
+.wait_infomation .text_wrap {text-align: center;color: #111;font-weight: 500;}
+.wait_infomation .text_wrap .t1 { font-size: 70px;font-weight: bold;}
+.wait_infomation .text_wrap .t2 { margin-top: 8px; font-size: 46px; }
+.wait_infomation .text_wrap .t2 b { color: #e81615; font-weight: bold;}
+.wait_infomation .text_wrap .t3 { margin-top: 22px; font-size: 38px;}
+.wait_infomation .tbl_wrap {width: 1580px;margin:155px auto 0;}
+.wait_infomation .tbl_wrap table {table-layout: fixed;width: 100%;border: solid 4px #111;}
+.wait_infomation .tbl_wrap table th,
+.wait_infomation .tbl_wrap table td {border: solid 2px #111;padding:15px 0 20px;}
+.wait_infomation .tbl_wrap table th {font-size: 32px;font-weight: bold;color:#fff;background-color: #2b3353;}
+.wait_infomation .tbl_wrap table tbody th {font-size: 28px;font-weight: 500;}
+.wait_infomation .tbl_wrap table td {font-size: 28px;font-weight: 500; text-align: center;}
+.wait_infomation .tbl_wrap .match {background-color: #7ad57b;}
+.wait_infomation .tbl_wrap .others { padding:60px 0;}
+
+
 @media only screen and (max-width:1024px) {
 	.review-item-wrap{width:calc( 100% - 40px );margin:25px auto 50px auto;}
 	.review-item-wrap ul li{width:100%;margin-top:30px;}

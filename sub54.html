@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta property="og:title" content="minglecup">
+<meta property="og:type" content="website">
+<meta property="og:description" content="1 on 1 Talk Make Global freinds">
+<meta property="og:image" content="images/og.jpg">
+<title>kemi</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/font.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+
+    <div class="wait_infomation">
+        <div class="text_wrap">
+            <p class="t1">Please Wait</p>
+            <p class="t2">We gonna match your new partner in <b>3 min</b></p>
+            <p class="t3">You can go restroom</p>
+        </div>
+        <div class="tbl_wrap">
+            <table>
+                <colgroup>
+                    <col style="width: 25%;">
+                    <col style="width: 25%;">
+                    <col style="width: 25%;">
+                    <col style="width: 25%;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th colspan="3" class="match">Match</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Franch</th>
+                        <td>Umeed</td>
+                        <td>Omar</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>German</th>
+                        <td>Peter</td>
+                        <td>Kyo</td>
+                        <td>Hamza</td>
+                    </tr>
+                    <tr>
+                        <th>Korean</th>
+                        <td>mike</td>
+                        <td>Arsen</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Japanese</th>
+                        <td>yili</td>
+                        <td>Kei K</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>English</th>
+                        <td colspan="3" class="others">Others</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+<div class="dialog">
+    <div class="pop-wrap type01">
+        <div class="pop-header">
+            <button type="button" class="btn-close" onclick="popClose('.dialog');"></button>
+        </div>
+        <div class="pop-cont">
+            <p class="t2">
+                Your subscription is paid until Apr 30, 2021. If you would like to proceed with cancelling today. The cancellation will not go into effect until the date listed above.
+            </p>
+            <div class="btn-wrap billing">
+                <a href="#" class="btn-style11 btn-large rectangle" onclick="popClose('.dialog');"><span>Downgrade</span></a>
+                <a href="#" class="btn-style4 btn-large rectangle" onclick="popClose('.dialog');"><span>Cancel</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+	$('button.default').on('click',function(){
+        $(this).parent('.status_box').empty().append('<span>Default</span>');
+    });
+    $('button.remove').on('click',function(){
+        $(this).closest('li').remove();
+    });
+</script>
+</body>
+</html>
