@@ -211,6 +211,7 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 #container.sub43_1 {background: #222;}
 #container.sub44_1 {background: #222;}
 #container.sub52_1 {background: #222;}
+#container.kemi-partners {background: #222;}
 #container.support {background: #222;}
 #container.terms {background: #222;}
 .tit-wrp{text-align:center;}
@@ -712,6 +713,19 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .wait_infomation .tbl_wrap .match {background-color: #7ad57b;}
 .wait_infomation .tbl_wrap .others { padding:60px 0;}
 
+/* kemi-partners */
+.partners-cont {max-width:850px;margin:0 auto;padding:60px 40px 0;}
+.partners-cont h3{margin-bottom:75px;padding-bottom:35px;border-bottom:1px solid #fff;font-size:32px;font-weight:500;color:#fff;text-align:center;}
+.partners-cont .contents {width: 400px;margin:0 auto;}
+.partners-cont .btn-wrap a {width: 400px;margin:28px auto 0;}
+.partners-cont h4 {margin-top:56px;margin-bottom: 45px; padding-left: 60px; font-size: 28px;font-weight: bold;color:#ffcc2a; background: url(../images/ico_h4_arrow.png) no-repeat 0 50% / 36px 26px;}
+.partners-cont h4:first-child {margin-top: 0;}
+.partners-cont h4 span {font-size: 20px;font-weight: normal;margin-left: 28px;vertical-align: middle;}
+.partners-cont .input_box {margin-bottom: 24px;display: flex;justify-content: space-between;align-items: stretch;}
+.partners-cont .input {width: 100%; height: 64px;padding:0 26px;color:#fff;font-size: 18px;border: 1.4px solid #fff;background: transparent;box-sizing: border-box;}
+.partners-cont .btn_box .input {width: 71.5%;}
+.partners-cont .btn_resend {width: 100px;background-color: #fff;color:#222;font-size: 18px;margin-left: 14px;}
+
 /* =================================================
 	* Footer
 ================================================= */
@@ -1203,6 +1217,19 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 	.wait_infomation .tbl_wrap table td {font-size: 14px;font-weight: 500; text-align: center;}
 	.wait_infomation .tbl_wrap .match {background-color: #7ad57b;}
 	.wait_infomation .tbl_wrap .others { padding:30px 0;}
+
+	/* kemi-partners */
+	.partners-cont {max-width: 100%;margin: 0 auto;padding: 60px 40px 0;}
+	.partners-cont h3{margin-bottom:35px;padding-bottom:35px;border-bottom:1px solid #fff;font-size:32px;font-weight:500;color:#fff;text-align:center;}
+	.partners-cont .contents {width: 100%;}
+	.partners-cont .btn-wrap a {width: 100%;height: 71px; margin:28px auto 0;}
+	.partners-cont h4 {margin-top:56px;margin-bottom: 25px; padding-left: 60px; font-size: 28px;font-weight: bold;color:#ffcc2a; background: url(../images/ico_h4_arrow.png) no-repeat 0 50% / 36px 26px;}
+	.partners-cont h4:first-child {margin-top: 0;}
+	.partners-cont h4 span {font-size: 20px;font-weight: normal;margin-left: 0;display: block;}
+	.partners-cont .input_box {margin-bottom: 14px;display: flex;justify-content: space-between;align-items: stretch;}
+	.partners-cont .input {width: 100%; height: 51px;padding:0 16px;color:#fff;font-size: 14px;border: 1.4px solid #fff;background: transparent;box-sizing: border-box;}
+	.partners-cont .btn_box .input {width: 71.5%;}
+	.partners-cont .btn_resend {width: 100px;background-color: #fff;color:#222;font-size: 18px;margin-left: 14px;}
 }
 
 /*추가*/
