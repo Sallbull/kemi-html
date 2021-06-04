@@ -19,6 +19,9 @@ body{position:relative;z-index:2;font-family: 'Noto Sans KR', sans-serif;}
 .fc-yellow{color:#f8e274 !important;}
 .m-show{display:none;}
 .oswald{font-family: 'Oswald', sans-serif;}
+.cookie-4 {font-family: 'CookieRun-Regular';}
+.cookie-7 {font-family: 'CookieRunOTF-Bold';}
+.cookie-9 {font-family: 'CookieRunOTF-Black';}
 
 /* Form */
 input,

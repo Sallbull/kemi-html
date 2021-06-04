@@ -49,3 +49,22 @@
         url(fonts/NotoSansKR-Black.woff) format('woff'),
         url(fonts/NotoSansKR-Black.otf) format('opentype');
  }
+
+ @font-face {
+     font-family: 'CookieRunOTF-Black';
+     src: url(fonts/CookieRunOTF-Black00.woff) format('woff');
+     font-weight: normal;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: 'CookieRun-Regular';
+     src: url(fonts/CookieRun-Regular.woff) format('woff');
+     font-weight: normal;
+     font-style: normal;
+ }
+ @font-face {
+     font-family: 'CookieRunOTF-Bold';
+     src: url(fonts/CookieRunOTF-Bold00.woff) format('woff');
+     font-weight: normal;
+     font-style: normal;
+ }
