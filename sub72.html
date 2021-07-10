@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta property="og:title" content="minglecup">
+<meta property="og:type" content="website">
+<meta property="og:description" content="1 on 1 Talk Make Global freinds">
+<meta property="og:image" content="images/og.jpg">
+<title>kemi</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/font.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+</head>
+<body>
+
+<div id="wrap">
+
+	<!-- Header -->
+	<div id="header">
+		<h1><a href="#"><img src="images/logo_kemi.png" alt="kemi"></a></h1>
+		<button type="button" class="btn-menu"><span>Menu</span></button>
+		<div class="gnb">
+			<div class="inner">
+				<ul>
+					<li><a href="#">SIGNUP</a></li>
+					<li><a href="#">LOGIN</a></li>
+					<li><a href="#" class="not-login">PARTNERS</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			languageToggle();//모바일 언어 선택 토글
+		});
+
+		//모바일 언어 선택 토글
+		function languageToggle(){
+			$('.language-wrap').on('click', function(){
+				var winW = $(window).width();
+				if(winW < 800){
+					var Idx = $(this).find('a.on').index();
+					$(this).find('a').removeClass('on');
+					$(this).find('a').not(':eq('+ Idx +')').addClass('on');
+				}
+			});
+		}
+	</script>
+	<!-- //Header -->
+
+	<!-- Container -->
+	<div id="container" class="sub41_1">
+		<h2 class="blind">본문 내용</h2>
+		<div class="matching_email_setting">
+            <div class="tab_menu">
+                <button data-rel="matching_wrap" class="on">
+                    <h3>Matching</h3>
+                </button>
+                <button data-rel="email_setting_list">
+                    <h3>Email</h3>
+                </button>
+            </div>
+			<div class="contents">
+                <ul class="matching_wrap tab-cont">
+                    <li>
+                        <p class="t1">Which matching do you prefer?</p>
+                        <div class="checkbox_wrap">
+                            <button class="btn-style3 btn-large"><span>1:1</span></button>
+                            <button class="btn-style3 btn-large"><span>2:1</span></button>
+                            <button class="btn-style3 btn-large"><span>Both</span></button>
+                        </div>
+                        <p class="t2">Actually 1 on 1, if your partner is not good, you can feel bad</p>
+                    </li>
+                    <li>
+                        <p class="t1">Is there your partner’s age you don’t want to match with?</p>
+                        <div class="checkbox_wrap">
+                            <button class="btn-style3 btn-large"><span>Young</span></button>
+                            <button class="btn-style3 btn-large"><span>Middle</span></button>
+                            <button class="btn-style3 btn-large"><span>Old</span></button>
+                            <button class="btn-style3 btn-large"><span>All</span></button>
+                        </div>
+                        <p class="t2">Old people they have dicersity story and wisdom, knowledge</p>
+                    </li>
+                    <li>
+                        <p class="t1">What is the main purpose?</p>
+                        <div class="checkbox_wrap">
+                            <button class="btn-style3 btn-large"><span>To meet new people</span></button>
+                            <button class="btn-style3 btn-large"><span>To practice target language</span></button>
+                            <button class="btn-style3 btn-large"><span>Both</span></button>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="t1">Is there a country you would like to talk with? <a href="#a">Go to choose ></a></p>
+                        <p class="answer">UK, France, German</p>
+                        <p class="t2">We will do our best, but we are not guarantee to match</p>
+                    </li>
+                    <li>
+                        <p class="t1">Is there a country you dont want to talk with?<a href="#a">Go to choose ></a></p>
+                        <p class="answer">China, USA</p>
+                        <p class="t2">Old people they have dicersity story and wisdom, knowledge</p>
+                    </li>
+                </ul>
+				<ul class="email_setting_list tab-cont">
+                    <li>
+                        <span>Your great partner participation</span>
+                        <input type="checkbox" id="l1">
+                        <label for="l1"></label>
+                    </li>
+                    <li>
+                        <span>Partner Review request</span>
+                        <input type="checkbox" id="l2">
+                        <label for="l2"></label>
+                    </li>
+                    <li>
+                        <span>New event announcements</span>
+                        <input type="checkbox" id="l3">
+                        <label for="l3"></label>
+                    </li>
+                    <li>
+                        <span>New chat message</span>
+                        <input type="checkbox" id="l4">
+                        <label for="l4"></label>
+                    </li>
+                    <li>
+                        <span>Feedback request when you missed meetup</span>
+                        <input type="checkbox" id="l5">
+                        <label for="l5"></label>
+                    </li>
+                    <li>
+                        <span>Feedback request when you left without notice</span>
+                        <input type="checkbox" id="l6">
+                        <label for="l6"></label>
+                    </li>
+                    
+                </ul>
+			</div>
+		</div>
+	</div>
+	<!-- //Container -->
+	<script type="text/javascript">
+		var owlTouchDir = 0;
+		$(function(){
+			slide();
+		});
+
+		function slide(){
+			$('.owl-carousel').owlCarousel({
+				dots: false,
+			    loop: true,
+				autoWidth: true,
+				center: true,
+				nav: true,
+				margin: 18,
+				items: 10
+			});
+
+			if($('body').hasClass('ios')){
+				$('.owl-carousel').on('touchstart', function(e){
+					owlTouchDir = e.pageX;
+				});
+
+				$('.owl-carousel').on('touchmove', function(e){
+					var touchStartPos = e.pageX;
+
+					if (owlTouchDir + 10 < touchStartPos || owlTouchDir - 10 > touchStartPos){
+						e.preventDefault();
+					} else {
+						return true;
+					}
+				});
+
+				$('.owl-carousel').on('touchend', function(e){
+					return true;
+				});
+			}
+		}
+	</script>
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="inner">
+			<ul class="content">
+				<li><a href="privacy.html">Privacy policy</a></li>
+				<li><a href="terms.html">Temrs & Use</a></li>
+				<li><a href="support.html">Support</a></li>
+			</ul>
+			<p>©2021 Bgoos</p>
+		</div>
+	</div>
+	<!-- //Footer -->
+
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$('.not-login').click(function(){
+		popOpen('.pop-login');
+	});
+    $('.contents .tab-cont').hide();
+    $('.contents .matching_wrap').show();
+    $('.tab_menu button').on('click',function(){
+        $(this).addClass('on').siblings('button').removeClass('on');
+        var tg = '.' + $(this).attr('data-rel');
+        console.log(tg);
+        $(tg).show().siblings('.tab-cont').hide();
+    });
+
+    $('.matching_email_setting .checkbox_wrap button').on('click',function(){
+        $(this).addClass('on').siblings('button').removeClass('on');
+    });
+    
+});
+</script>
+<div class="popup pop-login pop-alert">
+	<div class="table">
+		<div class="table-cell">
+			<div class="pop-cont">
+				<p>로그인 후<br>이용이 가능합니다</p>
+				<!-- <button type="button" class="btn-close" onclick="popClose(this);">닫기</button> -->
+				<div class="btn-wrap">
+					<a href="#" class="btn-style1 btn-medium" onclick="popClose(this);"><span>확인</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

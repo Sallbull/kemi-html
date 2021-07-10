@@ -65,24 +65,90 @@
 			<h3>ACTIVITES</h3>
 			<div class="contents">
                 <div class="stit">
-                    <h4>RSVP</h4>
+                    <button class="btn-style11 btn-large"><span>RSVP</span></button>
                     <span>Boardgame (Sunday 11:00am ~ 13:00pm)</span>
                 </div>
-                <ul class="img_list">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+				<div class="owl-carousel owl-loaded owl-drag">
+					<div class="owl-stage-outer">
+						<ul class="img_list owl-stage">
+							<li class="owl-item">
+								<div class="img_box"></div>
+								<span>Spain_madrid</span>
+							</li>
+							<li class="owl-item">
+								<div class="img_box"></div>
+								<span>Korea_Seoul</span>
+							</li>
+							<li class="owl-item">
+								<div class="img_box"></div>
+								<span>UK_London</span>
+							</li>
+							<li class="owl-item">
+								<div class="img_box"></div>
+								<span>Spain_madrid</span>
+							</li>
+							<li class="owl-item">
+								<div class="img_box"></div>
+								<span>Korea_Seoul</span>
+							</li>
+							<li class="owl-item">
+								<div class="img_box"></div>
+								<span>UK_London</span>
+							</li>
+						</ul>
+					</div>
+					<div class="owl-nav disabled">
+						<button type="button" role="presentation" class="owl-prev">
+							<span aria-label="Previous">‹</span>
+						</button>
+						<button type="button" role="presentation" class="owl-next">
+							<span aria-label="Next">›</span>
+						</button>
+					</div>
+				</div>
 
                 <div class="stit">
-                    <h4>RSVP</h4>
+					<button class="btn-style11 btn-large"><span>RSVP</span></button>
                     <span>Hiking (Sunday 11:00am ~ 13:00pm)</span>
                 </div>
-                <ul class="img_list">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+				<div class="owl-carousel owl-loaded owl-drag">
+					<div class="owl-stage-outer">
+						<ul class="img_list owl-stage">
+							<li class="owl-item">
+								<div class="img_box"></div>
+								<span>Spain_madrid</span>
+							</li>
+							<li class="owl-item">
+								<div class="img_box"></div>
+								<span>Korea_Seoul</span>
+							</li>
+							<li class="owl-item">
+								<div class="img_box"></div>
+								<span>UK_London</span>
+							</li>
+							<li class="owl-item">
+								<div class="img_box"></div>
+								<span>Spain_madrid</span>
+							</li>
+							<li class="owl-item">
+								<div class="img_box"></div>
+								<span>Korea_Seoul</span>
+							</li>
+							<li class="owl-item">
+								<div class="img_box"></div>
+								<span>UK_London</span>
+							</li>
+						</ul>
+					</div>
+					<div class="owl-nav disabled">
+						<button type="button" role="presentation" class="owl-prev">
+							<span aria-label="Previous">‹</span>
+						</button>
+						<button type="button" role="presentation" class="owl-next">
+							<span aria-label="Next">›</span>
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -96,12 +162,29 @@
 		function slide(){
 			$('.owl-carousel').owlCarousel({
 				dots: false,
-			    loop: true,
+				loop: true,
 				autoWidth: true,
 				center: true,
 				nav: true,
-				margin: 18,
-				items: 10
+				margin: 40,
+				items: 10,
+				responsive: {
+					// breakpoint from 0 up
+					0: {
+						margin: 5,
+						items: 1,
+					},
+					// breakpoint from 480 up
+					480: {
+						margin: 10,
+						items: 1,
+					},
+					// breakpoint from 768 up
+					768: {
+						margin: 20,
+						items: 3,
+					},
+				},
 			});
 
 			if($('body').hasClass('ios')){
