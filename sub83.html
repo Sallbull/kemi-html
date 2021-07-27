@@ -59,17 +59,45 @@
 	<!-- //Header -->
 
 	<!-- Container -->
-	<div id="container" class="sub42_1">
+	<div id="container" class="sub80">
 		<h2 class="blind">본문 내용</h2>
-		<div class="login">
-			<h3>Sign up</h3>
-			<div class="contents">
-				<p class="description al">국적</p>
-				<div class="input-txt">
-					<select class="select">
-						<option>Korea</option>
-					</select>
-				</div>
+		<div class="jar">
+            <a href="#a" class="btn_back">Go back</a>
+			<h3>Who I am</h3>
+			<div class="contents who">
+				<h4>Interesting</h4>
+                <div class="checkbox_wrap">
+                    <button class="btn-large"><span>Part</span></button>
+                    <button class="btn-large"><span>Reading book</span></button>
+                    <button class="btn-large"><span>Movie</span></button>
+                    <button class="btn-large"><span>Instagram</span></button>
+                    <button class="btn-large"><span>90’s vibe</span></button>
+                    <button class="btn-large"><span>Golf</span></button>
+                    <button class="btn-large"><span>Kpop</span></button>
+                    <button class="btn-large"><span>Latin music</span></button>
+                    <button class="btn-large"><span>Japan animation</span></button>
+                    <button class="btn-large"><span>Workout</span></button>
+                    <button class="btn-large"><span>Online game</span></button>
+                </div>
+                <h4>Interesting</h4>
+                <div class="checkbox_wrap">
+                    <button class="btn-large"><span>Work out</span></button>
+                    <button class="btn-large"><span>Drink</span></button>
+                    <button class="btn-large"><span>Wine</span></button>
+                    <button class="btn-large"><span>Beer</span></button>
+                    <button class="btn-large"><span>Netflix</span></button>
+                </div>
+                <h4>Personality</h4>
+                <div class="checkbox_wrap">
+                    <button class="btn-large"><span>Quiet</span></button>
+                    <button class="btn-large"><span>entusiastic</span></button>
+                    <button class="btn-large"><span>Out going</span></button>
+                </div>
+                <h4>I heard</h4>
+                <div class="checkbox_wrap">
+                    <button class="btn-large"><span>Nice voice</span></button>
+                    <button class="btn-large"><span>Funny</span></button>
+                </div>
 			</div>
 
 		</div>
@@ -93,6 +121,10 @@
 				dateFormat: 'yy-mm-dd',
 			    direction: 'down',
 			});
+
+            $('.checkbox_wrap button').on('click',function(){
+        $(this).addClass('on').siblings('button').removeClass('on');
+    });
 		});
 	</script>
 	<!-- //Container -->

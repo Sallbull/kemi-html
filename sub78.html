@@ -75,6 +75,11 @@
 				<a href="#" class="btn-style8 btn-large"><span>Language Exchange</span></a>
                 <a href="#" class="btn-style11 btn-large"><span>Group in person</span></a>
                 <a href="#" class="btn-style12 btn-large"><span>Ativities</span></a>
+                <a href="#a" class="btn-tip">
+                    <img src="images/ico_tip.svg" alt="">
+                    <span class="s1">TIP</span>
+                    <span class="s2">for us?</span>
+                </a>
 			</div>
 		</div>
 	</div>
@@ -140,19 +145,20 @@ $(function(){
 	});
 });
 </script>
-<div class="popup pop-login pop-alert">
-	<div class="table">
-		<div class="table-cell">
-			<div class="pop-cont">
-				<p>로그인 후<br>이용이 가능합니다</p>
-				<!-- <button type="button" class="btn-close" onclick="popClose(this);">닫기</button> -->
-				<div class="btn-wrap">
-					<a href="#" class="btn-style1 btn-medium" onclick="popClose(this);"><span>확인</span></a>
-				</div>
-			</div>
-		</div>
-	</div>
+<div class="dialog on">
+    <div class="pop-wrap type02">
+        <div class="pop-header">
+            <h1>NOTICE</h1>
+            <button type="button" class="btn-close" onclick="popClose('.dialog');"></button>
+        </div>
+        <div class="pop-cont txt">
+            <p class="txt1">Hello!</p>
+            <p class="txt2">We can not run our meetup today for some reason.</p>
+            <p class="date">2021-07-21</p>
+            <p class="txt2">Sorry for that.</p>
+            <p class="txt3">But we gonna open another day! <br>Thanks.</p>
+        </div>
+    </div>
 </div>
-
 </body>
 </html>
