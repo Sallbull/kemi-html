@@ -65,7 +65,7 @@
 		<div class="activities">
 			<h3>Group in person</h3>
 			<div class="contents">
-				<div class="owl-carousel owl-loaded owl-drag">
+				<div class="owl-carousel owl-loaded owl-drag slide2">
 					<div class="owl-stage-outer">
 						<ul class="img_list owl-stage">
 							<li class="owl-item">
@@ -78,14 +78,14 @@
 							</li>
     					</ul>
 					</div>
-					<div class="owl-nav disabled">
+					<!-- <div class="owl-nav disabled slide2">
 						<button type="button" role="presentation" class="owl-prev">
 							<span aria-label="Previous">‹</span>
 						</button>
 						<button type="button" role="presentation" class="owl-next">
 							<span aria-label="Next">›</span>
 						</button>
-					</div>
+					</div> -->
 				</div>
                 <div class="btn_wrap">
                     <select class="select">
@@ -117,25 +117,28 @@
 			$('.owl-carousel').owlCarousel({
 				dots: false,
 			    loop: true,
-				nav: true,
-                responsiveClass: true,
 				responsive: {
 					// breakpoint from 0 up
 					0: {
-						margin: 5,
+						margin: 10,
 						items: 1,
-                        center: true,
+						autoWidth:true,
+						nav: false,
+						navigationText: ["", ""],
     				},
 					// breakpoint from 480 up
 					480: {
 						margin: 10,
 						items: 1,
-                        center: true,
+						autoWidth: true,
+						nav: false,
+						navigationText: ["", ""],
     				},
 					// breakpoint from 768 up
 					768: {
 						margin: 20,
 						items: 2,
+						nav: true,
     				},
 				},
 			});
