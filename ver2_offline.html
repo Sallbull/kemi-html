@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta property="og:title" content="minglecup">
+<meta property="og:type" content="website">
+<meta property="og:description" content="1 on 1 Talk Make Global freinds">
+<meta property="og:image" content="images/og.jpg">
+<title>kemi</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/font.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+</head>
+<body>
+
+<div id="wrap">
+
+	<!-- Header -->
+	<div id="header">
+		<h1><a href="#"><img src="images/logo_kemi.png" alt="kemi"></a></h1>
+		<button type="button" class="btn-menu"><span>Menu</span></button>
+		<div class="gnb">
+			<div class="inner">
+				<ul>
+					<li><a href="#">RECOMMENDED</a></li>
+					<li><a href="#">FRIENDS</a></li>
+					<li><a href="#" class="not-login">PARTNERS</a></li>
+					<li><a href="#">My RSVP</a></li>
+					<li><a href="#">FAQ</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			languageToggle();//모바일 언어 선택 토글
+		});
+
+		//모바일 언어 선택 토글
+		function languageToggle(){
+			$('.language-wrap').on('click', function(){
+				var winW = $(window).width();
+				if(winW < 800){
+					var Idx = $(this).find('a.on').index();
+					$(this).find('a').removeClass('on');
+					$(this).find('a').not(':eq('+ Idx +')').addClass('on');
+				}
+			});
+		}
+	</script>
+	<!-- //Header -->
+
+	<!-- Container -->
+	<div id="container" class="ver2-container">
+		<h2 class="blind">본문 내용</h2>
+		<div class="offline-contents">
+			<h3>Jack the Ripper Tour with 'Ripper-Vision' in London</h3>
+			<div class="contents">
+				<div class="owl-carousel">
+					<div class="item type1">
+						<img src="images/tmp_img1.jpg" alt="">
+					</div>
+					<div class="item type2">
+						<ul>
+							<li>Every Wed<br>8:00pm  ~ 01:00am</li>
+							<li>Around 40people join<br><strong class="bold">Free entry</strong></li>
+						</ul>
+					</div>
+					<div class="item type3">
+						<h4>Address</h4>
+						<div class="address"><strong class="bold">Soho Zebrano</strong><br>18 Greek St, London W1D 4DS UK</div>
+						<button type="button" class="btn-map">See with google map</button>
+					</div>
+				</div>
+				<div class="input-txt input-calender">
+					<label><input type="text" id="datepicker" readonly="readonly" value="2021-08-19"></label>
+				</div>
+				<div class="msg-box">
+					<p>Please select the date you want to join</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Container -->
+	<script>
+		$('.owl-carousel').owlCarousel({
+			dots: true,
+			loop: true,
+			nav: false,
+			items: 1,
+			margin: 20
+		});
+	</script>
+
+	<script>
+		$( function() {
+			var active_picker = 0;
+			$('.input-calender').click(function(){
+				if(!active_picker){
+					$('#datepicker').datepicker("show");
+					active_picker = 1;
+				} else {
+					$('#datepicker').datepicker("hide");
+					active_picker = 0;
+				}
+			});
+			$( "#datepicker" ).focusout(function(){
+				active_picker = 0;
+			});
+			$( "#datepicker" ).datepicker({
+				dateFormat: 'yy-mm-dd',
+				direction: 'down',
+			});
+		});
+	</script>
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="inner">
+			<ul class="content">
+				<li><a href="privacy.html">Privacy policy</a></li>
+				<li><a href="terms.html">Temrs & Use</a></li>
+				<li><a href="support.html">Support</a></li>
+			</ul>
+			<p>©2021 Bgoos</p>
+		</div>
+	</div>
+	<!-- //Footer -->
+
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$('.not-login').click(function(){
+		popOpen('.pop-login');
+	});
+});
+</script>
+<div class="popup pop-login pop-alert">
+	<div class="table">
+		<div class="table-cell">
+			<div class="pop-cont">
+				<p>로그인 후<br>이용이 가능합니다</p>
+				<!-- <button type="button" class="btn-close" onclick="popClose(this);">닫기</button> -->
+				<div class="btn-wrap">
+					<a href="#" class="btn-style1 btn-medium" onclick="popClose(this);"><span>확인</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
