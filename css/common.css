@@ -845,12 +845,29 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 	width: 91px;
 }
 
+.email_setting {max-width:850px;margin:0 auto;padding:60px 40px 0;}
+.email_setting h3 {margin-bottom: 45px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #fff;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;}
+.email_setting .email_setting_list li {padding:0 86px 0 82px;display: flex;justify-content: space-between;margin-bottom: 51px;}
+.email_setting .email_setting_list li:last-child {margin-bottom: 0;}
+.email_setting .email_setting_list li span {font-size: 24px;color:#fff;}
+.email_setting .email_setting_list li input {display: none;} 
+.email_setting .email_setting_list li label {width: 30px;height: 30px;background:rgba(255, 255, 255, 0.1) url(../images/ico_check_off.svg) no-repeat 0 0 / cover;border-radius: 100%;}
+.email_setting .email_setting_list li input:checked + label {background:#ffab00 url(../images/ico_check_on.svg) no-repeat 0 0 / cover;}
+
+
 /* sub76 */
 .matching_email_setting {max-width:850px;margin:0 auto;padding:60px 40px 0;}
 .matching_email_setting .tab_menu {border-bottom: 1px solid #fff;margin-bottom:45px;display: flex;}
 .matching_email_setting .tab_menu button {width: 50%;border: 0 solid #000;padding:0;}
 .matching_email_setting h3 {padding: 11px 0 12px; font-size:26px;font-weight:500;color:#fff;text-align:center;}
 .matching_email_setting .tab_menu button.on h3 {background-color: #ffcc2a;color:#222;}
+.matching_email_setting.new .tab_menu button.on h3 {background-color: transparent;color:#ffcc2a;}
 .matching_email_setting .matching_wrap .t1 {font-size: 26px;color:#fff;margin-bottom: 32px;display: flex;justify-content: space-between;}
 .matching_email_setting .matching_wrap .t1 a {font-size: 22px;color:#ffcc2a}
 .matching_email_setting .matching_wrap .t2 {font-size: 18px;color:rgba(255,255,255,.6);margin-top: 27px;}
@@ -858,16 +875,25 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .matching_email_setting .checkbox_wrap button {border-width: 1px;font-size: 20px;font-weight: 400;margin-right: 40px;text-align:center;}
 .matching_email_setting .checkbox_wrap button span {display: block;}
 .matching_email_setting .checkbox_wrap button.btn-large {height: 56px;min-width:148px;width: auto;padding:0 30px;}
+.matching_email_setting .checkbox_wrap button.btn-large.round { border-radius: 40px;border-image-source: none;}
+.matching_email_setting .checkbox_wrap button.btn-large.round span {margin:0;}
 .matching_email_setting .checkbox_wrap button.btn-large.on {background-color: #ffcc2a;color:#333;}
 .matching_email_setting .matching_wrap li {margin-bottom: 32px; padding-bottom: 32px; border-bottom: 1px solid #495057;}
 .matching_email_setting .matching_wrap li:last-child {border-bottom: 0 solid #000;}
 .matching_email_setting .matching_wrap .answer {display: flex;align-items: center; width: 100%;height: 74px; border-radius: 2px;border: solid 1.5px #fff;padding:0 34px;font-size: 26px;color:#ffcc2a;box-sizing: border-box;}
-.matching_email_setting .email_setting_list li {padding:0 86px 0 82px;display: flex;justify-content: space-between;margin-bottom: 31px;}
+.matching_email_setting .email_setting_list li {padding:0 86px 0 82px;display: flex;justify-content: space-between;margin-bottom: 50px;}
 .matching_email_setting .email_setting_list li:last-child {margin-bottom: 0;}
 .matching_email_setting .email_setting_list li span {font-size: 24px;color:#fff;}
 .matching_email_setting .email_setting_list li input {display: none;} 
-.matching_email_setting .email_setting_list li label {width: 50px;height: 50px;background:rgba(255, 255, 255, 0.1) url(../images/ico_check_off.svg) no-repeat 0 0 / cover;border-radius: 100%;}
+.matching_email_setting .email_setting_list li label {width: 30px;height: 30px;background:rgba(255, 255, 255, 0.1) url(../images/ico_check_off.svg) no-repeat 0 0 / cover;border-radius: 100%;}
 .matching_email_setting .email_setting_list li input:checked + label {background:#ffab00 url(../images/ico_check_on.svg) no-repeat 0 0 / cover;}
+.matching_email_setting.new .checkbox_wrap {flex-wrap: wrap;}
+.matching_email_setting.new .checkbox_wrap label {color:#fff;display:inline-flex;align-items: center;margin-right: 90px;}
+.matching_email_setting.new .checkbox_wrap label:last-child {margin-right: 0;}
+.matching_email_setting.new .checkbox_wrap input[type="radio"] {border: 1px solid #dedede;border-radius: 100%;width: 30px;height: 30px;margin:0;box-sizing: border-box;}
+.matching_email_setting.new .checkbox_wrap input[type="radio"]:checked {background: url(../images/ico_radio_on.svg) no-repeat center / 60%;}
+.matching_email_setting.new .checkbox_wrap span {margin-left: 10px;}
+.matching_email_setting.new .checkbox_wrap button {margin-right: 10px;margin-bottom: 10px;color:#fff;}
 
 /* sub64, 68, 69 */
 .activities {width: 1148px;margin:0 auto;padding:60px 40px 0;}
@@ -962,7 +988,7 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .recommended.select {max-width: 100%;margin:0 auto;padding:60px 40px 200px;position: relative;text-align: center;}
 .recommended.select h3 {max-width: 850px; margin:0 auto 70px;padding-bottom:35px;border-bottom:1px solid #fff;font-size:32px;font-weight:bold;color:#fff;text-align:center;}
 .recommended.select .contents.select {width:100%;margin:0 auto;}
-.recommended.select .btm {max-width: 850px; margin:0 auto;border-top: 1px solid rgba(255,255,255,.3);padding-top: 56px;}
+.recommended.select .btm {max-width: 850px; margin:0 auto;border-top: 2px solid rgba(255,255,255,.9);padding-top: 56px;}
 .recommended.select .btm .btn-wrap {width: 356px;margin:0 auto;}
 .recommended.select .btn_skip {font-size: 22px;font-weight: bold;color:#ffcc2a;margin-top: 25px;}
 .recommended.select .select_list_wrap {display: flex;justify-content: center;}
@@ -970,11 +996,15 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .recommended.select .select_list .profile_img {width: 136px;text-align: center;color:#fff;margin:0 auto;}
 .recommended.select .select_list .profile_img img {width: 100%;margin-bottom: 22px;}
 .recommended.select .select_list .profile_img .name {font-size: 26px;color:#fff;text-align: center;font-weight: bold;}
-.recommended.select .select_list .checkbox_wrap {display: flex;flex-wrap: wrap;justify-content: center;margin:25px auto 0;}
-.recommended.select .select_list .checkbox_wrap span {font-size: 16px;font-weight: 400;margin-right: 16px;margin-bottom: 10px; text-align:center;display: flex;justify-content: center;align-items: center;border-radius: 2px;}
-.recommended.select .select_list .checkbox_wrap span {height: 40px;width: auto;padding:0 22px;border: 2px solid #fff;color:#fff; background: none;border-radius: 2px;}
-.recommended.select .select_list .checkbox_wrap span.on {color:#fff;border: solid 1.5px #ffcc2a;background-color: #ffcc2a;}
-.recommended.select .select_list .txt_box {width: 330px;color:#fff;font-size: 18px;text-align: center;margin-top: 20px;}
+.recommended.select .select_list .checkbox_wrap {margin:25px auto 0;color:#fff;display: block;}
+.recommended.select .select_list .checkbox_wrap span {font-size: 16px;font-weight: 400;margin-right: 16px;margin-bottom: 10px; text-align:center;display: inline;height: auto;}
+.recommended.select .select_list .checkbox_wrap span {color:#fff;border: 0 solid #000;padding:0;margin:0;}
+.recommended.select .select_list .checkbox_wrap span.on {color:#ffcc2a;}
+.recommended.select .select_list .txt_box {width: 330px;color:#fff;font-size: 18px;text-align: center;margin: 20px auto 0;background: #303030;padding:20px 10px;}
+.recommended.select .select_list .txt_box + label {display: flex;justify-content: center;align-items: center;margin-top: 20px;}
+.recommended.select .select_list .txt_box + label input {width: 20px;height: 20px;border-radius: 2px;border: solid 1px #fff;}
+.recommended.select .select_list .txt_box + label input:checked {background:#ffcc2a url(../images/ico_check_on2.svg) no-repeat 50% / 90%;border-color: #ffcc2a;}
+.recommended.select .select_list .txt_box + label span {color:#ffcc2a;margin-left: 5px;}
 .recommended.select .select_list .btn_select {border: solid 1px #ffcc2a;width: 160px;height: 56px;display: flex;justify-content: center;align-items: center;margin: 37px auto 0;;}
 .recommended.select .select_list .btn_select span {color: #ffcc2a;font-size: 20px;font-weight: bold;padding-left: 34px;background: url(../images/ico_select_off.svg) no-repeat 0 50% / 22px;}
 .recommended.select .select_list .btn_select.on {background-color: #ffcc2a;}
@@ -1076,7 +1106,7 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .completed-offline-contents .select_list .checkbox_wrap {display: flex;flex-wrap: wrap;justify-content: center;margin:8px auto 0;}
 .completed-offline-contents .select_list .checkbox_wrap span {flex:0 1 auto;height: 40px;width:auto;margin:22px 8px 0;padding:5px 16px 0;border: 1px solid #979797;border-radius:20px;box-sizing:border-box;font-size: 16px;font-weight: 300; text-align:center;color:#fff;}
 .completed-offline-contents .select_list .checkbox_wrap span.on {background:linear-gradient(#222,#222) padding-box, linear-gradient(to right, #f8e274, #d57205) border-box;border:1px solid transparent;color:#f8e274;border-radius:20px;}
-.completed-offline-contents .select_list .txt_box {width: 330px;margin:36px auto 0;color:#fff;font-size: 18px;font-weight:300;text-align: center;line-height:1.78;}
+.completed-offline-contents .select_list .txt_box {width: 330px;margin:36px auto 0;color:#fff;font-size: 18px;font-weight:300;text-align: center;line-height:1.78;box-sizing: border-box;}
 .completed-offline-contents .select_list .btn_select{display:block;width:24px;height:24px;margin:30px auto 0;background:#d8d8d8;text-indent:-9999em;}
 .completed-offline-contents .select_list .btn_select.on {background-color: #ffcc2a;}
 
@@ -1875,7 +1905,9 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .dialog .pop-wrap .pop-cont .icon_box img {width: 150px;}
 .dialog .pop-wrap .btn-grade{display:flex;justify-content:center;align-items:center;margin:0 5px;width:39px;height:39px;overflow:hidden;background:url(../images/ico-star05-off.svg) no-repeat center center;}
 .dialog .pop-wrap .btn-grade.on{background:url(../images/ico-star05-on.svg) no-repeat center center;}
-.dialog .pop-wrap.type01 .pop-cont .btn-wrap a{border-radius:40px !important;border-image-source:none;margin-bottom:26px;}
+/* .dialog .pop-wrap.type01 .pop-cont .btn-wrap a{border-radius:40px !important;border-image-source:none;margin-bottom:26px;} */
+.dialog .pop-wrap.type01 .pop-cont .btn-wrap a{margin-bottom:26px;}
+.dialog .pop-wrap.type01 .pop-cont .btn-wrap a.round {border-radius: 40px;border-image-source:none;}
 .dialog .pop-wrap.type01 .pop-cont .btn-wrap .rectangle {border-radius: 0 !important;color:#222;}
 .dialog .pop-wrap.type01 .pop-cont .btn-wrap a span{}
 .dialog .pop-wrap.type01 .pop-cont.txt {padding: 100px 0 200px;}
@@ -2001,6 +2033,16 @@ div.bigstars div.rateit-reset:hover{background: url(../images/ico-star05-on.svg)
 	.dialog .select_add_wrap .ui-selectmenu-button {min-height: 30px;padding: 10px 15px 10px 15px !important;border-radius: 2px;border: solid 1.5px rgba(255, 255, 255, 0.2);background:transparent;color:#fff;appearance: none;-webkit-appearance: none;width: 100%;font-size: 16px;margin-right: 10px;}
 	.ui-widget.ui-widget-content {margin-top: 0;}
 
+	
+	.email_setting {max-width:100%;margin:0 auto;padding:60px 40px 0;}
+	.email_setting h3 {font-size: 26px;}
+	.email_setting .email_setting_list li {padding:0 20px;display: flex;justify-content: space-between;margin-bottom: 51px;}
+	.email_setting .email_setting_list li:last-child {margin-bottom: 0;}
+	.email_setting .email_setting_list li span {width: 80%;}
+	.email_setting .email_setting_list li input {display: none;} 
+	.email_setting .email_setting_list li label {width: 30px;height: 30px;background:rgba(255, 255, 255, 0.1) url(../images/ico_check_off.svg) no-repeat 0 0 / cover;border-radius: 100%;}
+	.email_setting .email_setting_list li input:checked + label {background:#ffab00 url(../images/ico_check_on.svg) no-repeat 0 0 / cover;}
+
 	/* sub76 */
 	.matching_email_setting {max-width: 100%;margin: 0 auto;padding: 60px 40px 0;}
 	.matching_email_setting h3 {padding: 11px 0 12px; font-size:26px;}
@@ -2017,6 +2059,7 @@ div.bigstars div.rateit-reset:hover{background: url(../images/ico-star05-on.svg)
 	.matching_email_setting .checkbox_wrap button.btn-large.on {background-color: #ffcc2a;color:#333;}
 	.matching_email_setting .matching_wrap li {margin-bottom: 32px;padding-bottom: 32px;}
 	.matching_email_setting .matching_wrap .answer {width: 100%;height: 56px; border-radius: 2px;border: solid 1px #fff;padding:0 15px;font-size: 20px;color:#ffcc2a;box-sizing: border-box;}
+	.matching_email_setting.new .checkbox_wrap label {color:#fff;display:inline-flex;align-items: center;margin-right: 30px;}
 
 	.matching_email_setting .email_setting_list li {padding:0;margin-bottom: 20px;align-items: center;}
 	.matching_email_setting .email_setting_list li:last-child {margin-bottom: 0;}
@@ -2124,11 +2167,11 @@ div.bigstars div.rateit-reset:hover{background: url(../images/ico-star05-on.svg)
 	.recommended.select .select_list .profile_img {width: 136px;text-align: center;color:#fff;margin:0 auto;}
 	.recommended.select .select_list .profile_img img {width: 100%;margin-bottom: 22px;}
 	.recommended.select .select_list .profile_img .name {font-size: 26px;color:#fff;text-align: center;font-weight: bold;}
-	.recommended.select .select_list .checkbox_wrap {display: flex;flex-wrap: wrap;justify-content: center;margin:25px auto 0;}
-	.recommended.select .select_list .checkbox_wrap span {font-size: 16px;font-weight: 400;margin-right: 16px;margin-bottom: 10px; text-align:center;display: flex;justify-content: center;align-items: center;border-radius: 2px;}
-	.recommended.select .select_list .checkbox_wrap span {height: 40px;width: auto;padding:0 22px;border: 2px solid #fff;color:#fff; background: none;border-radius: 2px;}
-	.recommended.select .select_list .checkbox_wrap span.on {color:#fff;border: solid 1.5px #ffcc2a;background-color: #ffcc2a;}
-	.recommended.select .select_list .txt_box {width: 100%;color:#fff;font-size: 18px;text-align: center;margin-top: 20px;}
+	.recommended.select .select_list .checkbox_wrap {margin:25px auto 0;color:#fff;display: block;}
+	.recommended.select .select_list .checkbox_wrap span {font-size: 16px;font-weight: 400;margin-right: 16px;margin-bottom: 10px; text-align:center;display: inline;height: auto;}
+	.recommended.select .select_list .checkbox_wrap span {color:#fff;border: 0 solid #000;padding:0;margin:0;}
+	.recommended.select .select_list .checkbox_wrap span.on {color:#ffcc2a;}
+	.recommended.select .select_list .txt_box {width: auto;color:#fff;font-size: 18px;text-align: center;margin-top: 20px;padding:20px;}
 	.recommended.select .select_list .btn_select {border: solid 1px #ffcc2a;width: 160px;height: 56px;display: flex;justify-content: center;align-items: center;margin: 37px auto 0;;}
 	.recommended.select .select_list .btn_select span {color: #ffcc2a;font-size: 20px;font-weight: bold;padding-left: 34px;}
 	.recommended.select .select_list .btn_select.on {background-color: #ffcc2a;}
