@@ -62,6 +62,8 @@ textarea{-webkit-appearance:none;-webkit-border-radius:0;font-family: 'Noto Sans
 .btn-medium span{display:table-cell;vertical-align:middle;}
 .btn-large{display:table;height:80px;box-sizing:border-box;font-size:22px;font-weight:bold;text-align:center;}
 .btn-large span{display:table-cell;vertical-align:middle;}
+.btn-large2{display:table;height:50px;box-sizing:border-box;font-size:22px;font-weight:bold;text-align:center;}
+.btn-large2 span{display:table-cell;vertical-align:middle;}
 .btn-style1{width:100%;background:#e9527a;border:2px solid #e9527a;border-radius:2px;color:#fff;transition: .3s ease-in-out;}
 .btn-style1:hover{opacity:.8;}
 .btn-style2{width:100%;background:none;border:2px solid #ff99c1;border-radius:2px;font-size:20px;color:#ff5784;transition: .3s ease-in-out;}
@@ -89,6 +91,10 @@ textarea{-webkit-appearance:none;-webkit-border-radius:0;font-family: 'Noto Sans
 .btn-style12{width:100%;background:#f65a5a;border:2px solid #f65a5a;border-radius:2px;color:#222;transition: .3s ease-in-out;}
 .btn-style12 span {color:#fff;}
 .btn-style12:hover{opacity:.8;}
+
+.btn-style13{width:100%;background:none;border:2px solid #f8e274;border-radius:2px;border-image-source: linear-gradient(102deg, #f8e274, #d57205 110%);border-image-slice: 1;color:#f8e274;font-size:20px;color:#f8e274;transition: .3s ease-in-out;}
+.btn-style13 em{display:block;font-size:16px;color:#f8e274;}
+.btn-style13:hover{background:rgba(248, 226, 116, .1);}
 
 .btn-zoom {display: flex;justify-content: center;align-items: center; width:300px;height:80px;margin:0 auto; background:#008cff;border:2px solid #008cff;border-radius:2px;color:#fff;transition: .3s ease-in-out;}
 .btn-zoom:hover{opacity:.8;}
@@ -872,9 +878,9 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .matching_email_setting .matching_wrap .t1 a {font-size: 22px;color:#ffcc2a}
 .matching_email_setting .matching_wrap .t2 {font-size: 18px;color:rgba(255,255,255,.6);margin-top: 27px;}
 .matching_email_setting .checkbox_wrap {display: flex;}
-.matching_email_setting .checkbox_wrap button {border-width: 1px;font-size: 20px;font-weight: 400;margin-right: 40px;text-align:center;}
+.matching_email_setting .checkbox_wrap button {border-width: 1px;font-size: 16px;font-weight: 400;margin-right: 40px;text-align:center;}
 .matching_email_setting .checkbox_wrap button span {display: block;}
-.matching_email_setting .checkbox_wrap button.btn-large {height: 56px;min-width:148px;width: auto;padding:0 30px;}
+.matching_email_setting .checkbox_wrap button.btn-large {height: 40px;min-width:148px;width: auto;padding:0 30px;}
 .matching_email_setting .checkbox_wrap button.btn-large.round { border-radius: 40px;border-image-source: none;}
 .matching_email_setting .checkbox_wrap button.btn-large.round span {margin:0;}
 .matching_email_setting .checkbox_wrap button.btn-large.on {background-color: #ffcc2a;color:#333;}
@@ -990,17 +996,18 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .recommended.select .contents.select {width:100%;margin:0 auto;}
 .recommended.select .btm {max-width: 850px; margin:0 auto;border-top: 2px solid rgba(255,255,255,.9);padding-top: 56px;}
 .recommended.select .btm .btn-wrap {width: 356px;margin:0 auto;}
+.recommended.select .btm .btn-wrap .btn-large {height: 53px;}
 .recommended.select .btn_skip {font-size: 22px;font-weight: bold;color:#ffcc2a;margin-top: 25px;}
 .recommended.select .select_list_wrap {display: flex;justify-content: center;}
-.recommended.select .select_list {width: 400px;padding-bottom: 70px;margin:0 33px 0;}
+.recommended.select .select_list {width: 300px;padding-bottom: 70px;margin:0 33px 0;}
 .recommended.select .select_list .profile_img {width: 136px;text-align: center;color:#fff;margin:0 auto;}
-.recommended.select .select_list .profile_img img {width: 100%;margin-bottom: 22px;}
-.recommended.select .select_list .profile_img .name {font-size: 26px;color:#fff;text-align: center;font-weight: bold;}
-.recommended.select .select_list .checkbox_wrap {margin:25px auto 0;color:#fff;display: block;}
+.recommended.select .select_list .profile_img img {width: 61px;margin:0 auto 22px;display: block;}
+.recommended.select .select_list .profile_img .name {font-size: 18px;color:#fff;text-align: center;font-weight: bold;}
+.recommended.select .select_list .checkbox_wrap {margin:25px auto 0;color:#fff;display: block;width: 100%;}
 .recommended.select .select_list .checkbox_wrap span {font-size: 16px;font-weight: 400;margin-right: 16px;margin-bottom: 10px; text-align:center;display: inline;height: auto;}
 .recommended.select .select_list .checkbox_wrap span {color:#fff;border: 0 solid #000;padding:0;margin:0;}
 .recommended.select .select_list .checkbox_wrap span.on {color:#ffcc2a;}
-.recommended.select .select_list .txt_box {width: 330px;color:#fff;font-size: 18px;text-align: center;margin: 20px auto 0;background: #303030;padding:20px 10px;}
+.recommended.select .select_list .txt_box {width: 100%;color:#fff;font-size: 18px;text-align: center;margin: 20px auto 0;background: #303030;padding:20px 10px;}
 .recommended.select .select_list .txt_box + label {display: flex;justify-content: center;align-items: center;margin-top: 20px;}
 .recommended.select .select_list .txt_box + label input {width: 20px;height: 20px;border-radius: 2px;border: solid 1px #fff;}
 .recommended.select .select_list .txt_box + label input:checked {background:#ffcc2a url(../images/ico_check_on2.svg) no-repeat 50% / 90%;border-color: #ffcc2a;}
@@ -1038,10 +1045,13 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .completed-online-contents{max-width: 600px;margin: 0 auto;}
 .completed-online-contents .contents{margin-bottom:52px;padding:54px 0 24px;background-color:rgba(216, 216, 216, 0.07);text-align:center;}
 .completed-online-contents .contents .date{margin-bottom:24px;font-size:24px;font-weight:300;color:#fff;line-height:1.6;}
-.completed-online-contents .contents .btn-zoom{font-size:22px;font-weight:500;}
+.completed-online-contents .contents .btn-zoom{font-size:22px;font-weight:500;height: 60px;}
+.completed-online-contents .contents .btn-zoom span {padding:0 40px 0 0;background: url('../images/zoom-link.svg') no-repeat 100% 50% / 28px;}
 .completed-online-contents .contents .notice{margin:18px 0 28px;font-size:20px;font-weight:300;color:#fff;line-height:1.8;}
-.completed-online-contents .contents .btn-cancel{font-size:18px;font-weight:300;color:#fff;text-decoration:underline;line-height:1.8;}
-.completed-online-contents .btn-wrap a{max-width:400px;margin:0 auto;font-size:22px;font-weight:bold;}
+.completed-online-contents .contents .btn-cancel{font-size:18px;font-weight:300;text-decoration:underline;line-height:1.8;text-align: center;color:#fff;}
+.completed-online-contents .btn-wrap {text-align: center;}
+.completed-online-contents .btn-wrap a{max-width:400px;margin:0 auto;font-size:22px;text-align: center;color:#f8e274;}
+.completed-online-contents .btn-wrap a span {padding-right: 20px;background: url('../images/zoom-arrow.svg') no-repeat 100% 65% / 10px;}
 
 /* Activities */
 .activities-contents h3{margin-bottom:40px;}
@@ -1264,7 +1274,7 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 	.btn-style8 em{font-size:11px;}
 	.btn-more{width:150px;height:45px;padding-top:9px;font-size:16px;}
 
-	.btn-zoom {display: flex;justify-content: center;align-items: center; width:100%;height:60px;margin:0 auto; background:#008cff;border:2px solid #008cff;border-radius:2px;color:#fff;transition: .3s ease-in-out;box-sizing: border-box;}
+	.btn-zoom {display: flex;justify-content: center;align-items: center; width:80%;height:60px;margin:0 auto; background:#008cff;border:2px solid #008cff;border-radius:2px;color:#fff;transition: .3s ease-in-out;box-sizing: border-box;}
 	.btn-zoom:hover{opacity:.8;}
 	.btn-zoom span {padding-left: 60px;background: url(../images/btn_zoom.png) no-repeat 0 45% / 50px;font-size: 22px;}
 
@@ -1899,6 +1909,7 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .dialog .pop-wrap .pop-cont .textarea{height:240px;font-size:24px;color:#fff;width:calc( 100% - 32px );padding:15px;border:1px solid #979797;border-radius:8px;background:rgba(255, 255, 255, 0.02);;}
 .dialog .pop-wrap .pop-cont .textarea.t01{margin-top:28px;}
 .dialog .pop-wrap .pop-cont .btn-wrap{width:400px;height:auto;overflow:hidden;margin:0 auto;padding:30px 0 35px 0;}
+.dialog .pop-wrap .pop-cont .btn-wrap.payment {width: 207px;}
 .dialog .pop-wrap .pop-cont .t1 {font-size: 18px;color: #fff;text-align: center;margin-top: 20px;}
 .dialog .pop-wrap .pop-cont .t2 {font-size: 24px;color: #fff;text-align: center;margin: 20px auto 0;padding-bottom: 65px;border-bottom: 1px solid rgba(255,255,255,.4);max-width: 500px;}
 .dialog .pop-wrap .pop-cont .icon_box {text-align: center;margin:30px auto 20px;}
@@ -2055,7 +2066,7 @@ div.bigstars div.rateit-reset:hover{background: url(../images/ico-star05-on.svg)
 	.matching_email_setting .checkbox_wrap button {border-width: 1px;font-size: 18px;margin-right: 10px;margin-bottom: 10px;}
 	.matching_email_setting .checkbox_wrap button:last-child {margin-right: 0;}
 	.matching_email_setting .checkbox_wrap button span {display: block;}
-	.matching_email_setting .checkbox_wrap button.btn-large {height: 56px;min-width:100px;width: auto;padding:0 15px;}
+	.matching_email_setting .checkbox_wrap button.btn-large {height: 40px;min-width:100px;width: auto;padding:0 15px;}
 	.matching_email_setting .checkbox_wrap button.btn-large.on {background-color: #ffcc2a;color:#333;}
 	.matching_email_setting .matching_wrap li {margin-bottom: 32px;padding-bottom: 32px;}
 	.matching_email_setting .matching_wrap .answer {width: 100%;height: 56px; border-radius: 2px;border: solid 1px #fff;padding:0 15px;font-size: 20px;color:#ffcc2a;box-sizing: border-box;}
