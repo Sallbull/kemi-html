@@ -15,9 +15,11 @@
 <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
 <link rel="stylesheet" type="text/css" href="css/common.css"/>
+<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
 <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
 </head>
 <body>
@@ -64,75 +66,77 @@
 		<div class="recommended select">
 			<h3>We recommend these. <br>Please select, if you would like to talk?</h3>
 			<div class="contents">
-                <div class="select_list_wrap">
-                    <div class="select_list">
-                        <div class="profile_img">
-                            <img src="images/ico_profile_big.svg" alt="">
-                            <span class="name">JAKE</span>
+                <div class="swiper swiper-container">
+                    <div class="swiper-wrapper select_list_wrap">
+                        <div class="select_list swiper-slide">
+                            <div class="profile_img">
+                                <img src="images/ico_profile_big.svg" alt="">
+                                <span class="name">JAKE</span>
+                            </div>
+                            <div class="checkbox_wrap">
+                                <span class="on">Party</span>
+                                <span>Workout</span>
+                                <span>Reading a book</span>
+                                <span>Reading a book</span>
+                                <span>Golf</span>
+                            </div>
+                            <div class="txt_box">
+                                I am working as a UX designer 
+                                and doing my own business.
+                                if you are interested in startup of IT.
+                                I am the one you like me :)
+                            </div>
+                            <label>
+                                <input type="checkbox">
+                                <span>Select</span>
+                            </label>
                         </div>
-                        <div class="checkbox_wrap">
-                            <span class="on">Party</span>
-                            <span>Workout</span>
-                            <span>Reading a book</span>
-                            <span>Reading a book</span>
-                            <span>Golf</span>
+                        <div class="select_list swiper-slide">
+                            <div class="profile_img">
+                                <img src="images/ico_profile_big.svg" alt="">
+                                <span class="name">JAKE</span>
+                            </div>
+                            <div class="checkbox_wrap">
+                                <span class="on">Party</span>
+                                <span>Workout</span>
+                                <span>Reading a book</span>
+                                <span>Reading a book</span>
+                                <span>Golf</span>
+                            </div>
+                            <div class="txt_box">
+                                I am working as a UX designer 
+                                and doing my own business.
+                                if you are interested in startup of IT.
+                                I am the one you like me :)
+                            </div>
+                            <label>
+                                <input type="checkbox">
+                                <span>Select</span>
+                            </label>
                         </div>
-                        <div class="txt_box">
-                            I am working as a UX designer 
-                            and doing my own business.
-                            if you are interested in startup of IT.
-                            I am the one you like me :)
+                        <div class="select_list swiper-slide">
+                            <div class="profile_img">
+                                <img src="images/ico_profile_big.svg" alt="">
+                                <span class="name">JAKE</span>
+                            </div>
+                            <div class="checkbox_wrap">
+                                <span class="on">Party</span>
+                                <span>Workout</span>
+                                <span>Reading a book</span>
+                                <span>Reading a book</span>
+                                <span>Golf</span>
+                            </div>
+                            <div class="txt_box">
+                                I am working as a UX designer 
+                                and doing my own business.
+                                if you are interested in startup of IT.
+                                I am the one you like me :)
+                            </div>
+                            <label>
+                                <input type="checkbox">
+                                <span>Select</span>
+                            </label>
                         </div>
-                        <label>
-                            <input type="checkbox">
-                            <span>Select</span>
-                        </label>
-                    </div>
-                    <div class="select_list">
-                        <div class="profile_img">
-                            <img src="images/ico_profile_big.svg" alt="">
-                            <span class="name">JAKE</span>
-                        </div>
-                        <div class="checkbox_wrap">
-                            <span class="on">Party</span>
-                            <span>Workout</span>
-                            <span>Reading a book</span>
-                            <span>Reading a book</span>
-                            <span>Golf</span>
-                        </div>
-                        <div class="txt_box">
-                            I am working as a UX designer 
-                            and doing my own business.
-                            if you are interested in startup of IT.
-                            I am the one you like me :)
-                        </div>
-                        <label>
-                            <input type="checkbox">
-                            <span>Select</span>
-                        </label>
-                    </div>
-                    <div class="select_list">
-                        <div class="profile_img">
-                            <img src="images/ico_profile_big.svg" alt="">
-                            <span class="name">JAKE</span>
-                        </div>
-                        <div class="checkbox_wrap">
-                            <span class="on">Party</span>
-                            <span>Workout</span>
-                            <span>Reading a book</span>
-                            <span>Reading a book</span>
-                            <span>Golf</span>
-                        </div>
-                        <div class="txt_box">
-                            I am working as a UX designer 
-                            and doing my own business.
-                            if you are interested in startup of IT.
-                            I am the one you like me :)
-                        </div>
-                        <label>
-                            <input type="checkbox">
-                            <span>Select</span>
-                        </label>
                     </div>
                 </div>
                 <div class="btm">
@@ -146,6 +150,31 @@
 	</div>
 	<script>
 		$( function() {
+            var ww = $(window).width();
+            var mySwiper = undefined;
+
+            function initSwiper() {
+
+                if (ww < 851 && mySwiper == undefined) {
+                    mySwiper = new Swiper(".swiper-container", {
+                        slidesPerView: 'auto',
+                        spaceBetween:10,
+                        centeredSlides: true,
+                        loop: true,                
+                    });
+                } else if (ww > 850 && mySwiper != undefined) {
+                    mySwiper.destroy();
+                    mySwiper = undefined;
+                }
+            }
+
+            initSwiper();
+            $(window).on('resize', function () {
+                ww = $(window).width();
+                initSwiper();
+            });
+
+
 			var active_picker = 0;
 			$('.input-calender').click(function(){
 				if(!active_picker){
