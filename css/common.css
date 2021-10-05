@@ -2183,7 +2183,7 @@ div.bigstars div.rateit-reset:hover{background: url(../images/ico-star05-on.svg)
 	.recommended .checkbox_wrap span.on {color:#ffcc2a; border-image-source: linear-gradient(102deg, #f8e274, #d57205 110%);    border-image-slice: 1;}
 	.recommended .txt_box {width: 100%;color:#fff;font-size: 18px;text-align: left;margin-top: 10px;}
 
-	.recommended.select {max-width: 100%;margin:0 auto;padding:60px 40px 200px;position: relative;text-align: center;}
+	.recommended.select {max-width: 100%;margin:0 auto;padding:30px 40px 200px;position: relative;text-align: center;}
 	.recommended.select h3 {max-width: 850px; margin:0 auto 45px;padding-bottom:35px;border-bottom:1px solid #fff;font-size:18px;font-weight:bold;color:#fff;text-align:center;}
 	.recommended.select .contents.select {width:100%;margin:0 auto;}
 	.recommended.select .btm {max-width: 850px; margin:0 auto;border-top: 1px solid rgba(255,255,255,.3);padding-top: 56px;}
