@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta property="og:title" content="minglecup">
+<meta property="og:type" content="website">
+<meta property="og:description" content="1 on 1 Talk Make Global freinds">
+<meta property="og:image" content="images/og.jpg">
+<title>kemi</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/font.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+
+	<!-- Header -->
+	<div id="header">
+		<h1><a href="#"><img src="images/logo_kemi.png" alt="kemi"></a></h1>
+		<button type="button" class="btn-menu"><span>Menu</span></button>
+		<div class="gnb">
+			<div class="inner">
+				<ul>
+					<li><a href="#">SIGNUP</a></li>
+					<li><a href="#">LOGIN</a></li>
+					<li><a href="#" class="not-login">PARTNERS</a></li>
+                    <li><a href="#">RECOMMENDED</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			languageToggle();//모바일 언어 선택 토글
+		});
+
+		//모바일 언어 선택 토글
+		function languageToggle(){
+			$('.language-wrap').on('click', function(){
+				var winW = $(window).width();
+				if(winW < 800){
+					var Idx = $(this).find('a.on').index();
+					$(this).find('a').removeClass('on');
+					$(this).find('a').not(':eq('+ Idx +')').addClass('on');
+				}
+			});
+		}
+	</script>
+	<!-- //Header -->
+
+	<!-- Container -->
+	<div id="container" class="sub80">
+		<h2 class="blind">본문 내용</h2>
+		<div class="friend">
+			<h3> Friends</h3>
+			<div class="contents">
+				<div class="sort_list center">
+                    <button>Recommended</button>
+                    <button class="on">Matched</button>
+                    <button>Friends</button>
+                </div>
+                <p>Click Great or bad, when you feel really good or not.</p>
+
+                <div class="matched" style="">
+					<div class="appraisal-wrp">
+                        <strong class="tit">Offline Meetup <span>Aug 29th</span> </strong>
+                        <div class="sec">
+                            <span class="time"></span>
+                            <div class="in">
+                                <span class="user">shakeel <em>member</em> </span>
+                                <input type="hidden" id="id" value="5050">
+                                <input type="hidden" id="eval_type" value="friend">
+                                <div class="btn-goodbad ">
+                                    <label>
+                                        <strong class="pending"><span>Pending...</span></strong>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec">
+                            <span class="time"></span>
+                            <div class="in">
+                                <span class="user">aaaaarff</span>
+                                <input type="hidden" id="id" value="5144">
+                                <input type="hidden" id="eval_type" value="friend">
+                                <div class="btn-goodbad ">
+                                    <label>
+                                        <strong class="pending"><span>Pending...</span></strong>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec">
+                            <span class="time">10-06</span>
+                            <div class="in">
+                                <span class="user">ddd</span>
+                                <input type="hidden" id="id" value="5120">
+                                <input type="hidden" id="eval_type" value="friend">
+                                <div class="btn-goodbad btn">
+                                    <label>
+                                        <input type="radio" value="2" name="goodbad3">
+                                        <strong class="btn_bad"><span>Bad</span></strong>
+                                    </label>
+
+                                    <label>
+                                        <input type="radio" value="0" name="goodbad3">
+                                        <strong class="btn_soso"><span>soso</span></strong>
+                                    </label>
+                                    <label>
+                                        <input type="radio" value="1" name="goodbad3">
+                                        <strong class="btn_kemi"><span>Kemi</span></strong>
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec">
+                            <span class="time">10-06</span>
+                            <div class="in">
+                                <span class="user">dlfffsssss</span>
+                                <input type="hidden" id="id" value="5141">
+                                <input type="hidden" id="eval_type" value="friend">
+                                <div class="btn-goodbad btn">
+                                    <label>
+                                        <input type="radio" value="2" name="goodbad3">
+                                        <strong class="btn_bad"><span>Bad</span></strong>
+                                    </label>
+
+                                    <label>
+                                        <input type="radio" value="0" name="goodbad3">
+                                        <strong class="btn_soso"><span>soso</span></strong>
+                                    </label>
+                                    <label>
+                                        <input type="radio" value="1" name="goodbad3">
+                                        <strong class="btn_kemi"><span>Kemi</span></strong>
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>					
+				</div>            
+            </div>
+		</div>
+	</div>
+	<script>
+		$( function() {
+			var active_picker = 0;
+			$('.input-calender').click(function(){
+				if(!active_picker){
+					$('#datepicker').datepicker("show");
+					active_picker = 1;
+				} else {
+	                $('#datepicker').datepicker("hide");
+					active_picker = 0;
+				}
+			});
+			$( "#datepicker" ).focusout(function(){
+					active_picker = 0;
+			});
+			$( "#datepicker" ).datepicker({
+				dateFormat: 'yy-mm-dd',
+			    direction: 'down',
+			});
+
+            $('.checkbox_wrap button').on('click',function(){
+        $(this).addClass('on').siblings('button').removeClass('on');
+    });
+		});
+	</script>
+	<!-- //Container -->
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="inner">
+			<ul class="content">
+				<li><a href="privacy.html">Privacy policy</a></li>
+				<li><a href="terms.html">Temrs & Use</a></li>
+				<li><a href="support.html">Support</a></li>
+			</ul>
+			<p>©2021 Bgoos</p>
+		</div>
+	</div>
+	<!-- //Footer -->
+
+</div>
+
+</body>
+</html>

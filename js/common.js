@@ -6,6 +6,7 @@ $(function(){
 	engOnly();//영어만 입력
 	profileMenu();
 	scrollLock();// dialog open 스크롤 방지
+	searchSlide();
 });
 
 //모바일 메뉴 이벤트
@@ -98,5 +99,17 @@ function scrollLock(){
 		$('html').css('height','100vh');
 		$('html').css('overflow-y','hidden');
 	}
+}
+
+function searchSlide(){
+	$('.search_input').on('focus', function() {
+		$(this).next('div').addClass('on');
+	});
+	// $('.search_input').on('blur', function() {
+	// 	$(this).next('div').removeClass('on');
+	// });
+	$('.search_box button').on('click',function(){
+		$(this).toggleClass('on');
+	});
 }
 

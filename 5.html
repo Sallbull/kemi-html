@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta property="og:title" content="minglecup">
+<meta property="og:type" content="website">
+<meta property="og:description" content="1 on 1 Talk Make Global freinds">
+<meta property="og:image" content="images/og.jpg">
+<title>kemi</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/font.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+
+	<!-- Header -->
+	<div id="header">
+		<h1><a href="#"><img src="images/logo_kemi.png" alt="kemi"></a></h1>
+		<button type="button" class="btn-menu"><span>Menu</span></button>
+		<div class="gnb">
+			<div class="inner">
+				<ul>
+					<li><a href="#">SIGNUP</a></li>
+					<li><a href="#">LOGIN</a></li>
+					<li><a href="#" class="not-login">PARTNERS</a></li>
+                    <li><a href="#">RECOMMENDED</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			languageToggle();//모바일 언어 선택 토글
+		});
+
+		//모바일 언어 선택 토글
+		function languageToggle(){
+			$('.language-wrap').on('click', function(){
+				var winW = $(window).width();
+				if(winW < 800){
+					var Idx = $(this).find('a.on').index();
+					$(this).find('a').removeClass('on');
+					$(this).find('a').not(':eq('+ Idx +')').addClass('on');
+				}
+			});
+		}
+	</script>
+	<!-- //Header -->
+
+	<!-- Container -->
+	<div id="container" class="sub80">
+		<h2 class="blind">본문 내용</h2>
+		<div class="friend">
+			<h3>If you really don’t want to talk with your partner, <br class="pc"> No worries!!</h3>
+			<div class="contents">
+				<p class="sub_txt">
+                    You will change your partner every 20min but if you dont’t want to wait 20min, <br class="pc">
+                    Click ask for help under the bar and keep talking with your partner,<br class="pc">
+                    then we go your room and ask through chat and change your partner!
+                </p>
+
+                <div class="partner_cont">
+                    <div class="img_cont">
+                        <img src="images/img_partner01.png" alt="" class="img1">
+                        <p>[Phone]</p>
+                    </div>
+                    <div class="img_cont">
+                        <img src="images/img_partner02.png" alt="" class="img2">
+                        <p>[Desktop]</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="img_box">
+                                <img src="images/img_partner03.png" alt="">
+                            </div>
+                            <div class="text_box">
+                                <p class="t1">
+                                    If you feel awkward with the partner,
+                                    question is good solution.
+                                </p>
+                                <p class="t2"><a href="#a">Question list here</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="images/img_partner04.png" alt="">
+                            </div>
+                            <div class="text_box">
+                                <p class="t1">
+                                    Stay and stare with smile
+                                </p>
+                                <p class="t2">If you move or if you don’t see your screen, your partner feel they got ignored</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="images/img_partner05.png" alt="">
+                            </div>
+                            <div class="text_box">
+                                <p class="t1">
+                                    Reaction is important!
+                                </p>
+                                <p class="t2">If you react, your partner feel you are good listener, so they want to talk more </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="images/img_partner06.png" alt="">
+                            </div>
+                            <div class="text_box">
+                                <p class="t1">
+                                    Speak long as possible as you can
+                                </p>
+                                <p class="t2">If you say “ yes “ “ No “, then the partner feel that you ignore that person.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img_box">
+                                <img src="images/img_partner07.png" alt="">
+                            </div>
+                            <div class="text_box">
+                                <p class="t1">
+                                    Even if your partner is not so smart, 
+                                    Please repect them
+                                </p>
+                                <p class="t2">Everyone is not perfect. And everyone has good point and bad point.</p>
+                            </div>
+                        </li>                        
+                    </ul>
+                </div>        
+            </div>
+		</div>
+	</div>
+	<script>
+		$( function() {
+			var active_picker = 0;
+			$('.input-calender').click(function(){
+				if(!active_picker){
+					$('#datepicker').datepicker("show");
+					active_picker = 1;
+				} else {
+	                $('#datepicker').datepicker("hide");
+					active_picker = 0;
+				}
+			});
+			$( "#datepicker" ).focusout(function(){
+					active_picker = 0;
+			});
+			$( "#datepicker" ).datepicker({
+				dateFormat: 'yy-mm-dd',
+			    direction: 'down',
+			});
+
+            $('.checkbox_wrap button').on('click',function(){
+        $(this).addClass('on').siblings('button').removeClass('on');
+    });
+		});
+	</script>
+	<!-- //Container -->
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="inner">
+			<ul class="content">
+				<li><a href="privacy.html">Privacy policy</a></li>
+				<li><a href="terms.html">Temrs & Use</a></li>
+				<li><a href="support.html">Support</a></li>
+			</ul>
+			<p>©2021 Bgoos</p>
+		</div>
+	</div>
+	<!-- //Footer -->
+
+</div>
+
+</body>
+</html>
