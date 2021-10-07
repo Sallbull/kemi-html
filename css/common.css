@@ -1237,7 +1237,7 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .online .online_box .disabled .status_box strong {color:#555;}
 .online .online_box .select_list {display: none;border-top: 1px solid #555;;padding: 30px 0 20px;}
 .online .online_box .on.select_list {display: block;}
-.online .online_box .select_list p {margin-bottom: 20px;display: flex;}
+.online .online_box .select_list p {margin-bottom: 20px;display: flex;align-items: center;}
 .online .online_box .select_list p:last-child {margin-bottom: 0;}
 .online .online_box .select_list span {color:#fff;font-size: 16px;margin-right: 25px;}
 .online .online_box .select_list span.select {margin-right: 0;margin-left: auto;font-size: 12px;color:#ffca01;border: 1px solid #ffca01;border-radius: 20px;padding:4px 15px 5px;cursor: pointer;}
