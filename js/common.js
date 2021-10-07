@@ -118,4 +118,7 @@ function onlineToggle() {
 	$('.online_box li .status_box').on('click',function(){
 		$(this).next('.select_list').toggleClass('on');
 	});
+	$('.online_box li .select').on('click',function(){
+		$(this).toggleClass('on');
+	});
 }
