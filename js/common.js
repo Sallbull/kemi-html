@@ -7,6 +7,7 @@ $(function(){
 	profileMenu();
 	scrollLock();// dialog open 스크롤 방지
 	searchSlide();
+	onlineToggle();
 });
 
 //모바일 메뉴 이벤트
@@ -113,3 +114,8 @@ function searchSlide(){
 	});
 }
 
+function onlineToggle() {
+	$('.online_box li .status_box').on('click',function(){
+		$(this).next('.select_list').toggleClass('on');
+	});
+}
