@@ -91,6 +91,7 @@ function popClose(o){
 
 function profileMenu(){
 	$('.my_profile').on('click',function(){
+		$(this).toggleClass('on');
 		$('.profile_box').toggleClass('on');
 	});
 }
