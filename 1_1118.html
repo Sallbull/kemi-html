@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta property="og:title" content="minglecup">
+<meta property="og:type" content="website">
+<meta property="og:description" content="1 on 1 Talk Make Global freinds">
+<meta property="og:image" content="images/og.jpg">
+<title>kemi</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/font.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+</head>
+<body>
+
+<div id="wrap">
+
+	<!-- Header -->
+	<div id="header">
+		<h1><a href="#"><img src="images/logo_kemi.png" alt="kemi"></a></h1>
+		<button type="button" class="btn-menu"><span>Menu</span></button>
+		<div class="gnb">
+			<div class="inner">
+				<ul>
+					<li><a href="#">SIGNUP</a></li>
+					<li><a href="#">LOGIN</a></li>
+					<li><a href="#" class="not-login">PARTNERS</a></li>
+                    <li><a href="#">RECOMMENDED</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			languageToggle();//모바일 언어 선택 토글
+		});
+
+		//모바일 언어 선택 토글
+		function languageToggle(){
+			$('.language-wrap').on('click', function(){
+				var winW = $(window).width();
+				if(winW < 800){
+					var Idx = $(this).find('a.on').index();
+					$(this).find('a').removeClass('on');
+					$(this).find('a').not(':eq('+ Idx +')').addClass('on');
+				}
+			});
+		}
+	</script>
+	<!-- //Header -->
+
+	<!-- Container -->
+	<div id="container" class="kemi-meet">
+		<h2 class="blind">본문 내용</h2>
+        <div class="meet_wrap">
+            <span class="ico __01"></span>
+            <span class="ico __02"></span>
+            <span class="ico __03"></span>
+            <span class="ico __04"></span>
+            <span class="ico __05"></span>
+            <span class="ico __06"></span>
+            <h3>The online meetup <br class="m">will be 25th of Oct</h3>
+            <div class="time_text">
+                <img src="../images/icon_time.svg" alt="">
+                <p class="t1">Start time : 14:00pm</p>
+                <p class="t1">JA, EN Meetup</p>
+            </div>
+        </div>
+	</div>
+	<!-- //Container -->
+	<script type="text/javascript">
+		var owlTouchDir = 0;
+		$(function(){
+			slide();
+		});
+
+		function slide(){
+			$('.owl-carousel').owlCarousel({
+				dots: false,
+			    loop: true,
+				autoWidth: true,
+				center: true,
+				nav: true,
+				margin: 18,
+				items: 10
+			});
+
+			if($('body').hasClass('ios')){
+				$('.owl-carousel').on('touchstart', function(e){
+					owlTouchDir = e.pageX;
+				});
+
+				$('.owl-carousel').on('touchmove', function(e){
+					var touchStartPos = e.pageX;
+
+					if (owlTouchDir + 10 < touchStartPos || owlTouchDir - 10 > touchStartPos){
+						e.preventDefault();
+					} else {
+						return true;
+					}
+				});
+
+				$('.owl-carousel').on('touchend', function(e){
+					return true;
+				});
+			}
+		}
+	</script>
+
+	<!-- Footer -->
+	<div id="footer">
+		<div class="inner">
+			<ul class="content">
+				<li><a href="privacy.html">Privacy policy</a></li>
+				<li><a href="terms.html">Temrs & Use</a></li>
+				<li><a href="support.html">Support</a></li>
+			</ul>
+			<p>©2021 Bgoos</p>
+		</div>
+	</div>
+	<!-- //Footer -->
+
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$('.not-login').click(function(){
+		popOpen('.pop-login');
+	});
+    $()
+});
+</script>
+<div class="popup pop-login pop-alert">
+	<div class="table">
+		<div class="table-cell">
+			<div class="pop-cont">
+				<p>로그인 후<br>이용이 가능합니다</p>
+				<!-- <button type="button" class="btn-close" onclick="popClose(this);">닫기</button> -->
+				<div class="btn-wrap">
+					<a href="#" class="btn-style1 btn-medium" onclick="popClose(this);"><span>확인</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
