@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta property="og:title" content="minglecup">
+<meta property="og:type" content="website">
+<meta property="og:description" content="1 on 1 Talk Make Global freinds">
+<meta property="og:image" content="images/og.jpg">
+<title>kemi</title>
+<link rel="shortcut icon" href="images/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="css/font.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+<div id="wrap">
+
+	<!-- Header -->
+	<div id="header">
+		<h1><a href="#"><img src="images/logo_kemi.png" alt="kemi"></a></h1>
+		<div class="search_box">
+			<input type="text" placeholder="type user id" class="search_input">
+			<div class="search_menu">
+				<p>You have to Click ‘Add’ each other</p>
+				<ul>
+					<li>
+						<div class="user_box">
+							<p class="user_id">@jake231</p>
+							<p class="user_name">jake</p>
+						</div>
+						<div class="btn_box">
+							<button class="on">Add</button>
+						</div>
+					</li>
+					<li>
+						<div class="user_box">
+							<p class="user_id">@jake231</p>
+							<p class="user_name">jake</p>
+						</div>
+						<div class="btn_box">
+							<span>pending...</span>
+						</div>
+					</li>
+					<li>
+						<div class="user_box">
+							<p class="user_id">@jake231</p>
+							<p class="user_name">jake</p>
+						</div>
+						<div class="btn_box">
+							<button class="">Add</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<button type="button" class="btn-menu"><span>Menu</span></button>
+		<div class="gnb">
+			<div class="inner">
+				<ul class="mob-hide">
+					<li class="my_profile">
+                        <a href="#"><img src="images/@user.png" alt=""></a>
+                        <div class="profile_box">
+                            <p>JAKE</p>
+                            <div class="btn_box">
+                                <a href="https://dev.kemi.ai/talk/profile">Profile</a>
+                                <a href="https://dev.kemi.ai/talk/billing">Billing</a>
+                                <a href="https://dev.kemi.ai/talk/settings">Settings</a>
+                                <a href="https://dev.kemi.ai/talk/logout">Sign out</a>
+                            </div>
+                        </div>
+                    </li>
+					<li><a href="#">PARTNERS</a></li>
+					<li><a href="#" class="not-login">FRIEND</a></li>
+					<li><a href="#">PARTNERS</a></li>
+				</ul>
+				<div class="mob-user-wrap">
+					<div class="upic" style="background:url(images/@user.png)"></div>
+					<div class="uname">jake231</div>
+					<button type="button">Logout</button>
+				</div>
+				<ul class="mobile_list type01">
+					<li><a href="javascript:void(0)" class="ico01">FRIENDS</a></li>
+					<li><a href="javascript:void(0)" class="ico02">FRIENDS</a></li>
+				</ul>
+				<ul class="mobile_list type01">
+					<li><a href="javascript:void(0)" class="ico03">PROFILE</a></li>
+					<li><a href="javascript:void(0)" class="ico04">SETTING</a></li>
+					<li><a href="javascript:void(0)" class="ico05">FAQ</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			languageToggle();//모바일 언어 선택 토글
+		});
+
+		//모바일 언어 선택 토글
+		function languageToggle(){
+			$('.language-wrap').on('click', function(){
+				var winW = $(window).width();
+				if(winW < 800){
+					var Idx = $(this).find('a.on').index();
+					$(this).find('a').removeClass('on');
+					$(this).find('a').not(':eq('+ Idx +')').addClass('on');
+				}
+			});
+		}
+	</script>
+	<!-- //Header -->
+
+	<!-- Container -->
+	<div id="container" class="sub80">
+
+		<section class="page-item-wrap">
+			<div class="sitem01-wrap">
+				<div class="lt-item">
+					Language Exchange,
+					<br />Socializing
+					<strong>Online & in person</strong>
+				</div>
+				<div class="rt-item">
+					<img src="./images/etc-sitem01.png" class="wimg" />
+					<img src="./images/etc-sitem01-mo.png" class="mimg" />
+				</div>
+			</div>
+			<div class="sitem02-wrap">
+				<div class="lt-item"><img src="./images/etc-sitem02.png" /></div>
+				<div class="rt-item">
+					<div class="stit">ONLINE</div>
+					<div class="sdate">Match 1:1 or 2:1 online</div>
+					<div class="sdesc">Partner will change every 15min for 1hr</div>
+					<button type="button">Go</button>
+				</div>
+				<div class="bg-ball01"></div>
+			</div>
+			<div class="sitem03-wrap">
+				<div class="cont01">
+					<div class="lt-item">Pin the friends
+						<br />you met online to
+						<br /><strong>your interest list.</strong></div>
+					<div class="rt-item"><img src="./images/etc-sitem03.png" /></div>
+				</div>
+				<div class="cont02">
+					<div class="stit">IN PERSON</div>
+					<div class="sdesc">Meet up with your <strong>interest friends</strong>
+						<br />in person by <strong>various activities</strong></div>
+					<button type="button">Go</button>
+				</div>
+				<div class="bg-ball01"></div>
+				<div class="bg-ball02"></div>
+				<div class="bg-ball03"></div>
+				<div class="bg-ball04"></div>
+				<div class="bg-ball05"></div>
+			</div>
+			<div class="sitem04-wrap">
+				<!-- <div class="photo-item-wrap">
+					<img src="./images/etc-sitem04.png"  class="wimg" />
+					<img src="./images/etc-sitem04-mo.png"  class="mimg" />
+				</div> -->
+				<div class="cont">
+					<div class="spic"><img src="./images/etc-group01.png" /></div>
+					<div class="msg">Find friends you have good <strong>KEMI</strong><span>stry</span> with</div>
+					<div class="line">
+						<span>Chemistry</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- //Container -->
+
+	<!-- Footer -->
+	<div id="footer" class="type01">
+		<section class="fitem-wrap">
+			<div class="flogo"><img src="images/logo_kemi.png" alt="kemi" /></div>
+			<ul>
+				<li>
+					<div class="key">E-mail</div>
+					<div class="value">cs@talklang.com</div>
+				</li>
+				<li>
+					<div class="key">Kakao</div>
+					<div class="value">abcdefg</div>
+				</li>
+				<li>
+					<div class="key">Phone</div>
+					<div class="value">02 6124 1227 , 010 3233 1234</div>
+				</li>
+			</ul>
+			<div class="fcopy">Copyright©2018 Talklang</div>
+		</section>
+	</div>
+	<!-- //Footer -->
+
+    <!-- pc loading -->
+    <div class="loading_wrap">
+        <div class="loading_dot">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <p class="t1">LOADING…</p>
+        <p class="txt">
+            <span class="tip">Tip</span>
+            Please smile when you talk with your partner
+        </p>
+        <button class="btn_start">Start</button>
+    </div>
+
+</div>
+
+</body>
+</html>
