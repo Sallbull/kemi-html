@@ -2750,7 +2750,7 @@ div.bigstars div.rateit-reset:hover{background: url(../images/ico-star05-on.svg)
 
 
 .page-item-wrap .sitem04-wrap{padding:70px 0 150px 0;width:100%;height:auto;overflow:Hidden;background:url(../images/bg-sitem04.png) no-repeat left top;background-size:contain;}
-.page-item-wrap .sitem04-wrap .photo-item-wrap{max-width:1112px;margin:0 auto;width:100%;height:auto;overflow:Hidden;}
+.page-item-wrap .sitem04-wrap .photo-item-wrap{max-width:1112px;margin:0 auto;width:100%;height:auto;overflow:Hidden;position: static;}
 .page-item-wrap .sitem04-wrap .photo-item-wrap .wimg{max-width:100%;}
 .page-item-wrap .sitem04-wrap .photo-item-wrap .mimg{max-width:100%;display:none;}
 .page-item-wrap .sitem04-wrap .cont{margin-top:100px;width:100%;height:auto;overflow:Hidden;}
