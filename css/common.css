@@ -1301,6 +1301,15 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .meet_wrap .btn_kemi {width:100%;background:none;border:1px solid #22eed9;border-radius:2px;border-image-source: linear-gradient(118deg, #22eed9, #08acdc 110%);border-image-slice: 1;color:#22eed9;transition: .3s ease-in-out;}
 .meet_wrap .btn_kemi:hover {background:rgba(35, 255, 233, .1);}
 .meet_wrap .btn_back {color:#fff;font-size: 18px;font-weight: 700;padding-left: 30px;background: url(../images/btn_back.svg) no-repeat 0 50% / 20px 14px;}
+.meet_wrap .remaining_time {position: absolute;right:0;top:60px;color:#fff;font-family: 'Lato';}
+.meet_wrap .remaining_time p {font-size: 18px;font-weight: 800;}
+.meet_wrap .remaining_time .time_box {display: flex;align-items: center;margin-top:10px;position: relative;}
+.meet_wrap .remaining_time .time_box::after,
+.meet_wrap .remaining_time .time_box::before {content: '';display: block;width: 4px;height: 4px;border-radius: 50%;background-color: #fff;position: absolute;left: 61px;}
+.meet_wrap .remaining_time .time_box::after {top:20px;}
+.meet_wrap .remaining_time .time_box::before {top:30px;}
+.meet_wrap .remaining_time .time_box > div {width: 56px;height: 56px;display: flex;justify-content: center;align-items: center;font-size: 30px;background: #000;border-radius: 10px;}
+.meet_wrap .remaining_time .time_box .txt_time {margin-right: 14px;}
 
 /* Popup Window1 */
 .dialog .pop-wrap.save-my-city1 .pop-header{border-bottom:0;}
@@ -1645,6 +1654,7 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 	.meet_wrap .btn_box {display: flex;width: 100%;justify-content: space-between;margin:20px auto 30px;}
 	.meet_wrap .btn_box strong {height: 40px;width: 30%;}
 	.meet_wrap .btn_back {margin-top: 30px;}
+	.meet_wrap .remaining_time {position: static;margin-bottom: 50px;}
 
 }
 
