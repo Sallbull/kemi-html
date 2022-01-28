@@ -1288,7 +1288,7 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .meet_wrap .join_text h3 {margin:0 auto;}
 .meet_wrap .join_text .tit {margin: 40px auto 0; line-height: 79px; border-radius: 40px;border: solid 1px #ffcc2a;color:#ffcc2a;font-size: 32px;font-weight: 700;width: 240px;}
 .meet_wrap .info_box {width: 520px;margin:40px auto 0;background-color: #2e2e2e;padding:20px 0;}
-.meet_wrap .reivew {text-align: center;}
+.meet_wrap .reivew {text-align: center;position: relative;z-index: 1;}
 .meet_wrap .reivew .tit {margin: 0 auto 40px; line-height: 79px; border-radius: 40px;border: solid 1px #ffcc2a;color:#ffcc2a;font-size: 32px;font-weight: 700;width: 240px;}
 .meet_wrap .reivew h3 {margin:0 auto 40px;}
 .meet_wrap .btn_box {display: flex;width: 240px;justify-content: space-between;margin:20px auto 30px;}
