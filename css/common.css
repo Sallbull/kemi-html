@@ -1294,6 +1294,8 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 .meet_wrap .btn_box {display: flex;width: 240px;justify-content: space-between;margin:20px auto 30px;}
 .meet_wrap .btn_box strong {display: flex;justify-content: center;align-items: center;height: 40px;width: 72px;cursor: pointer;}
 .meet_wrap .btn_box strong span {font-size: 14px;}
+.meet_wrap .btn_box label {position: relative;}
+.meet_wrap .btn_box label input {position: absolute;left:0;top:0;}
 .meet_wrap .btn_bad {width:100%;background:none;border:1px solid #f8e274;border-radius:2px;border-image-source: linear-gradient(118deg, #f8e274, #d57205 110%);border-image-slice: 1;color:#f8e274;transition: .3s ease-in-out;}
 .meet_wrap .btn_bad:hover {background:rgba(248, 226, 116, .1);}
 .meet_wrap .btn_soso {width:100%;background:none;border:1px solid #ce9ffc;border-radius:2px;border-image-source: linear-gradient(118deg, #ce9ffc, #9f44d3 110%);border-image-slice: 1;color:#ce9ffc;ftransition: .3s ease-in-out;}
@@ -1660,6 +1662,9 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 	.meet_wrap .reivew h3 {margin:0 auto 40px;}
 	.meet_wrap .btn_box {display: flex;width: 100%;justify-content: space-between;margin:20px auto 30px;}
 	.meet_wrap .btn_box strong {height: 40px;width: 30%;}
+	.meet_wrap .btn_box label {width: 30%;position: relative;}
+	.meet_wrap .btn_box label input {position: absolute;left:0;top:0;}
+	.meet_wrap .btn_box label strong {width: 100%;}
 	.meet_wrap .btn_back {margin-top: 30px;}
 	.meet_wrap .remaining_time {position: static;margin-bottom: 50px;}
 
