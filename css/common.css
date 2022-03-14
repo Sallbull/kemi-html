@@ -1741,7 +1741,9 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 	.join-step .step-contents{margin-top:30px;}
 	.join-step .step-contents dl + dl{margin-top:20px;}
 	.join-step .step-contents dl dt{margin-bottom:10px;font-size:14px;}
-	.join-step .step-contents dl dd .input-radio + .input-radio{margin-left:4%;}
+
+	.join-step .step-contents dl dd .input-radio{float:none;width:100%;}
+	.join-step .step-contents dl dd .input-radio + .input-radio{margin-left:0 !important;}
 	.join-step .btn-wrap{margin:40px auto 0;}
 	.join-step1 .step-contents a + a{margin-top:15px;}
 	.join-step1-1 .step-contents{max-width:350px;margin:50px auto 0;padding-right:0;}

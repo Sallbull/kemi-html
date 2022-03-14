@@ -3,6 +3,7 @@ $(function(){
 	gnbOpen();//모바일 메뉴 이벤트
 	accodionEvent();//아코디언 리스트 이벤트
 	selectEvent();//셀렉트 디자인
+	stepSelectEvent();//step select
 	engOnly();//영어만 입력
 	profileMenu();
 	scrollLock();// dialog open 스크롤 방지
@@ -37,8 +38,14 @@ function accodionEvent(){
 
 //셀렉트 디자인
 function selectEvent(){
-	$('select').selectmenu({
-	
+	$('select').selectmenu({ 
+		
+	});
+}
+// step select
+function stepSelectEvent(){
+	$('.step_select').selectmenu("option", "position", { 
+		my : "left+2 top", at: "left+2 top" 
 	});
 }
 
