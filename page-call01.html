@@ -25,13 +25,15 @@
 <section class="call-item-wrap">
 	<div class="side-call-list">
 		<ul>
+			
 			<li>
 				<div class="video-item-wrap" style="background:url(./images/etc-callimg.jpg);"></div>
 				<div class="vname">Jenny</div>
 			</li>
 			<li class="full">
 				<div class="video-item-wrap" style="background:url(./images/etc-callimg.jpg);"></div>
-				
+				<div class="vname">Kevin</div>
+				<div class="mname">Jenny</div>
 			</li>
 		</ul>
 	</div>
@@ -39,8 +41,7 @@
 	
 
 	<div class="footer-item-wrap">
-		<div class="vname">Kevin</div>
-		<div class="mname">Jenny</div>
+		
 		<div class="func-item-wrap">
 			<a class="topic" href="#a"><img src="./images/icon_topic.svg" alt="" srcset=""></a>
 			<button type="button" class="btn-call-video"><img src="./images/ico-call-video.svg" /></button>
@@ -57,7 +58,7 @@
 		<a href="#a">I will leave after this round</a>
 	</div>
 
-	<div class="message_pop on">
+	<div class="message_pop">
 		<div class="text_box">
 			<p>
 				What is your favorite food? What is your favorite food? <br class="pc">
@@ -71,6 +72,17 @@
 				What is your favorite food?
 			</p>
 			<p>When do you usually go to bed?</p>
+		</div>
+		<button type="button" class="btn-close" onclick="popClose('.message_pop');"></button>
+	</div>
+
+	<div class="message_pop on">
+		<div class="info_box">
+			<p class="t1">English Session</p>
+			<p class="t2">
+				Please speak in english <br class="pc">
+				Help your partner to practice english speaking!
+			</p>
 		</div>
 		<button type="button" class="btn-close" onclick="popClose('.message_pop');"></button>
 	</div>
