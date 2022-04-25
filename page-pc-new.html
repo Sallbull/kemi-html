@@ -17,7 +17,9 @@
     <link rel="stylesheet" type="text/css" href="css/font.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/common_new.css" />
+    <link rel="stylesheet" type="text/css" href="css/new_integration.css" />
+
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
@@ -30,6 +32,10 @@
         <h1>
           <a href="#"><img src="images/logo_kemi.png" alt="kemi" /></a>
         </h1>
+        <div class="lng-select">
+          <div class="kor">한국어</div>
+          <div class="eng">English</div>
+        </div>
         <div class="search_box">
           <input type="text" placeholder="type user id" class="search_input" />
           <div class="search_menu">
@@ -70,6 +76,7 @@
           <div class="inner">
             <ul class="mob-hide">
               <li class="my_profile">
+                <img class="hg-icon" src="./images/menu.png" alt="" srcset="" />
                 <a href="#"><img src="images/@user.png" alt="" /></a>
                 <div class="profile_box">
                   <p>JAKE</p>
@@ -81,9 +88,11 @@
                   </div>
                 </div>
               </li>
-              <li><a href="#">PARTNERS</a></li>
-              <li><a href="#" class="not-login">FRIEND</a></li>
-              <li><a href="#">PARTNERS</a></li>
+
+              <li><a href="3">FAQ</a></li>
+              <li><a href="#">In Person</a></li>
+              <li><a href="#">Video Call</a></li>
+              <!-- <li><a href="#" class="not-login">FRIEND</a></li> -->
             </ul>
             <div class="mob-user-wrap">
               <div class="upic" style="background: url(images/@user.png)"></div>
@@ -130,52 +139,170 @@
           <div class="sitem01-wrap">
             <div class="lt-item">
               Language Exchange,
-              <br />Socializing
-              <strong>Online & in person</strong>
-            </div>
-            <div class="rt-item">
-              <img src="./images/etc-sitem01.png" class="wimg" />
-              <img src="./images/etc-sitem01-mo.png" class="mimg" />
+              <br />Global Socializing
+              <strong>around you</strong>
             </div>
           </div>
           <div class="sitem02-wrap">
-            <div class="lt-item"><img src="./images/etc-sitem02.png" /></div>
-            <div class="rt-item">
-              <div class="stit">ONLINE</div>
-              <div class="sdate">Match 1:1 or 2:1 online</div>
-              <div class="sdesc">Partner will change every 15min for 1hr</div>
-              <button type="button">Go</button>
+            <div class="lt-item">
+              <div class="vid-section">
+                <img src="./images/etc-sitem02.png" />
+              </div>
+
+              <div class="sm2-buttons">
+                <a id="in-p" href="#"> In person</a>
+                <a id="v-call" href="#"> Video call</a>
+              </div>
             </div>
+
             <div class="bg-ball01"></div>
           </div>
           <div class="sitem03-wrap">
-            <div class="cont01">
-              <div class="lt-item">
-                Pin the friends <br />you met online to <br /><strong
-                  >your interest list.</strong
-                >
+            <div class="title">This service is great for the people below</div>
+            <div class="body">
+              <div class="service-sections">
+                <div class="sr-section">
+                  <div class="image-section one">
+                    <img src="images/service-one.png" alt="" srcset="" />
+                  </div>
+                  <div class="bd-title">Travellers, Expats</div>
+                  <div class="subtitle">
+                    Find new friends through video calls that you can meet and
+                    hang out with in person while traveling
+                  </div>
+                </div>
+                <div class="sr-section">
+                  <div class="image-section two">
+                    <img src="images/service-two.png" alt="" srcset="" />
+                  </div>
+                  <div class="bd-title">
+                    Those who want to practice language
+                  </div>
+                  <div class="subtitle">
+                    You can exchange language with native speakers
+                  </div>
+                </div>
+                <div class="sr-section">
+                  <div class="image-section three">
+                    <img src="images/service-thre.png" alt="" srcset="" />
+                  </div>
+                  <div class="bd-title">
+                    Locals who want to make international friends
+                  </div>
+                  <div class="subtitle">
+                    If you are a local, you can meet international friends and
+                    hangout together
+                  </div>
+                </div>
               </div>
-              <div class="rt-item"><img src="./images/etc-sitem03.png" /></div>
             </div>
-            <div class="cont02">
-              <div class="stit">IN PERSON</div>
-              <div class="sdesc">
-                Meet up with your <strong>interest friends</strong> <br />in
-                person by <strong>various activities</strong>
-              </div>
-              <button type="button">Go</button>
-            </div>
-            <div class="bg-ball01"></div>
-            <div class="bg-ball02"></div>
-            <div class="bg-ball03"></div>
-            <div class="bg-ball04"></div>
-            <div class="bg-ball05"></div>
           </div>
+
           <div class="sitem04-wrap">
-            <div class="photo-item-wrap">
-              <img src="./images/etc-sitem04.png" class="wimg" />
-              <img src="./images/etc-sitem04-mo.png" class="mimg" />
+            <div class="sitem04-title">
+              The more meetings, The closer you become
             </div>
+            <div class="sitem04-body">
+              <div class="progresses">
+                <div class="strnge">
+                  <img src="images/pr-first.png" alt="" srcset="" />
+                  <div class="under-text-first">Stranger</div>
+                </div>
+
+                <div class="pr">
+                  <div class="upper-text">video call</div>
+                  <img src="images/pr-progresser.png" alt="" />
+                </div>
+                <div class="strnge">
+                  <img src="images/pr-second.png" alt="" srcset="" />
+                </div>
+
+                <div class="pr">
+                  <div class="upper-text">Activities</div>
+                  <img src="images/pr-progresser.png" alt="" />
+                </div>
+                <div class="strnge">
+                  <img src="images/pr-third.png" alt="" srcset="" />
+                  <div class="under-text-last">Real friend</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sitem05-wrap">
+            <div class="sitem05-left">
+              <div class="sitem05-image-section">
+                <img src="images/etc-sitem02.png" alt="" srcset="" />
+              </div>
+            </div>
+            <div class="sitem05-right">
+              <div class="sitem-title">Video call</div>
+              <div class="sitem-subtitle">
+                Find friends you have good chemisty with
+              </div>
+              <div class="sitem-body">
+                <ul>
+                  <li>Match 1:1 or 2:1 online</li>
+                  <li>Your partner will change every 15min for 1hour</li>
+                </ul>
+              </div>
+              <div class="sitem-button">
+                <a class="vdeo-call" href="#">video call</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="sitem06-wrap">
+            <div class="sitem06-left">
+              <div class="sitem-title">Social Party</div>
+              <div class="sitem-subtitle">
+                You can meet in person with the people you met online
+              </div>
+              <div class="sitem-body">
+                <ul>
+                  <li>We have a socializing meet up</li>
+                  <li>once or twice each week</li>
+                </ul>
+              </div>
+              <div class="sitem-button">
+                <a class="in-person" href="#">In person</a>
+              </div>
+            </div>
+            <div class="sitem06-right">
+              <div class="sitem06-image-section">
+                <img
+                  src="images/social-party-section-image.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="sitem07-wrap">
+            <div class="sitem07-left">
+              <div class="sitem07-image-section">
+                <img src="images/activity-section-image.png" alt="" srcset="" />
+              </div>
+            </div>
+            <div class="sitem07-right">
+              <div class="sitem-title">Activities</div>
+              <div class="sitem-subtitle">
+                You can hangout with your kemi through activities
+              </div>
+              <div class="sitem-body">
+                <ul>
+                  <li>More than 100 free activities in your city</li>
+                  <li>Discount paid activities</li>
+                </ul>
+              </div>
+              <div class="sitem-button">
+                <a class="in-person" href="#">In person</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="sitem04-wrap">
             <div class="cont">
               <div class="spic"><img src="./images/etc-group01.png" /></div>
               <div class="msg">

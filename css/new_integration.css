@@ -1,0 +1,313 @@
+#wrap #header .lng-select {
+  color: #c6c6c6;
+  position: absolute;
+  left: 15%;
+  display: flex;
+  align-items: center;
+}
+
+#wrap #header .lng-select .kor {
+  padding-right: 10px;
+  border-right: 1px solid #c6c6c6;
+}
+
+#wrap #header .lng-select .eng {
+  padding-left: 10px;
+}
+
+.sitem02-wrap .lt-item .sm2-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sitem02-wrap .lt-item .sm2-buttons #in-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffcc2a;
+  width: 144px;
+  height: 46px;
+  text-align: center;
+  border-radius: 23px;
+  color: #ffcc2a;
+  margin-right: 20px;
+}
+
+.sitem02-wrap .lt-item .sm2-buttons #v-call {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcc2a;
+  width: 144px;
+  height: 46px;
+  text-align: center;
+  border-radius: 23px;
+  color: black;
+}
+
+.sitem03-wrap .title {
+  font-size: 30px;
+  line-height: 36px;
+  font-family: "Urbanist-Medium";
+  text-align: left;
+  color: #ffff;
+  padding-left: 165px;
+  padding-bottom: 70px;
+}
+
+.sitem03-wrap .body .service-sections {
+  display: flex;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.sitem03-wrap .body .service-sections .sr-section {
+  width: 260px;
+
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.sitem03-wrap .body .service-sections .sr-section .image-section {
+  height: 290px;
+  /* padding: 10px 15px 10px; */
+  border-radius: 10px;
+  transform: rotate(-4deg);
+}
+
+.sitem03-wrap .body .service-sections .sr-section .image-section.one {
+  background-color: #ff224f;
+}
+
+.sitem03-wrap .body .service-sections .sr-section .image-section.two {
+  background-color: #6b52d5;
+}
+
+.sitem03-wrap .body .service-sections .sr-section .image-section.three {
+  background-color: #ffb000;
+}
+
+.sitem03-wrap .body .service-sections .sr-section .image-section img {
+  height: 100%;
+  width: 100%;
+  transform: rotate(4deg);
+}
+
+.sitem03-wrap .body .service-sections .sr-section .bd-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "Urbanist-Bold";
+  color: #ffff;
+  margin-top: 30px;
+}
+
+.sitem03-wrap .body .service-sections .sr-section .subtitle {
+  font-size: 16px;
+  line-height: 19px;
+  color: #a3a3a3;
+  margin-top: 20px;
+}
+
+.sitem04-wrap {
+  margin-top: 240px;
+}
+
+.sitem04-wrap .sitem04-title {
+  font-family: "Urbanist-ExtraBold";
+  font-size: 38px;
+  line-height: 46px;
+  color: #ffff;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.sitem04-body .progresses {
+  display: flex;
+  justify-content: center;
+  width: 347px;
+  margin: auto;
+}
+
+.sitem04-body .progresses .pr {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.under-text-first {
+  position: absolute;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffff;
+  font-family: "Urbanist-Bold";
+  left: -30px;
+}
+
+.under-text-last {
+  position: absolute;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffff;
+  font-family: "Urbanist-Bold";
+}
+
+.strnge {
+  position: relative;
+}
+.upper-text {
+  font-family: "Urbanist-Bold";
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffff;
+  padding-bottom: 10px;
+}
+
+.sitem05-wrap {
+  padding-left: 164px;
+  padding-right: 164px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.sitem05-left {
+  width: 50%;
+}
+
+.sitem05-right {
+  width: 50%;
+}
+
+.sitem05-left .sitem05-image-section img {
+  width: 388px;
+  height: auto;
+}
+
+.sitem06-wrap {
+  padding-left: 164px;
+  padding-right: 164px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.sitem06-left {
+  width: 50%;
+}
+
+.sitem06-right {
+  width: 50%;
+}
+
+.sitem06-right .sitem06-image-section img {
+  width: 450px;
+  height: auto;
+}
+
+.sitem07-wrap {
+  padding-left: 164px;
+  padding-right: 164px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.sitem07-left {
+  width: 50%;
+}
+
+.sitem07-right {
+  width: 50%;
+}
+
+.sitem07-left .sitem05-image-section img {
+  width: 482px;
+  height: auto;
+}
+
+.sitem05-image-section {
+  width: 410px;
+  height: 410px;
+  background-color: #ff224f;
+  border-radius: 110px;
+  transform: rotate(-20deg);
+  position: relative;
+}
+
+.sitem06-image-section {
+  width: 410px;
+  height: 410px;
+  background-color: #05ac67;
+  border-radius: 110px;
+  transform: rotate(20deg);
+  position: relative;
+}
+
+.sitem07-image-section {
+  width: 410px;
+  height: 410px;
+  background-color: #ffcc2a;
+  border-radius: 110px;
+  transform: rotate(-35deg);
+  position: relative;
+}
+
+.sitem05-image-section img {
+  transform: rotate(20deg);
+  position: absolute;
+  top: -30%;
+  left: -12%;
+}
+
+.sitem06-image-section img {
+  transform: rotate(-20deg);
+  position: absolute;
+  top: 7%;
+  left: -9%;
+}
+
+.sitem07-image-section img {
+  transform: rotate(35deg);
+  position: absolute;
+  top: -6%;
+  left: -12%;
+}
+.sitem-title {
+  font-size: 24px;
+  font-family: "Urbanist-Bold";
+  line-height: 29px;
+  color: #ffff;
+  padding-bottom: 10px;
+}
+
+.sitem-subtitle {
+  font-family: "Urbanist-Medium";
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffff;
+  padding-bottom: 10px;
+}
+
+.sitem-body ul li {
+  color: #a3a3a3;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.sitem-button {
+  margin-top: 40px;
+}
+
+.sitem-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ffcc2a;
+  width: 144px;
+  height: 46px;
+  text-align: center;
+  border-radius: 23px;
+  color: #ffcc2a;
+  margin-right: 20px;
+}
