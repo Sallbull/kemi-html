@@ -92,3 +92,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Urbanist-SemiBold";
+  src: url(fonts/Urbanist-SemiBold.ttf) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
