@@ -279,7 +279,7 @@ a.disabled{background:transparent;border:2px solid #555;color:#555;}
 /* =================================================
 	* Container
 ================================================= */
-#container{min-height:100vh;padding:60px 0 180px;background:url('../images/bg.png') no-repeat center 60px #222;background-size:cover;box-sizing:border-box;}
+#container{min-height:100vh;padding:60px 0 180px;background:#222222;background-size:cover;box-sizing:border-box;}
 #container.sub41_1 {background: #222;}
 #container.sub41_2 {background: #222;}
 #container.sub42_1 {background: #222;}
