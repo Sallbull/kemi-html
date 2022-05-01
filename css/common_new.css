@@ -3152,6 +3152,7 @@ div.bigstars div.rateit-reset:hover{background: url(../images/ico-star05-on.svg)
 	#header .gnb ul.mobile_list.type01 li a.ico03{background:url(../images/bg-lnb-list03.svg) no-repeat left center;}
 	#header .gnb ul.mobile_list.type01 li a.ico04{background:url(../images/bg-lnb-list04.svg) no-repeat left center;}
 	#header .gnb ul.mobile_list.type01 li a.ico05{background:url(../images/bg-lnb-list05.svg) no-repeat left center;}
+	#header .gnb ul.mobile_list.type02 li a{position:relative;font-size:14px;color:#fff;}
 
 
 	.call-item-wrap .footer-item-wrap .mname{display:none;}
