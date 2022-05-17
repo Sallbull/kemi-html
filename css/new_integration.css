@@ -643,6 +643,9 @@ input[type="radio"]:checked ~ label {
 }
 
 @media only screen and (max-width: 850px) {
+  #wrap #header .lng-select {
+    display: none;
+  }
   .sitem03-wrap .body .service-sections {
     display: flex;
     padding-left: 20px;

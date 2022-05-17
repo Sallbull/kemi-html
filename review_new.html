@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/font.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/php_css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/common_new.css" />
     <link rel="stylesheet" type="text/css" href="css/new_integration.css" />
 
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -117,7 +117,10 @@
       </div>
       <script type="text/javascript">
         $(function () {
-          languageToggle(); //모바일 언어 선택 토글
+            languageToggle(); //모바일 언어 선택 토글
+            $('.checkbox_wrap button').on('click', function () {
+                $(this).addClass('on').siblings('button').removeClass('on');
+            });
         });
 
         //모바일 언어 선택 토글
@@ -139,44 +142,47 @@
 
       <!-- Container -->
       <div id="container" class="sub80">
-        <section class="page-item-wrap">
-          <div class="profile-wrap">
-            <div class="title">Profile</div>
-            <div class="border"></div>
-            <div class="image-section">
-              <img src="images/@user.png" alt="" srcset="" />
-            </div>
-            <div class="progress-image">
-              <img src="images/pr-second.png" alt="" srcset="" />
-            </div>
-            <div class="details-card">
-              <div class="sec"><span>Name</span> <span>Jake</span></div>
-              <div class="sec">
-                <span>Social Media</span>
-                <span
-                  ><img src="images/icon_facebook.png" alt="" srcset="" />
-                  <img src="images/icon_instargram.png" alt="" srcset=""
-                /></span>
-              </div>
-
-              <div class="sec">
-                <span>Language</span>
-                <div>
-                  <div><span class="lng">English</span>  | <span class="ln-level">Advance</span></div>
-                  <div><span class="lng">Korean</span>  | <span class="ln-level">Intermediate</span></div>
+        <section class="cont-wrap">
+            <nav class="tab-wrap">
+                <a class="tab-wrap__item" href="#a">History</a>
+                <a class="tab-wrap__item tab-wrap--active" href="#a">Review</a>
+                <a class="tab-wrap__item" href="#a">My Real Kemi</a>
+            </nav>
+            <div class="review-wrap">
+                <div class="review-tap">
+                  <a href="#a" class="review-tap__item review-tap--active">Kemi</a>
+                  <a href="#a" class="review-tap__item">Bad</a>
                 </div>
+                <div class="setting-wrap">
                 
-                  
                 </div>
-                <div class="about-me-sec">
-                    <div>About Me</div>
-                    <div>
-                        <textarea class="about-me-input" name=""  id="" cols="30" rows="10"></textarea>
-                    </div>
-                </div>
-              </div>
+                <ul class="review-wrap__list">
+                  <li class="review-wrap__li">
+                    <p>Raquel</p>
+                    <button type="button" class="review-wrap__delete"></button>
+                  </li>
+                  <li class="review-wrap__li">
+                    <p>Arsen</p>
+                    <button type="button" class="review-wrap__delete"></button>
+                  </li>
+                  <li class="review-wrap__li">
+                    <p>Chandra Plyush Bajpal</p>
+                    <button type="button" class="review-wrap__delete"></button>
+                  </li>
+                  <li class="review-wrap__li">
+                    <p>Johan</p>
+                    <button type="button" class="review-wrap__delete"></button>
+                  </li>
+                  <li class="review-wrap__li">
+                    <p>Saswatl</p>
+                    <button type="button" class="review-wrap__delete"></button>
+                  </li>
+                  <li class="review-wrap__li">
+                    <p>Ponlr</p>
+                    <button type="button" class="review-wrap__delete"></button>
+                  </li>
+                </ul>
             </div>
-          </div>
         </section>
       </div>
 

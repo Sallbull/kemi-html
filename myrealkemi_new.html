@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/font.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/php_css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/common_new.css" />
     <link rel="stylesheet" type="text/css" href="css/new_integration.css" />
 
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -117,7 +117,10 @@
       </div>
       <script type="text/javascript">
         $(function () {
-          languageToggle(); //모바일 언어 선택 토글
+            languageToggle(); //모바일 언어 선택 토글
+            $('.checkbox_wrap button').on('click', function () {
+                $(this).addClass('on').siblings('button').removeClass('on');
+            });
         });
 
         //모바일 언어 선택 토글
@@ -139,44 +142,86 @@
 
       <!-- Container -->
       <div id="container" class="sub80">
-        <section class="page-item-wrap">
-          <div class="profile-wrap">
-            <div class="title">Profile</div>
-            <div class="border"></div>
-            <div class="image-section">
-              <img src="images/@user.png" alt="" srcset="" />
+        <section class="cont-wrap">
+            <nav class="tab-wrap">
+                <a class="tab-wrap__item" href="#a">History</a>
+                <a class="tab-wrap__item" href="#a">Review</a>
+                <a class="tab-wrap__item tab-wrap--active" href="#a">My Real Kemi</a>
+            </nav>
+            <div class="my_real_kemi-wrap">
+                <p class="tit">The more meeting, the become closer</p>
+                <ul class="my_real__list">
+                    <li class="my_real__li">
+                        <button class="my_real__delete" type="button"></button>
+                        <div class="my_real__user">
+                            <img src="images/@user.png" alt="">
+                            <span>Jeny</span>
+                        </div>
+                        <i class="my_real__lv my_real__lv3"><img src="images/pr-second.png" alt=""></i>
+                        <div class="my_real__kemi">
+                            <span>Do video call together</span>
+                            <a href="#a" class="my_real__link">Go to Video call</a>
+                        </div>
+                    </li>
+                    <li class="my_real__li">
+                        <button class="my_real__delete" type="button"></button>
+                        <div class="my_real__user">
+                            <img src="images/@user.png" alt="">
+                            <span>Jeny</span>
+                        </div>
+                        <i class="my_real__lv my_real__lv3"><img src="images/pr-second.png" alt=""></i>
+                        <div class="my_real__kemi">
+                            <span>Join the social party together</span>
+                            <a href="#a" class="my_real__link">Go to Video call</a>
+                        </div>
+                    </li>
+                    <li class="my_real__li">
+                        <button class="my_real__delete" type="button"></button>
+                        <div class="my_real__user">
+                            <img src="images/@user.png" alt="">
+                            <span>Jeny</span>
+                        </div>
+                        <i class="my_real__lv my_real__lv3"><img src="images/pr-second.png" alt=""></i>
+                        <div class="my_real__kemi">
+                            <span>Join the activity together</span>
+                            <a href="#a" class="my_real__link">Go to Video call</a>
+                        </div>
+                    </li>
+                    <li class="my_real__li">
+                        <button class="my_real__delete" type="button"></button>
+                        <div class="my_real__user">
+                            <img src="images/@user.png" alt="">
+                            <span>Jeny</span>
+                        </div>
+                        <i class="my_real__lv my_real__lv3"><img src="images/pr-second.png" alt=""></i>
+                        <div class="my_real__kemi">
+                            <span>Do video call together<i class="speech_bubble"><img src="images/speech_bubble2.png" alt=""></i></span>
+                        </div>
+                    </li>
+                    <li class="my_real__li">
+                        <button class="my_real__delete" type="button"></button>
+                        <div class="my_real__user">
+                            <img src="images/@user.png" alt="">
+                            <span>Jeny</span>
+                        </div>
+                        <i class="my_real__lv my_real__lv3"><img src="images/pr-second.png" alt=""></i>
+                        <div class="my_real__kemi">
+                            <span>Do video call together<i class="speech_bubble"><img src="images/speech_bubble.png" alt=""></i></span>
+                        </div>
+                    </li>
+                    <li class="my_real__li">
+                        <button class="my_real__delete" type="button"></button>
+                        <div class="my_real__user">
+                            <img src="images/@user.png" alt="">
+                            <span>Jeny</span>
+                        </div>
+                        <i class="my_real__lv my_real__lv3"><img src="images/pr-second.png" alt=""></i>
+                        <div class="my_real__kemi">
+                            <span>Do video call together<i class="speech_bubble"><img src="images/speech_bubble.png" alt=""></i></span>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="progress-image">
-              <img src="images/pr-second.png" alt="" srcset="" />
-            </div>
-            <div class="details-card">
-              <div class="sec"><span>Name</span> <span>Jake</span></div>
-              <div class="sec">
-                <span>Social Media</span>
-                <span
-                  ><img src="images/icon_facebook.png" alt="" srcset="" />
-                  <img src="images/icon_instargram.png" alt="" srcset=""
-                /></span>
-              </div>
-
-              <div class="sec">
-                <span>Language</span>
-                <div>
-                  <div><span class="lng">English</span>  | <span class="ln-level">Advance</span></div>
-                  <div><span class="lng">Korean</span>  | <span class="ln-level">Intermediate</span></div>
-                </div>
-                
-                  
-                </div>
-                <div class="about-me-sec">
-                    <div>About Me</div>
-                    <div>
-                        <textarea class="about-me-input" name=""  id="" cols="30" rows="10"></textarea>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </section>
       </div>
 

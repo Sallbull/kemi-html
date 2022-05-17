@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/font.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/php_css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/common_new.css" />
     <link rel="stylesheet" type="text/css" href="css/new_integration.css" />
 
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -139,45 +139,87 @@
 
       <!-- Container -->
       <div id="container" class="sub80">
-        <section class="page-item-wrap">
-          <div class="profile-wrap">
-            <div class="title">Profile</div>
-            <div class="border"></div>
-            <div class="image-section">
-              <img src="images/@user.png" alt="" srcset="" />
-            </div>
-            <div class="progress-image">
-              <img src="images/pr-second.png" alt="" srcset="" />
-            </div>
-            <div class="details-card">
-              <div class="sec"><span>Name</span> <span>Jake</span></div>
-              <div class="sec">
-                <span>Social Media</span>
-                <span
-                  ><img src="images/icon_facebook.png" alt="" srcset="" />
-                  <img src="images/icon_instargram.png" alt="" srcset=""
-                /></span>
-              </div>
-
-              <div class="sec">
-                <span>Language</span>
-                <div>
-                  <div><span class="lng">English</span>  | <span class="ln-level">Advance</span></div>
-                  <div><span class="lng">Korean</span>  | <span class="ln-level">Intermediate</span></div>
-                </div>
-                
-                  
-                </div>
-                <div class="about-me-sec">
-                    <div>About Me</div>
-                    <div>
-                        <textarea class="about-me-input" name=""  id="" cols="30" rows="10"></textarea>
+        <div class="soccer-social">
+            <h3>Soccer-Social</h3>
+            <div class="contents">
+                <div class="owl-carousel owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <ul class="img_list owl-stage">
+                            <li class="owl-item">
+                                <div class="img_box"><img src="images/@soccer_01.png" alt=""></div>
+                            </li>
+                            <li class="owl-item">
+                                <div class="txt_box">
+                                    <p>
+                                        Every Sun <br>
+                                        14:00PM ~ 15:00PM
+                                    </p>
+                                    <p>Around 100 people join</p>
+                                </div>
+                            </li>
+                            <li class="owl-item">
+                                <div class="map_box">
+                                    <div class="map"></div>
+                                    <span class="map_tit">Near sol</span>
+                                </div>
+                            </li>
+                            <li class="owl-item">
+                                <div class="img_box"><img src="images/@soccer_01.png" alt=""></div>
+                                <span>Spain_madrid</span>
+                            </li>
+                            <li class="owl-item">
+                                <div class="img_box"></div>
+                                <span>Korea_Seoul</span>
+                            </li>
+                            <li class="owl-item">
+                                <div class="img_box"></div>
+                                <span>UK_London</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="owl-nav disabled">
+                        <button type="button" role="presentation" class="owl-prev">
+                            <span aria-label="Previous">‹</span>
+                        </button>
+                        <button type="button" role="presentation" class="owl-next">
+                            <span aria-label="Next">›</span>
+                        </button>
                     </div>
                 </div>
-              </div>
+        
+                <a href="#a" class="group_chat">
+                    Group chat
+                    <span>for this meetup</span>
+                </a>
+        
+                <ul class="meetup_list">
+                    <li>
+                        <span class="day">3.27</span>
+                        <span class="time">14:00pm - 15:00pm</span>
+                        <label>
+                            <input type="checkbox">
+                            <span>select</span>
+                        </label>
+                    </li>
+                    <li>
+                        <span class="day">3.27</span>
+                        <span class="time">14:00pm - 15:00pm</span>
+                        <label>
+                            <input type="checkbox" value="select">
+                            <span>select</span>
+                        </label>
+                    </li>
+                    <li>
+                        <span class="day">3.27</span>
+                        <span class="time">14:00pm - 15:00pm</span>
+                        <label>
+                            <input type="checkbox" value="select">
+                            <span>select</span>
+                        </label>
+                    </li>
+                </ul>
             </div>
-          </div>
-        </section>
+        </div>
       </div>
 
       <!-- //Container -->
@@ -205,5 +247,60 @@
       </div>
       <!-- //Footer -->
     </div>
+    <script type="text/javascript">
+        var owlTouchDir = 0;
+        $(function () {
+            slide();
+        });
+
+        function slide() {
+            $('.owl-carousel').owlCarousel({
+                dots: false,
+                loop: true,
+                autoWidth: true,
+                center: true,
+                nav: true,
+                margin: 40,
+                items: 3,
+                responsive: {
+                    // breakpoint from 0 up
+                    0: {
+                        margin: 5,
+                        items: 1,
+                    },
+                    // breakpoint from 480 up
+                    480: {
+                        margin: 10,
+                        items: 1,
+                    },
+                    // breakpoint from 768 up
+                    768: {
+                        margin: 20,
+                        items: 3,
+                    },
+                },
+            });
+
+            if ($('body').hasClass('ios')) {
+                $('.owl-carousel').on('touchstart', function (e) {
+                    owlTouchDir = e.pageX;
+                });
+
+                $('.owl-carousel').on('touchmove', function (e) {
+                    var touchStartPos = e.pageX;
+
+                    if (owlTouchDir + 10 < touchStartPos || owlTouchDir - 10 > touchStartPos) {
+                        e.preventDefault();
+                    } else {
+                        return true;
+                    }
+                });
+
+                $('.owl-carousel').on('touchend', function (e) {
+                    return true;
+                });
+            }
+        }
+    </script>
   </body>
 </html>
