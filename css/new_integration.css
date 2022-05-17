@@ -636,6 +636,12 @@ input[type="radio"]:checked ~ label {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1070px){
+  #wrap #header .lng-select {
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 850px) {
   .sitem03-wrap .body .service-sections {
     display: flex;
