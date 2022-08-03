@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.121" height="14.121" viewBox="0 0 14.121 14.121">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #222;
+        stroke-linecap: round;
+        stroke-width: 1.5px;
+      }
+    </style>
+  </defs>
+  <g id="icon_close" transform="translate(-996.939 -268.939)">
+    <rect id="사각형_154" data-name="사각형 154" class="cls-1" width="14" height="14" transform="translate(997 269)"/>
+    <line id="선_9" data-name="선 9" class="cls-2" x2="12" y2="12" transform="translate(998 270)"/>
+    <line id="선_10" data-name="선 10" class="cls-2" x1="12" y2="12" transform="translate(998 270)"/>
+  </g>
+</svg>

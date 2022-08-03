@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta property="og:title" content="minglecup" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="1 on 1 Talk Make Global freinds" />
+    <meta property="og:image" content="images/og.jpg" />
+    <title>kemi</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font.css" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common_new.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/new_integration.css" />
+
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <!-- Header -->
+      <div id="header">
+        <h1>
+          <a href="#"><img src="../images/logo_kemi.png" alt="kemi" /></a>
+        </h1>
+        
+        <div class="search_box">
+          <input type="text" placeholder="type user id" class="search_input" />
+          <div class="search_menu">
+            <p>You have to Click ‘Add’ each other</p>
+            <ul>
+              <li>
+                <div class="user_box">
+                  <p class="user_id">@jake231</p>
+                  <p class="user_name">jake</p>
+                </div>
+                <div class="btn_box">
+                  <button class="on">Add</button>
+                </div>
+              </li>
+              <li>
+                <div class="user_box">
+                  <p class="user_id">@jake231</p>
+                  <p class="user_name">jake</p>
+                </div>
+                <div class="btn_box">
+                  <span>pending...</span>
+                </div>
+              </li>
+              <li>
+                <div class="user_box">
+                  <p class="user_id">@jake231</p>
+                  <p class="user_name">jake</p>
+                </div>
+                <div class="btn_box">
+                  <button class="">Add</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="btn-menu"><span>Menu</span></button>
+        <div class="gnb">
+          <div class="inner">
+            <ul class="mob-hide">
+              <li class="my_profile">
+                <img class="hg-icon" src="../images/menu.png" alt="" srcset="" />
+                <a href="#"><img src="../images/@user.png" alt="" /></a>
+                <div class="profile_box">
+                  <div class="btn_box">
+                    <a href="">My RSVP</a>
+                    <a href="">My Kemi</a>
+                  </div>
+                  <div class="btn_box">
+                    <a href="https://dev.kemi.ai/talk/profile">Profile</a>
+                    <a href="https://dev.kemi.ai/talk/settings">Settings</a>
+                  </div>
+
+                  <div class="btn_box">
+                    <a href="https://dev.kemi.ai/talk/logout">Logout</a>
+                  </div>
+                </div>
+              </li>
+
+              <li><a href="3">FAQ</a></li>
+              
+              <li><a href="#">Activites</a></li>
+              <li><a href="#">Social Party</a></li>
+              <li><a href="#">Video Call</a></li>
+              <!-- <li><a href="#" class="not-login">FRIEND</a></li> -->
+            </ul>
+            <div class="mob-user-wrap">
+              <div class="upic" style="background: url(images/@user.png)"></div>
+              <div class="uname">jake231</div>
+              <button type="button">Logout</button>
+            </div>
+            <ul class="mobile_list type01">
+              <li><a href="javascript:void(0)" class="ico01">FRIENDS</a></li>
+              <li><a href="javascript:void(0)" class="ico02">FRIENDS</a></li>
+            </ul>
+            <ul class="mobile_list type01">
+              <li><a href="javascript:void(0)" class="ico03">PROFILE</a></li>
+              <li><a href="javascript:void(0)" class="ico04">SETTING</a></li>
+              <li><a href="javascript:void(0)" class="ico05">FAQ</a></li>
+            </ul>
+            <ul class="mobile_list type02">
+              <li><a href="javascript:void(0)" class="ico_kor">한국어</a></li>
+              <li><a href="javascript:void(0)" class="ico_en">English</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript">
+        $(function () {
+          languageToggle(); //모바일 언어 선택 토글
+        });
+
+        //모바일 언어 선택 토글
+        function languageToggle() {
+          $(".language-wrap").on("click", function () {
+            var winW = $(window).width();
+            if (winW < 800) {
+              var Idx = $(this).find("a.on").index();
+              $(this).find("a").removeClass("on");
+              $(this)
+                .find("a")
+                .not(":eq(" + Idx + ")")
+                .addClass("on");
+            }
+          });
+        }
+      </script>
+      <!-- //Header -->
+
+      <!-- bg_texture -->
+      <div class="bg-text-left">
+        <img src="../images/bg_texture_left.png" alt="" srcset="">
+      </div>
+
+      <div class="bg-text-right">
+        <img src="../images/bg_texture_right.png" alt="" srcset="">
+      </div>
+      <!-- Container -->
+      <div id="container" class="sub80">
+        <section class="page-item-wrap-new">
+            <div class="title-one">
+                Global Socializing<br/>
+                in real life
+            </div>
+            <div class="title-two">
+                I am
+            </div>
+            <div class="about-me-buttons">
+                <div>
+                    <a class="abt-me-button" href="#">Traveler</a>
+                </div>
+                <div>
+                    <a class="abt-me-button" href="#">Locals</a>
+
+                </div>
+                <div>
+                    <a class="abt-me-button" href="#">Language Learner</a>
+
+                </div>
+                <div>
+                    <a class="abt-me-button" href="#">Expats</a>
+
+                </div>
+
+            </div>
+        </section>
+      </div>
+
+      <!-- //Container -->
+
+      <!-- Footer -->
+      <div id="footer" class="type01">
+        <section class="fitem-wrap">
+          <div class="flogo"><img src="../images/logo_kemi.png" alt="kemi" /></div>
+          <ul>
+            <li>
+              <div class="key">E-mail</div>
+              <div class="value">cs@talklang.com</div>
+            </li>
+            <li>
+              <div class="key">Kakao</div>
+              <div class="value">abcdefg</div>
+            </li>
+            <li>
+              <div class="key">Phone</div>
+              <div class="value">02 6124 1227 , 010 3233 1234</div>
+            </li>
+          </ul>
+          <div class="fcopy">Copyright©2018 Talklang</div>
+        </section>
+      </div>
+      <!-- //Footer -->
+    </div>
+  </body>
+</html>

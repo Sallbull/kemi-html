@@ -636,6 +636,144 @@ input[type="radio"]:checked ~ label {
   cursor: pointer;
 }
 
+
+.bg-text-left{
+  position: absolute;
+  bottom: 28%;
+  left: 10%;
+}
+
+.bg-text-left img{
+  width: 160px;
+  height: 134px;
+}
+
+.bg-text-right{
+  position: absolute;
+  top: 15%;
+  right: 10%;
+}
+
+.bg-text-right img{
+  width: 136px;
+  height: 145px;
+}
+
+.about-me-buttons .abt-me-button{
+  
+    display: flex;
+    align-items: center;
+    width: 380px;
+    height: 62px;
+    border-radius: 31px;
+    border: solid 1px #ffcc2a;
+    justify-content: center;
+    color: #ffcc2a;
+    font-family: 'Urbanist-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  
+}
+
+.page-item-wrap-new{
+  margin-top: 80px;
+  margin-bottom: 140px;
+  text-align: center;
+}
+
+.page-item-wrap-new .title-one{
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
+  font-family: 'Urbanist-Medium';
+  margin-bottom: 60px;
+  
+}
+
+.page-item-wrap-new .title-two{
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
+  font-family: 'Urbanist-Bold';
+  margin-bottom: 40px;
+}
+
+.about-me-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pop-wrap-event{
+  width: 560px;
+  height: auto;
+  border-radius: 10px;
+  background-color: #fff;
+  padding-top: 64px;
+  
+  position: relative;
+}
+
+.pop-wrap-event .body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  overflow-y: auto;
+}
+
+.cross-button{
+  position: absolute;
+  right: 4%;
+  top: 3%;
+  cursor: pointer;
+}
+
+.pop-wrap-event .title{
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Urbanist-Bold';
+  color: #222222;
+}
+
+.pop-wrap-event .sub-title{
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Urbanist-Medium';
+  color: #222222;
+  padding-top: 10px;
+  white-space: pre-line;
+}
+
+.pop-wrap-event .pop-body img{
+  margin-top: 20px;
+  width: 220px;
+  
+}
+
+.pop-wrap-event .footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer .start-travel{
+  width: 191px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 23px;
+  background-color: #ffcc2a;
+}
+
+
+
+
 @media screen and (max-width: 1070px){
   #wrap #header .lng-select {
 		display: none;
