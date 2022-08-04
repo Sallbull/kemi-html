@@ -13,17 +13,20 @@
     <meta property="og:image" content="images/og.jpg" />
     <title>kemi</title>
     <link rel="shortcut icon" href="../images/favicon.ico" />
+    
     <link rel="stylesheet" type="text/css" href="../css/reset.css" />
     <link rel="stylesheet" type="text/css" href="../css/font.css" />
     <link rel="stylesheet" type="text/css" href="../css/jquery-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/owl.carousel.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/common_new.css"/>
     <link rel="stylesheet" type="text/css" href="../css/new_integration.css" />
+    <link rel="stylesheet" type="text/css" href="../css/new_home_page.css">
 
     <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="../js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="../js/common.js"></script>
+    
   </head>
   <body>
     <div id="wrap">
@@ -149,8 +152,51 @@
         });
 
         $("body").on("click","#start_travel",function(){
-            $(".travel_first").addClass('on')
+            $(".travel_first").addClass('on');
+            $(".travel").removeClass('on');
         });
+
+        $("body").on("click","#next_lang_level",function(){
+          $(".travel_first").removeClass('on');
+          $(".travel_second").addClass('on');
+        });
+
+        $("body").on("click",".add-button",function(){
+            var html =  
+                "<div class='speak-level'>"+
+                  "<select class='' name='' id=''>"+
+                    "<option selected>Select</option>"+
+                    "<option>One</option>"+
+                    "<option>Two</option>"+
+                    "<option>Three</option>"+
+                  "</select>"+
+                  "<select class='' name='' id=''>"+
+                    "<option selected>Level</option>"+
+                    "<option>One</option>"+
+                    "<option>Two</option>"+
+                    "<option>Three</option>"+
+                  "</select>"+
+                  "<div class='cross'>"+
+                    "<img src='../images/cross_evnets.svg' alt='' srcset=''>"+ 
+                  "</div>"+
+                "</div>";
+                
+
+            $("#after-skill").after(html);
+        });
+
+
+     
+        $("body").on("click",".cross",function(){ 
+          $(this).parent().remove();
+        });
+
+        $("body").on("click","#start_travel_ok",function(){
+           $('.travel_second').removeClass('on');
+           $('.travel_final').addClass('on');
+        })
+
+       
       </script>
       <!-- //Header -->
 
@@ -200,6 +246,7 @@
                 <div class="cross-button">
                     <img src="../images/cross_evnets.svg" alt="" srcset="">
                 </div>
+                
                 <div class="title">I am traveler</div>
                 <div class="sub-title">
                     1month before you leave to Seoul,
@@ -236,11 +283,12 @@
     </div>
 
     <div class="dialog travel_first">
-        <div class="pop-wrap-event language-level">
+        <div class="pop-wrap-event  language-level">
             <div class="body">
                 <div class="cross-button">
                     <img src="../images/cross_evnets.svg" alt="" srcset="">
                 </div>
+                <div>1/2</div>
                 <div class="title">Start as a traveler</div>
                
                 
@@ -249,10 +297,20 @@
                         <div class="input-fields">
                             <div><label for="">When</label></div>
                             <div class="date-from-to">
-                                
+                              <input type = "date" placeholder="Date">-
+                              <input type = "date" placeholder="Date">
+
                             </div>
                         </div>
                       
+                        <div class="input-fields">
+                          <div><label for="">Where are you going (city)?</label></div>
+                          <div class="date-from-to">
+                            <input type = "text" name="city">
+                            
+
+                          </div>
+                      </div>
                       
                       
                     
@@ -260,11 +318,95 @@
               
             </div>
             <div class="footer">
-                <a class="start-travel" href="#">Next</a>
+                <a class="start-travel" id="next_lang_level" href="#">Next</a>
             </div>
             
             
         </div>
+    </div>
+
+    <div class="dialog travel_second">
+      <div class="pop-wrap-event  language-level">
+          <div class="body">
+              <div class="cross-button">
+                  <img src="../images/cross_evnets.svg" alt="" srcset="">
+              </div>
+              <div>2/2</div>
+              <div class="title">I can speak</div>
+
+              
+              <div class="speak-levels-body">
+                <div class="speak-level">
+                  <select class="" name="" id="">
+                    <option selected>Select</option>
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                  </select>
+                  <select class="" name="" id="">
+                    <option selected>Level</option>
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                  </select>
+                </div>  
+
+                <div class="speak-level" id="after-skill">
+                  <select class="" name="" id="">
+                    <option selected>Select</option>
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                  </select>
+                  <select class="" name="" id="">
+                    <option selected>Level</option>
+                    <option>One</option>
+                    <option>Two</option>
+                    <option>Three</option>
+                  </select>
+                  <div class="cross">
+                    <img src="../images/cross_evnets.svg" alt="" srcset="">  
+                  </div>
+                </div> 
+               
+              </div>
+              
+              <div class="add">
+                  <div class="add-button">
+                      <img src="../images/add.svg" alt="" srcset="">
+                      Add
+                  </div>
+              </div>
+                
+        </div>
+        <div class="footer">
+          <a class="start-travel" id="start_travel_ok" href="#">OK</a>
+        </div>
+          
+      </div>
+    </div>
+
+    <div class="dialog travel_final">
+      <div class="pop-wrap-event  language-level">
+          <div class="body">
+              <div class="cross-button">
+                  <img src="../images/cross_evnets.svg" alt="" srcset="">
+              </div>
+              
+              <div class="title">You setting has completed!
+                Do video first to make friend 😁</div>
+
+                <div class="pop-body">
+                  <img src="../images/last_part_setting_home.png" alt="" srcset="">
+                </div>
+             
+             
+        
+        </div> 
+        <div class="footer">
+          <a class="start-travel" id="start_travel" href="#">Go Video Call</a>
+        </div>
+      </div>
     </div>
 
       <!-- Footer -->

@@ -1,0 +1,7 @@
+.ui-selectmenu-button.ui-button {
+    display: none;
+}
+
+select{
+    display: block!important;
+}

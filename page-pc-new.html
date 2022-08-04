@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/font.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/php_css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/common_new.css"/>
     <link rel="stylesheet" type="text/css" href="css/new_integration.css" />
 
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -79,12 +79,17 @@
                 <img class="hg-icon" src="./images/menu.png" alt="" srcset="" />
                 <a href="#"><img src="images/@user.png" alt="" /></a>
                 <div class="profile_box">
-                  <p>JAKE</p>
+                  <div class="btn_box">
+                    <a href="">My RSVP</a>
+                    <a href="">My Kemi</a>
+                  </div>
                   <div class="btn_box">
                     <a href="https://dev.kemi.ai/talk/profile">Profile</a>
-                    <a href="https://dev.kemi.ai/talk/billing">Billing</a>
                     <a href="https://dev.kemi.ai/talk/settings">Settings</a>
-                    <a href="https://dev.kemi.ai/talk/logout">Sign out</a>
+                  </div>
+
+                  <div class="btn_box">
+                    <a href="https://dev.kemi.ai/talk/logout">Logout</a>
                   </div>
                 </div>
               </li>
@@ -150,7 +155,9 @@
           <div class="sitem02-wrap">
             <div class="lt-item">
               <div class="vid-section">
-                <img src="./images/etc-sitem02.png" />
+                <video  class="myVideo" id="myVideo" controls autoplay controls muted>
+                  <source src="./video/video.mp4" type="video/mp4">
+                </video> 
               </div>
 
               <div class="sm2-buttons">
