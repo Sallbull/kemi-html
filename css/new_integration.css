@@ -1550,4 +1550,59 @@ input[type="radio"]:checked ~ label {
     padding-top: 8px;
     padding-bottom: 8px;
   }
+
+  .bg-text-left{
+    display: none;
+  }
+
+  .bg-text-right{
+    display: none;
+  }
+
+  .page-item-wrap-new{
+    height: 100vh;
+    margin-bottom: 0;
+  }
+
+  .page-item-wrap-new .title-one{
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 36px;
+  }
+  .page-item-wrap-new .title-two{
+    font-size: 30px;
+    margin-bottom: 30px;
+    line-height: 36px;
+  }
+
+  .about-me-buttons .abt-me-button {
+    width: 245px;
+    height: 46px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .pop-wrap-event{
+    width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .pop-wrap-event .title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .pop-wrap-event .sub-title{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .pop-wrap-event .pop-body img {
+   
+    width: 152px;
+    height: auto;
+  }
+  .footer .start-travel {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
