@@ -639,7 +639,7 @@ input[type="radio"]:checked ~ label {
 
 .bg-text-left{
   position: absolute;
-  bottom: 28%;
+  bottom: 18%;
   left: 10%;
 }
 
@@ -1096,6 +1096,137 @@ input[type="radio"]:checked ~ label {
 .card .right{
   display: flex;
 }
+
+.page-item{
+  padding-left: 164px;
+}
+
+.images{
+  display: flex;
+  padding-bottom: 30px;
+
+}
+
+.images .left img{
+  height: 553px;
+  padding-right: 8px;
+}
+
+.right-flex{
+  display: flex;
+}
+
+.right-flex img{
+  height: 272px;
+
+  width: 271px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+}
+
+.page-item .title{
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 58px;
+  font-family: 'Urbanist-Medium';
+  padding-bottom: 30px;
+}
+
+.page-item .subtitle{
+  color: #a3a3a3;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Urbanist-Bold';
+  padding-bottom: 12px;
+}
+
+.page-item .info{
+  color: #a3a3a3;
+  font-size: 16px;
+  line-height: 19px;
+  padding-bottom: 10px;
+}
+
+.page-item .subtitle::before{
+  content: "\2022";  
+  color: #ffffff; 
+  /* font-weight: bold;  */
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.page-item .google-link{
+   
+  margin-top: 30px;
+}
+.page-item .google-link a{
+  width: 380px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 31px;
+  border: solid 1px #fff;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Urbanist-Bold';
+  color: #ffffff;
+}
+
+.page-item .google-link a img{
+  width: 26px;
+  height: 26px;
+  padding-right: 5px;
+}
+
+.loc-card{
+  padding-bottom: 40px;
+}
+
+.going-link a{
+  width: 305px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 31px;
+  background-color: #ffcc2a;
+  margin: auto;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Urbanist-Bold';
+  color: #222222;
+}
+
+.going-link{
+  margin-bottom: 20px;
+}
+.group-link a{
+  width: 305px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 31px;
+  border: solid 1px #ffcc2a;
+  font-family: 'Urbanist-Bold';
+  font-size: 18px;
+  line-height: 22px;
+  color:#ffcc2a;
+  margin: auto;
+}
+
+.info-text{
+  margin-top: 80px;
+  margin-bottom: 140px;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Urbanist-Bold';
+  color: #bbfd00;
+  text-align: center;
+}
+
 
 @media screen and (max-width: 1070px){
   #wrap #header .lng-select {
