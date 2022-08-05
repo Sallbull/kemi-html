@@ -1227,6 +1227,55 @@ input[type="radio"]:checked ~ label {
   text-align: center;
 }
 
+.row{
+  display: flex;
+  padding-left: 164px;
+  padding-right: 164px;
+  padding-bottom: 40px;
+  
+}
+
+.all-groups-margin{
+  margin-top: 40px;
+  margin-bottom: 140px;
+}
+.group-card{
+  width: 271px;
+  padding-right: 9px;
+  
+}
+
+.group-card .image img{
+  width: 100%;
+  height: 271px;
+  object-fit: cover;
+}
+
+
+.group-card .title{
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Urbanist-Bold';
+  color: #ffffff;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.group-card .link{
+  text-align: center;
+}
+
+.group-card .link a{
+  color: #ffcc2a;
+  font-family: "Urbanist-Bold";
+  font-size: 16px;
+  line-height: 19px;
+  padding-top: 20px;
+}
+
+.group-card .link a img{
+  padding-left: 10px;
+}
 
 @media screen and (max-width: 1070px){
   #wrap #header .lng-select {
