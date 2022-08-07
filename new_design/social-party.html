@@ -138,13 +138,67 @@
             }
           });
         }
+
+        var owlTouchDir = 0;
+		$(function(){
+			slide();
+		});
+
+		function slide(){
+			$('.owl-carousel').owlCarousel({
+				dots: false,
+				loop: true,
+				autoWidth: true,
+				center: true,
+				nav: true,
+				margin: 40,
+				items: 3,
+				responsive: {
+					// breakpoint from 0 up
+					0: {
+						margin: 5,
+						items: 1,
+					},
+					// breakpoint from 480 up
+					480: {
+						margin: 10,
+						items: 1,
+					},
+					// breakpoint from 768 up
+					768: {
+						margin: 20,
+						items: 3,
+					},
+				},
+			});
+
+			if($('body').hasClass('ios')){
+				$('.owl-carousel').on('touchstart', function(e){
+					owlTouchDir = e.pageX;
+				});
+
+				$('.owl-carousel').on('touchmove', function(e){
+					var touchStartPos = e.pageX;
+
+					if (owlTouchDir + 10 < touchStartPos || owlTouchDir - 10 > touchStartPos){
+						e.preventDefault();
+					} else {
+						return true;
+					}
+				});
+
+				$('.owl-carousel').on('touchend', function(e){
+					return true;
+				});
+			}
+		}
       </script>
       <!-- //Header -->
 
       <div id="after-header">
         <div class="after-header">
             <div class="left">
-                I am traveler (Destination: London / When: Aug 31 ~ Sep 30)
+               <div>I am traveler (Destination: London / When: Aug 31 ~ Sep 30)</div>
             </div>
             <div class="right">
                 <div class="edit">
@@ -197,8 +251,42 @@
             </div>
           
 
+            <!-- mobile carousel -->
+            <div class="mb-social-party-images desktop-hide">
+              <div class="owl-carousel owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                  <ul class="sc_img_list owl-stage">
+                    <li class="owl-item">
+                      <img src="../images/service-one.png" alt="" srcset="">
+                    </li>
+                    <li class="owl-item">
+                      <img src="../images/service-two.png" alt="" srcset="">
+                    </li>
+                    <li class="owl-item">
+                      <img src="../images/social-party-section-image.png" alt="" srcset="">
+                    </li>
+                    <li class="owl-item">
+                      <img src="../images/service-thre.png" alt="" srcset="">
+                    </li>
+                    <li class="owl-item">
+                      <img src="../images/service-thre.png" alt="" srcset="">
+                    </li>
+                    
+                  </ul>
+                </div>
+                <div class="owl-nav disabled">
+                  <button type="button" role="presentation" class="owl-prev">
+                    <span aria-label="Previous">‹</span>
+                  </button>
+                  <button type="button" role="presentation" class="owl-next">
+                    <span aria-label="Next">›</span>
+                  </button>
+                </div>
+              </div>
+            </div>
            
-            <div class="images">
+           
+            <div class="images mb-hide">
                 <div class="left">
                     <img src="../images/service-one.png" alt="" srcset="">
                 </div>
