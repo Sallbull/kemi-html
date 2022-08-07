@@ -1605,4 +1605,26 @@ input[type="radio"]:checked ~ label {
     font-size: 14px;
     line-height: 17px;
   }
+
+  .date-from-to input[type="date"] {
+    width: 134px;
+  }
+
+  .input-fields .date-from-to input[type="text"] {
+    width: 325px;
+    height: 42px;
+  }
+
+  .input-fields div label{
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .speak-level select {
+    width: 135px;
+  }
+
+  .travel_final .pop-wrap-event .body{
+    height: auto;
+  }
 }
