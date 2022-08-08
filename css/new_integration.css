@@ -1240,7 +1240,7 @@ input[type="radio"]:checked ~ label {
   margin-bottom: 140px;
 }
 .group-card{
-  width: 271px;
+  width: 50%;
   padding-right: 9px;
   
 }
@@ -1281,10 +1281,34 @@ input[type="radio"]:checked ~ label {
   display: none;
 }
 
+.hide-desktop{
+  display: none;
+}
+
+.hide-mobile{
+  display: block;
+}
+
+
+
 @media screen and (max-width: 1070px){
   #wrap #header .lng-select {
 		display: none;
 	}
+  #header .gnb.on ~ h1 .hide-desktop{
+    display: block;
+  }
+  .hide-mobile{
+    display: none;
+  }
+
+  .mobile_list li{
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+
+
 }
 
 @media only screen and (max-width: 850px) {
@@ -1534,6 +1558,7 @@ input[type="radio"]:checked ~ label {
     padding-bottom: 20px;
     background: #222222;
     background-size: 100% auto;
+    /* padding-top: 1px; */
   }
 
   .sections .title {
@@ -1693,7 +1718,7 @@ input[type="radio"]:checked ~ label {
   }
 
   .page-item-wrap-new{
-    margin-top: 0px;
+    /* margin-top: 0px; */
   }
 
   .info ul li{
@@ -1811,6 +1836,61 @@ input[type="radio"]:checked ~ label {
     font-size: 14px;
     line-height: 17px;
   }
+
+  .pt-12{
+    margin-top: 0px!important;
+  }
+
+  .owl-carousel.owl-loaded {
+    /* display: block; */
+    height: 300px;
+  }
+
+  #header .gnb ul.mobile_list.type01 li a{
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  #header .gnb ul.mobile_list.type01 li{
+    padding-bottom: 20px;
+  }
+
+  #header .gnb ul.mobile_list {
+    padding-bottom: 20px;
+  }
+
+  .set-up-card{
+    width: auto;
+  }
+
+  .card-header{
+    height: 60px;
+  }
+
+  .card-footer{
+    height: 60px;
+  }
+
+  .card-body .txt {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .loc-card {
+    padding-bottom: 20px;
+    padding-right: 10px;
+  }
+
+  #after-header {
+    padding-top: 55px;
+  }
+}
+
+
+@media screen and (max-width: 392px) {
+    .group-card{
+      width: 44%;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -1820,5 +1900,17 @@ input[type="radio"]:checked ~ label {
     padding-right: 8px;
 
 
+  }
+
+  
+}
+
+@media screen and (max-width: 323px) {
+  .group-card{
+    width: 44%;
+  }
+
+  .pr-4{
+    /* margin-top: 30px!important; */
   }
 }
