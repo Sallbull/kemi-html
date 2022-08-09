@@ -1969,7 +1969,7 @@ input[type="radio"]:checked ~ label {
   }
 
   .input-fields .date-from-to input[type="text"] {
-    width: auto;
+    width: 320px;
     height: 42px;
   }
 
@@ -1978,6 +1978,12 @@ input[type="radio"]:checked ~ label {
     font-size: 12px;
     width: auto;
     height: 40px;
+  }
+
+  .speak-level select {
+    width: 120px;
+    height: 50px;
+    font-size: 13px;
   }
   
   
@@ -1991,6 +1997,11 @@ input[type="radio"]:checked ~ label {
 }
 
 @media screen and (max-width: 323px) {
+
+  .input-fields .date-from-to input[type="text"] {
+    width: auto;
+    height: 42px;
+  }
   .group-card{
     width: 44%;
   }
@@ -1998,7 +2009,7 @@ input[type="radio"]:checked ~ label {
   
 
   .speak-level select {
-    width: 118px;
+    width: 110px;
     height: 45px;
     font-size: 12px;
   }
