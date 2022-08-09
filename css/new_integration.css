@@ -1940,7 +1940,7 @@ input[type="radio"]:checked ~ label {
 
 .mob-hr{
   color: #ededed;
-  margin-top: 0;
+  margin-top: 10;
   margin-bottom: 0;
 }
 
