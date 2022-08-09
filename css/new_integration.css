@@ -1851,11 +1851,14 @@ input[type="radio"]:checked ~ label {
   }
 
   #header .gnb ul.mobile_list.type01 li{
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
 
   #header .gnb ul.mobile_list {
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .set-up-card{
@@ -1914,6 +1917,31 @@ input[type="radio"]:checked ~ label {
 .page-item {
   padding-left: 10px;
   padding-right: 0;
+}
+
+#header .gnb .inner {
+  
+  padding: 0px 0px 0px;
+ 
+}
+
+.mobile_list .header{
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Urbanist-Bold';
+  /* padding-left: 10px; */
+  padding-top: 10px;
+}
+
+#header .gnb ul.mobile_list.type01 li a {
+  
+  padding-left: 0;
+}
+
+.mob-hr{
+  color: #ededed;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 }
