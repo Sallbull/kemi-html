@@ -1983,14 +1983,19 @@ input[type="radio"]:checked ~ label {
   
 }
 
+
+@media screen and (max-width: 365px) {
+  .date-from-to input[type="date"] {
+    width: 118px;
+  }
+}
+
 @media screen and (max-width: 323px) {
   .group-card{
     width: 44%;
   }
 
-  .date-from-to input[type="date"] {
-    width: 118px;
-  }
+  
 
   .speak-level select {
     width: 118px;
