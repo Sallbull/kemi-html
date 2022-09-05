@@ -1,3 +1,9 @@
+.chemistry-texture{
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+}
+
 #wrap #header .lng-select {
   color: #c6c6c6;
   position: absolute;
@@ -167,8 +173,8 @@
 }
 
 .sitem05-wrap {
-  padding-left: 164px;
-  padding-right: 164px;
+  padding-left: 155px;
+  padding-right: 155px;
   display: flex;
   align-items: center;
   margin-bottom: 150px;
@@ -274,6 +280,8 @@
   left: -9%;
 }
 
+/* Change from here */
+
 .sitem07-image-section img {
   transform: rotate(35deg);
   position: absolute;
@@ -281,17 +289,17 @@
   left: -12%;
 }
 .sitem-title {
-  font-size: 24px;
+  font-size: 38px;
   font-family: "Urbanist-Bold";
-  line-height: 29px;
+  line-height: 46px;
   color: #ffff;
   padding-bottom: 10px;
 }
 
 .sitem-subtitle {
-  font-family: "Urbanist-Medium";
-  font-size: 18px;
-  line-height: 22px;
+  font-family: "Urbanist-SemiBold";
+  font-size: 30px;
+  line-height: 36px;
   color: #ffff;
   padding-bottom: 10px;
 }
@@ -300,7 +308,13 @@
   color: #a3a3a3;
   padding-top: 2px;
   padding-bottom: 2px;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Urbanist-Medium';
 }
+
+/* stop here */
+
 
 .sitem-button {
   margin-top: 40px;
@@ -1395,6 +1409,32 @@ input[type="radio"]:checked ~ label {
 }
 
 @media only screen and (max-width: 480px) {
+  .page-item-wrap .sitem04-wrap .cont .msg:before {    
+    right: 14%;
+    top: 28%;
+  }
+
+  .sitem-title {
+    font-size: 30px;
+    
+    text-align: center;
+}
+
+.sitem-subtitle {
+ 
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.sitem-body ul li {
+  color: #a3a3a3;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Urbanist-Medium';
+}
+
   .sitem03-wrap .title {
     padding-left: 15px;
     padding-right: 15px;
@@ -1888,7 +1928,7 @@ input[type="radio"]:checked ~ label {
   }
 
   #container {
-    padding: 50px 0 50px;
+    padding: 50px 0 0px;
     height: auto;
 }
 

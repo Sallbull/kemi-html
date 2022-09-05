@@ -99,3 +99,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "AmaticSc-Bold";
+  src: url(fonts/AmaticSC-Bold.ttf) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
