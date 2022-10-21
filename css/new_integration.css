@@ -1,3 +1,57 @@
+/* if social party not available */
+.list-meetups{
+  display: flex;
+}
+
+.list-meetups .meetup-card{
+  height: auto;
+  width: 271px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.list-meetups .meetup-card .meetup-image img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.meetup-text{
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Urbanist-Bold';
+  color: #fff;
+  padding-top: 10px;
+}
+
+
+.after-meetup-card{
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #bbfd00;
+  width: 500px;
+  margin: auto;
+  font-family: 'Urbanist-Bold';
+  margin-top: 62px;
+  margin-bottom: 62px;
+}
+
+.vote-link a{
+  width: 467px;
+  margin: auto;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 31px;
+  background-color: #ffcc2a;
+  margin: auto;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Urbanist-Bold';
+  color: #222222;
+}
+
 /* new css october social party updated design */
 
 .after-gallery{
@@ -1466,6 +1520,41 @@ input[type="radio"]:checked ~ label {
 
 @media only screen and (max-width: 480px) {
 
+
+  /* if meetups not available */
+  .list-meetups {
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+  
+  }
+
+
+  .list-meetups .meetup-card {
+    height: auto;
+    width: 160px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+  }
+
+  .after-meetup-card {
+   width: auto;
+   font-size: 18px;
+   line-height: 22px;
+  }
+
+  .vote-link a {
+    width: 274px;
+    font-size: 18px;
+   line-height: 22px;
+   text-align: center;
+   padding-left: 10px;
+   padding-right: 10px;
+  }
+
+  /*  */
 
   /* social party new design */
 
