@@ -1,3 +1,148 @@
+/* social party new changes */
+.social-party-flex{
+  display: flex;
+  padding-right: 164px;
+}
+
+
+.page-item.social-party-flex .left-so{
+  width: 60%;
+  margin-right: 20px;
+}
+
+.page-item.social-party-flex .right-so{
+  width: 40%;
+  margin-left: 20px;
+}
+
+.right-so .good-bad-kemi-card{
+  background-color: #2b2b2b;
+  border: 1 px solid #535353;
+  margin-left: 60px;
+  border-radius: 8px;
+  padding-top: 40px;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 40px;
+  margin-top: 80px;
+}
+
+
+.right-so .good-bad-kemi-card .title{
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Urbanist-Medium';
+  color: #a3a3a3;
+  padding-bottom: 10px;
+}
+
+
+.right-so .good-bad-kemi-card .date{
+  font-family: 'Urbanist-Bold';
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+
+.right-so .good-bad-kemi-card .body{
+  padding-top: 20px;
+}
+.right-so .good-bad-kemi-card .body .sec{
+  border-bottom: 1px solid #535353;
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+
+.right-so .good-bad-kemi-card .body .sec .img{
+  margin-right: 20px;
+  display: flex;
+}
+
+.right-so .good-bad-kemi-card .body .sec .img img{
+
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 0.5px solid #dadada;
+}
+
+.right-so .good-bad-kemi-card .body .sec .title{
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Urbanist-Bold';
+  color: #ffffff;
+}
+
+.right-so .good-bad-kemi-card .body .sec .title span a{
+  font-size: 12px;
+  line-height: 14px;
+  font-family: 'Urbanist-Medium';
+  color: #23ffe9;
+  margin-left: 20px;
+}
+
+.bad-kemi{
+  padding-top: 0!important;
+  width: 330px !important;
+}
+
+.bad-kemi .header{
+  border-bottom: 1px solid #ededed;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Urbanist-Bold';
+  color: #222222;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.bad-kemi .body-bad-kemi{
+  padding-left: 20px;
+  border-bottom: 1px solid #ededed;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+}
+
+.bad-kemi .footer a{
+  width: 190px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 31px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: 'Urbanist-Bold';
+  color: #222222;
+  background-color:#ffcc2a;
+}
+
+.bad-kemi .body-bad-kemi .persons{
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.bad-kemi .body-bad-kemi .persons img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.bad-kemi .body-bad-kemi .persons .name{
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Urbanist-SemiBold';
+  color: #222222;
+  padding-left: 10px;
+}
+
 /* if social party not available */
 .list-meetups{
   display: flex;
@@ -57,22 +202,22 @@
 .after-gallery{
   width: 650px;
   margin: auto;
-  background-color: #2b2b2b;
-  margin-top: 70px;
-  margin-bottom: 80px;
-  border: 1px solid #bbfd00;
+  /* background-color: #2b2b2b; */
+  margin-top: 10px;
+  margin-bottom: 20px;
+  /* border: 1px solid #bbfd00; */
 }
 
 .after-gallery .text{
-  padding-left: 100px;
-  padding-right: 100px;
+  /* padding-left: 100px; */
+  /* padding-right: 100px; */
   padding-top: 40px;
   padding-bottom: 40px;
   font-family: "Urbanist-Bold";
   font-size: 24px;
   line-height: 29px;
   color:#bbfd00;
-  text-align: center;
+  text-align: left;
 }
 
 /*  */
@@ -1202,7 +1347,7 @@ input[type="radio"]:checked ~ label {
 }
 
 .images .left img{
-  height: 553px;
+  height: 353px;
   padding-right: 8px;
 }
 
@@ -1211,9 +1356,9 @@ input[type="radio"]:checked ~ label {
 }
 
 .right-flex img{
-  height: 272px;
+  height: 174px;
 
-  width: 271px;
+  width: 173px;
   padding-right: 8px;
   padding-bottom: 8px;
 }
@@ -1285,16 +1430,30 @@ input[type="radio"]:checked ~ label {
   align-items: center;
   justify-content: center;
   border-radius: 31px;
-  background-color: #ffcc2a;
+  
   margin: auto;
   font-size: 18px;
   line-height: 22px;
   font-family: 'Urbanist-Bold';
   color: #222222;
+  margin-bottom: 20px;
+}
+
+.going-link a.orrange{
+  background-color: #ffcc2a;
+  color: #222222;
+}
+
+.going-link a.white{
+  border: 1px solid #ffffff;
+  color: #ffffff;
 }
 
 .going-link{
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-top: 40px;
+    
 }
 .group-link a{
   width: 305px;

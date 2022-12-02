@@ -134,6 +134,14 @@
           languageToggle(); //모바일 언어 선택 토글
         });
 
+
+        $("body").on("click",".see_more",function(){
+          $(".good_bad_kemi").toggleClass("on");
+        })
+
+        $("body").on("click", ".close_bad" , function(){
+          $(".good_bad_kemi").removeClass("on");
+        })
         //모바일 언어 선택 토글
         function languageToggle() {
           $(".language-wrap").on("click", function () {
@@ -229,110 +237,187 @@
       </div> -->
       <!-- Container -->
       <div id="container" class="sub80">
-        <section class="page-item">
-            <div class="title">
+        <section class="page-item social-party-flex">
+
+            <div class="left-so">
+              <div class="title">
                 London Social Party
-            </div>
+              </div>
             
           
 
-            <!-- mobile carousel -->
-            <div class="mb-social-party-images desktop-hide">
-              <div class="owl-carousel owl-loaded owl-drag">
-                <div class="owl-stage-outer">
-                  <ul class="sc_img_list owl-stage">
-                    <li class="owl-item">
-                      <img src="../images/service-one.png" alt="" srcset="">
-                    </li>
-                    <li class="owl-item">
-                      <img src="../images/service-two.png" alt="" srcset="">
-                    </li>
-                    <li class="owl-item">
-                      <img src="../images/social-party-section-image.png" alt="" srcset="">
-                    </li>
-                    <li class="owl-item">
-                      <img src="../images/service-thre.png" alt="" srcset="">
-                    </li>
-                    <li class="owl-item">
-                      <img src="../images/service-thre.png" alt="" srcset="">
-                    </li>
-                    
-                  </ul>
-                </div>
-                <div class="owl-nav disabled">
-                  <button type="button" role="presentation" class="owl-prev">
-                    <span aria-label="Previous">‹</span>
-                  </button>
-                  <button type="button" role="presentation" class="owl-next">
-                    <span aria-label="Next">›</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-           
-           
-            <div class="images mb-hide">
-                <div class="left">
-                    <img src="../images/service-one.png" alt="" srcset="">
-                </div>
-                <div class="right">
-                    <div class="right-flex">
+              <!-- mobile carousel -->
+              <div class="mb-social-party-images desktop-hide">
+                <div class="owl-carousel owl-loaded owl-drag">
+                  <div class="owl-stage-outer">
+                    <ul class="sc_img_list owl-stage">
+                      <li class="owl-item">
+                        <img src="../images/service-one.png" alt="" srcset="">
+                      </li>
+                      <li class="owl-item">
                         <img src="../images/service-two.png" alt="" srcset="">
+                      </li>
+                      <li class="owl-item">
                         <img src="../images/social-party-section-image.png" alt="" srcset="">
-                    </div>
-                    <div class="right-flex">
+                      </li>
+                      <li class="owl-item">
                         <img src="../images/service-thre.png" alt="" srcset="">
+                      </li>
+                      <li class="owl-item">
                         <img src="../images/service-thre.png" alt="" srcset="">
-
-                    </div>
+                      </li>
+                      
+                    </ul>
+                  </div>
+                  <div class="owl-nav disabled">
+                    <button type="button" role="presentation" class="owl-prev">
+                      <span aria-label="Previous">‹</span>
+                    </button>
+                    <button type="button" role="presentation" class="owl-next">
+                      <span aria-label="Next">›</span>
+                    </button>
+                  </div>
                 </div>
-            </div>
+              </div>
+           
+           
+              <div class="images mb-hide">
+                  <div class="left">
+                      <img src="../images/service-one.png" alt="" srcset="">
+                  </div>
+                  <div class="right">
+                      <div class="right-flex">
+                          <img src="../images/service-two.png" alt="" srcset="">
+                          <img src="../images/social-party-section-image.png" alt="" srcset="">
+                      </div>
+                      <div class="right-flex">
+                          <img src="../images/service-thre.png" alt="" srcset="">
+                          <img src="../images/service-thre.png" alt="" srcset="">
 
-            <div class="after-gallery">
-                <div class="text">
-                    Every Week, All members meet in person 
-                    Meet video call friend here too
-                </div>
-            </div>
+                      </div>
+                  </div>
+              </div>
 
-            <div class="loc-card">
-              <div class="subtitle">
-                  Location
-             </div>
-             <div class="info">
-                  Bar name : Fitzgeralds Irish Pub
-             </div>
-             <div class="info">
-                  Address: 12 1 Sukhumvit 4 Alley, Khlong Toei, Bankkok 10110, Thailand
-             </div>
-             <div class="google-link">
-                  <a href="#"><img src="../images/google_icon_link.png" alt="" srcset="">Google Map link</a>
-             </div>
-          </div>
-          <div class="loc-card">
-              <div class="subtitle">
-                When
+              <div class="after-gallery">
+                  <div class="text">
+                    All member are in London come this party and see each other in person
+                    You can meet someone you met on the video call naturally
+                  </div>
+              </div>
+
+              <div class="loc-card">
+                <div class="subtitle">
+                    Location
               </div>
               <div class="info">
-                Every Saturday 7:00 to 10:00pm
+                    Bar name : Fitzgeralds Irish Pub
               </div>
               <div class="info">
-                July 23th for this week
+                    Address: 12 1 Sukhumvit 4 Alley, Khlong Toei, Bankkok 10110, Thailand
               </div>
-  
-          </div>
-            <div class="going-link">
-                <a href="#">Talk more? Group Chat!</a>
+              <div class="google-link">
+                    <a href="#"><img src="../images/google_icon_link.png" alt="" srcset="">Google Map link</a>
+              </div>
+              </div>
+             
+              
+            
             </div>
-            <!-- <div class="group-link">
-                <a href="#">Group chat link</a>
+            <div class="right-so">
+                <div class="good-bad-kemi-card">
+                    <div class="title">
+                      Every Saturday
+                    </div>
+                    <div class="date">
+                      26/11/2022(sat) for this week
+                    </div>
+                    <div class="body">
+                       <div class="sec">
+                          <div class="img">
+                              <img src="../images/@user2.png" alt="" srcset="">
+                              <img src="../images/@user2.png" alt="" srcset="">
+                              <img src="../images/@user2.png" alt="" srcset="">
+
+                          </div>
+                          <div class="title gd-bd-kemi">
+                            12 Good Kemi
+                          </div>
+                       </div>
+                       <div class="sec">
+                        <div class="img">
+                          <img src="../images/@user2.png" alt="" srcset="">
+                          <img src="../images/@user2.png" alt="" srcset="">
+                          <img src="../images/@user2.png" alt="" srcset="">
+
+                        </div>
+                        <div class="title gd-bd-kemi">
+                          2 Bad Kemi <span><a class="see_more" href="javascript:void(0)"  rel="noopener noreferrer">see more</a></span>
+                        </div>
+                       </div>
+                       <div class="sec">
+                        <div class="img">
+                          <img src="../images/@user2.png" alt="" srcset="">
+                          <img src="../images/@user2.png" alt="" srcset="">
+                          <img src="../images/@user2.png" alt="" srcset="">
+
+                        </div>
+                        <div class="title gd-bd-kemi">
+                          45 Others
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="going-link">
+                  <a class="orrange" href="#">Talk more? Group Chat!</a>
+                  <a class="white" href="#">I am going this week 62going</a>
+
+                </div>
+
+               
             </div>
             
-            <div class="info-text">
-                If you click, we will let your friend know you come
-            </div> -->
            
         </section>
+      </div>
+
+      <div class="dialog good_bad_kemi">
+        <div class="pop-wrap-event  bad-kemi">
+            <div class="header">
+              Bad Kemi
+            </div>    
+            <div class="body-bad-kemi">
+                <div class="persons">
+                    <img src="../images/@user3.png" alt="" srcset="">
+                    <div class="name">
+                      lisalover
+                    </div>
+                </div>
+
+                <div class="persons">
+                  <img src="../images/@user3.png" alt="" srcset="">
+                  <div class="name">
+                    lisalover
+                  </div>
+                </div>
+
+                <div class="persons">
+                  <img src="../images/@user3.png" alt="" srcset="">
+                  <div class="name">
+                    lisalover
+                  </div>
+                </div>
+                <div class="persons">
+                  <img src="../images/@user3.png" alt="" srcset="">
+                  <div class="name">
+                    lisalover
+                  </div>
+                </div>
+
+            </div>
+            <div class="footer">
+                <a class="close_bad" href="javascript:void(0)">OK</a>
+            </div>
+        </div>
       </div>
 
       <!-- //Container -->
