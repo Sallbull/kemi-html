@@ -15,7 +15,7 @@
   margin-left: 20px;
 }
 
-.right-so .good-bad-kemi-card{
+.good-bad-kemi-card{
   background-color: #2b2b2b;
   border: 1 px solid #535353;
   margin-left: 60px;
@@ -28,16 +28,16 @@
 }
 
 
-.right-so .good-bad-kemi-card .title{
-  font-size: 14px;
-  line-height: 17px;
-  font-family: 'Urbanist-Medium';
-  color: #a3a3a3;
-  padding-bottom: 10px;
+.good-bad-kemi-card .title{
+  font-size: 14px!important;
+  line-height: 17px!important;
+  font-family: 'Urbanist-Medium'!important;
+  color: #a3a3a3!important;
+  padding-bottom: 10px!important;
 }
 
 
-.right-so .good-bad-kemi-card .date{
+.good-bad-kemi-card .date{
   font-family: 'Urbanist-Bold';
   font-size: 20px;
   line-height: 24px;
@@ -45,10 +45,10 @@
 }
 
 
-.right-so .good-bad-kemi-card .body{
+.good-bad-kemi-card .body{
   padding-top: 20px;
 }
-.right-so .good-bad-kemi-card .body .sec{
+.good-bad-kemi-card .body .sec{
   border-bottom: 1px solid #535353;
   display: flex;
   padding-top: 20px;
@@ -56,12 +56,12 @@
   
 }
 
-.right-so .good-bad-kemi-card .body .sec .img{
+.good-bad-kemi-card .body .sec .img{
   margin-right: 20px;
   display: flex;
 }
 
-.right-so .good-bad-kemi-card .body .sec .img img{
+.good-bad-kemi-card .body .sec .img img{
 
   width: 22px;
   height: 22px;
@@ -69,14 +69,14 @@
   border: 0.5px solid #dadada;
 }
 
-.right-so .good-bad-kemi-card .body .sec .title{
+.good-bad-kemi-card .body .sec .title{
   font-size: 18px;
   line-height: 22px;
   font-family: 'Urbanist-Bold';
   color: #ffffff;
 }
 
-.right-so .good-bad-kemi-card .body .sec .title span a{
+.good-bad-kemi-card .body .sec .title span a{
   font-size: 12px;
   line-height: 14px;
   font-family: 'Urbanist-Medium';
@@ -142,6 +142,40 @@
   color: #222222;
   padding-left: 10px;
 }
+
+
+.going-link.mobile{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  width: 100%;
+  display: none;
+  z-index: 9;
+}
+
+.going-link.mobile a.orrange{
+  width: 50%;
+  height: 64px;
+  background-color: #ffcc2a;
+}
+
+.going-link.mobile a.white{
+  width: 50%;
+  height: 64px;
+  background-color: #535353;
+}
+
+.going-link.mobile a{
+  width: auto;
+  margin-bottom: 0;
+  border-radius: 0;
+  font-size: 12px;
+  line-height: 14px;
+}
+
 
 /* if social party not available */
 .list-meetups{
@@ -1565,6 +1599,31 @@ input[type="radio"]:checked ~ label {
 }
 
 @media only screen and (max-width: 850px) {
+
+  /* social party new change */
+  .going-link.mobile{
+    display: flex;
+  }
+
+  /* social party new changes */
+  .social-party-flex {
+    flex-direction: column;  
+  }
+
+  .page-item.social-party-flex .left-so {
+   width: 100%;
+  }
+
+  .page-item.social-party-flex .right-so{
+    width: 100%;
+  }
+
+  .good-bad-kemi-card{
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
   /* socail party new design  */
   .mb-hide{
     display: none;
@@ -1718,8 +1777,9 @@ input[type="radio"]:checked ~ label {
   /* social party new design */
 
   .after-gallery .text {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
     font-size: 18px;
   }
 
