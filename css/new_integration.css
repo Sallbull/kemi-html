@@ -1,3 +1,86 @@
+/* last week party new page */
+
+.last-week{
+  padding-left: 280px!important;
+  padding-right: 280px;
+}
+
+.last-week .title{
+  font-size: 48px;
+  line-height: 58px;
+  font-family: 'Urbanist-Medium';
+  color: #ffffff;
+  text-align: center;
+}
+
+.last-week .body .title{
+  font-size: 22px;
+  line-height: 27px;
+  font-family: 'Urbanist-Bold';
+  text-align: left;
+}
+
+.last-week-sec{
+  border-top: 1px solid #535353;
+  border-bottom: 1px solid #535353;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.last-week-sec .left .profile-name{
+  display: flex;
+  align-items: center;
+}
+
+.last-week-sec .left .profile-name .name{
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Urbanist-Bold';
+  color: #ffffff;
+  padding-left: 10px;
+}
+
+.last-week-sec .left .profile-name img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #dadada;
+}
+
+.buttons button{
+  width: 96px;
+  height: 51px;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Urbanist-Bold';
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.buttons .good{
+  color: #00ffe9;
+  border: 1px solid #00ddc7;
+}
+
+.buttons .soso{
+  color: #d79aff;
+  border: 1px solid #c38cec
+}
+
+.buttons .bad{
+  color: #fce25e;
+  border: 1px solid #e5c44d;
+}
+
+.buttons .havnt{
+  color: #ff0665;
+  border: 1px solid #fe0f6a;
+}
+
 /* social party new changes */
 .social-party-flex{
   display: flex;
@@ -1599,6 +1682,23 @@ input[type="radio"]:checked ~ label {
 }
 
 @media only screen and (max-width: 850px) {
+
+  /* last week party  */
+
+  .last-week{
+    padding-left: 10px!important;
+    padding-right: 10px;
+  }
+
+  .buttons button{
+    width: 80px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .last-week-sec .right{
+    margin-left: 40px;
+  }
 
   /* social party new change */
   .going-link.mobile{
