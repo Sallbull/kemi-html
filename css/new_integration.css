@@ -162,6 +162,46 @@
   
 }
 
+.title-pr-user-popup{
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Urbanist-Bold';
+  text-align: center;
+  white-space: pre-line;
+  color: #222222;
+}
+
+.pr-subtitle{
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Urbanist-Medium';
+  color: #222222;
+  padding-top: 10px;
+  text-align: center;
+
+}
+
+.pr-subtitle span{
+  font-size: 40px;
+  line-height: 48px;
+  color: #222222;
+  font-family: 'Urbanist-Bold';
+
+}
+
+.images-popup-premium{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.images-popup-premium img{
+  width: auto;
+  height: 52px;
+}
+
 
 /* last week party new page */
 
@@ -1848,6 +1888,54 @@ input[type="radio"]:checked ~ label {
 
 @media only screen and (max-width: 850px) {
 
+
+  /* premium user responsive */
+  .premium-user{
+    padding-left: 0!important;
+    padding-right: 0!important;
+
+  }
+
+  .premium-user-cards .row-card{
+    flex-wrap: wrap;
+  }
+
+  .premium-user-cards .row-card .user-card{
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+
+  .user-card .batch{
+    top: 24px;
+    left: -65px;
+  }
+
+  .match-starts-card{
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+  }
+
+  .match-starts-card .right{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .match-starts-card .right .text{
+    padding-bottom: 10px;
+  }
+
+  .premium-user-cards{
+    margin-top: 0;
+  }
+
+
   /* last week party  */
 
   .last-week{
@@ -2003,6 +2091,11 @@ input[type="radio"]:checked ~ label {
 
 @media only screen and (max-width: 480px) {
 
+  /* premium user mobile responsive */
+  .premium-user-cards .row-card .user-card{
+    width: 42%;
+   
+  }
 
   /* if meetups not available */
   .list-meetups {
@@ -2633,6 +2726,14 @@ input[type="radio"]:checked ~ label {
 }
 
 @media screen and (max-width: 380px) {
+
+  /* premium user */
+  .premium-user-cards .row-card .user-card{
+    width: 41%;
+   
+  }
+
+  /*  */
   .group-card{
    
     padding-left: 8px;
@@ -2671,6 +2772,13 @@ input[type="radio"]:checked ~ label {
 
 @media screen and (max-width: 323px) {
 
+  /* premium user */
+  .premium-user-cards .row-card .user-card {
+    width: 40%;
+  }
+
+  /*  */
+  
   .input-fields .date-from-to input[type="text"] {
     width: auto;
     height: 42px;

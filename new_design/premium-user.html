@@ -135,9 +135,9 @@
         });
 
 
-        // $("body").on("click","#start",function(){
-        //   $(".premium_user_popup").toggleClass("on");
-        // })
+        $("body").on("click","#start",function(){
+          $(".premium_user_popup").toggleClass("on");
+        })
 
         $("body").on("click", ".cross-button" , function(){
           $(".premium_user_popup").removeClass("on");
@@ -229,19 +229,30 @@
       
       <div class="dialog premium_user_popup">
         <div class="pop-wrap-event  language-level">
-            <div class="body">
+            <div class="">
                 <div class="cross-button">
                     <img src="../images/cross_evnets.svg" alt="" srcset="">
                 </div>
-                <div>1/2</div>
-                <div class="title">Start as a traveler</div>
+              
+                <div class="title-pr-user-popup">This is premium service, 
+                  Do you want to subscribe?</div>
                
-                
-               
+                <div class="pr-subtitle">
+                  Only
+                </div>
+               <div class="pr-subtitle">
+                <span>5USD</span>/ month
+               </div>
+               <div class="images-popup-premium">
+                  <img src="/images/coffeemug.png" alt="" srcset="">
+               </div>
+               <div class="pr-subtitle">
+                It is like 1 cup of Starbucks
+              </div>
               
             </div>
             <div class="footer">
-                <a class="start-travel" id="next_lang_level" href="#">Next</a>
+                <a class="start-travel" id="next_lang_level" href="#">Sure!</a>
             </div>
             
             
