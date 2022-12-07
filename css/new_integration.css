@@ -2777,8 +2777,33 @@ input[type="radio"]:checked ~ label {
     width: 40%;
   }
 
-  /*  */
+  .match-starts-card{
+    padding-top: 2px;
+    padding-bottom: 0;
+  }
+
+  .match-starts-card .left{
+    font-size: 12px;
+  }
+
+  .match-starts-card .right{
+    padding-top: 0px;
+    padding-bottom: 5px;
+  }
+
+  .match-starts-card .right .text{
+    font-size: 12px;
+  }
+
+  .match-starts-card .right .button{
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
   
+
+
+  /*  */
+
   .input-fields .date-from-to input[type="text"] {
     width: auto;
     height: 42px;
