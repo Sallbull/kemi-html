@@ -155,10 +155,19 @@
         $("body").on("click","#travel",function(){
             console.log('testing..');
             $(".travel").addClass('on');
+            $(".start-role-button").css('display','flex');
         });
+
+        $("body").on("click","#local",function(){
+            console.log('testing..');
+            $(".local-expats").addClass('on');
+        });
+
+        
 
         $("body").on("click",'.cross-button',function(){
             $(".dialog").removeClass('on');
+            $(".start-role-button").css('display','none');
         });
 
         $("body").on("click","#start_travel",function(){
@@ -204,6 +213,7 @@
      
         $("body").on("click",".cross",function(){ 
           $(this).parent().remove();
+          
         });
 
         $("body").on("click","#start_travel_ok",function(){
@@ -238,7 +248,7 @@
                     <a class="abt-me-button" id="travel" href="#">Traveler</a>
                 </div>
                 <div>
-                    <a class="abt-me-button" href="#">Locals</a>
+                    <a class="abt-me-button" id="local" href="#">Locals</a>
 
                 </div>
                 <div>
@@ -255,8 +265,51 @@
       </div>
 
     <!-- popup -->
+
+    <div class="dialog local-expats">
+      <div class="pop-wrap-event language-level">
+          <div class="body">
+              <div class="cross-button">
+                  <img src="../images/cross_evnets.svg" alt="" srcset="">
+              </div>
+              
+              <div class="title">I am local</div>
+              <div class="sub-title">
+                  1month before you leave to Seoul,
+                  you can meet locals in advance
+              </div>
+                  
+              
+              <div class="pop-body">
+                  <img src="../images/pop_travel_image.png" alt="" srcset="">
+              </div>
+              <div class="sub-title">
+                  Also,  You can meet other travelers like you
+                  who come to London same period with you.
+              </div>
+              <div class="pop-body">
+                  <img src="../images/pop_travel_image_two.png" alt="" srcset="">
+              </div>
+              <div class="sub-title">
+                  1month before you leave to Seoul,
+                  you can meet locals in advance
+              </div>
+                  
+              
+              <div class="pop-body">
+                  <img src="../images/pop_travel_image.png" alt="" srcset="">
+              </div>
+          </div>
+          <div class="footer">
+              <a class="start-travel" id="start_travel" href="#">Start as a traveler</a>
+          </div>
+          
+          
+      </div>
+  </div>
+
     <div class="dialog travel">
-        <div class="pop-wrap-event language-level">
+        <div class="pop-wrap-event  language-level">
             <div class="body">
                 <div class="cross-button">
                     <img src="../images/cross_evnets.svg" alt="" srcset="">
@@ -264,37 +317,108 @@
                 
                 <div class="title">I am traveler</div>
                 <div class="sub-title">
-                    1month before you leave to Seoul,
-                    you can meet locals in advance
+                  Set your travel information
+                </div>
+                <div class="sub-subtitle">
+                  e.g. Seoul, Aug 22 - Dec 22
                 </div>
                     
                 
                 <div class="pop-body">
-                    <img src="../images/pop_travel_image.png" alt="" srcset="">
+                    <div class="when-where">
+                        <div class="where">
+                        Where
+                        </div>
+                        <div class="when">
+                        When
+                        </div>
+                    </div>
+                    <img src="../images/travel_when_where_popup.png" alt="" srcset="">
                 </div>
-                <div class="sub-title">
-                    Also,  You can meet other travelers like you
-                    who come to London same period with you.
-                </div>
-                <div class="pop-body">
-                    <img src="../images/pop_travel_image_two.png" alt="" srcset="">
-                </div>
-                <div class="sub-title">
-                    1month before you leave to Seoul,
-                    you can meet locals in advance
-                </div>
+                
                     
                 
                 <div class="pop-body">
-                    <img src="../images/pop_travel_image.png" alt="" srcset="">
+                    <div class="after-when-where">
+                        <div class="left">
+                            <img src="../images/after-when-where.png" alt="" srcset="">
+                        </div>
+                        <div class="right">
+                            <div class="title">
+                              Video call first!
+                            </div>
+                            <div class="subtitle">
+                              Make friends with Locals and
+                              other travelers before going to Seoul
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="click-good-kemi">
+                        <div class="title">
+                          Click ‘Good kemi’
+                          
+                        </div>
+                        <div class="subtitle">
+                          if you find someone has good chemistry with
+                        </div>
+                        <div class="image">
+                           <img src="../images/good-kemi-image-popup.png" alt="" srcset="">
+                        </div>
+                    </div>
+
+                    <div class="create-network">
+                      <div class="left">
+                        <div class="title">
+                          Create
+                          your own network
+                          in seoul before arriving
+                        </div>
+                      </div>
+                        <div class="right">
+                        <img src="../images/create-network.png" alt="" srcset="">
+                      </div>
+                    </div>
+
+                    <div class="arrival-pop">
+                       <img src="../images/arrival-pop.png" alt="" srcset="">
+                      
+                       <div class="text">
+                        Finally, you arrive in Seoul
+                       </div>
+                    </div>
+
+
+                    <div class="after-when-where">
+                      <div class="left">
+                          <img src="../images/social-party-going.png" alt="" srcset="">
+                      </div>
+                      <div class="right">
+                          <div class="title">
+                            Social Party
+                          </div>
+                          <div class="subtitle">
+                            Join our social party and
+                            meet your Kemi in person
+                          </div>
+                      </div>
+                    </div>
+                    <div class="last-image">
+                      <img src="../images/footer-last-image-popup.png" alt="" srcset="">
+
+                    </div>
+
+
                 </div>
             </div>
-            <div class="footer">
-                <a class="start-travel" id="start_travel" href="#">Start as a traveler</a>
-            </div>
+            
             
             
         </div>
+    </div>
+
+    <div class="footer start-role-button">
+      <a class="" id="start_travel" href="#">Start as a traveler</a>
     </div>
 
     <div class="dialog travel_first">
