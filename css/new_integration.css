@@ -260,6 +260,10 @@
 
 }
 
+.premium-user .row-card .user-card.premium{
+  border: 1px solid #00ffe9;
+}
+
 .user-card .image img{
   width: 70px;
   height: 70px;
