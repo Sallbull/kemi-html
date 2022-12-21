@@ -1,4 +1,20 @@
 /* new modal design */
+
+.slot_popup_ok, .lang_popup_ok{
+  
+  width: 100px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 23px;
+
+  background-color: #ffcc2a;
+  font-family: 'Urbanist-Bold';
+}
+
+
+
 .language-level{
   width: 1112px!important;
 }
