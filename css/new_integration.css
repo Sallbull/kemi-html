@@ -1,4 +1,27 @@
+/* new home page issue */
+
+@media screen and (min-width:1630px){
+    .sitem02-wrap,.sitem03-wrap,.sitem04-wrap , .sitem05-wrap , .sitem06-wrap , .sitem07-wrap{
+     
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .page-item-wrap .sitem04-wrap .cont .msg:before {
+      top: 50%;
+    }
+
+}
+
+
+.sitem02-wrap,.sitem03-wrap,.sitem04-wrap , .sitem05-wrap , .sitem06-wrap , .sitem07-wrap{
+  padding-bottom: 70px;
+}
+
+
 /* new modal design */
+
+
 
 .language-level .body .subtitle{
   font-size: 30px;
@@ -915,12 +938,14 @@
   color: #ffff;
   padding-left: 165px;
   padding-bottom: 70px;
+  text-align: left;
 }
 
 .sitem03-wrap .body .service-sections {
   display: flex;
   padding-left: 200px;
   padding-right: 200px;
+  justify-content: center;
 }
 
 .sitem03-wrap .body .service-sections .sr-section {
