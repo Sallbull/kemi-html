@@ -167,6 +167,10 @@
         });
 
         
+        $("body").on("click",'.cross-button-new-popup',function(){
+            $(".dialog").removeClass('on');
+            $(".start-role-button").css('display','none');
+        });
 
         $("body").on("click",'.cross-button',function(){
             $(".dialog").removeClass('on');
@@ -378,12 +382,12 @@
         </div>
           
       </div>
-  </div>
+    </div>
 
     <div class="dialog travel">
         <div class="pop-wrap-event  language-level">
             <div class="body">
-                <div class="cross-button">
+                <div class="cross-button-new-popup">
                     <img src="../images/cross_evnets.svg" alt="" srcset="">
                 </div>
                 
@@ -422,6 +426,7 @@
                             <div class="subtitle">
                               Make friends with <span>Locals <img src="../images/popup-circle.png" alt="" srcset=""></span>  and
                               other <span>travelers <img src="../images/popup-circle.png" alt="" srcset=""></span>before going to Seoul
+                              <img class="after-when-where-img" src="../images/popup-line.png" alt="" srcset="">
                             </div>
                         </div>
                     </div>
@@ -442,9 +447,8 @@
                     <div class="create-network">
                       <div class="left">
                         <div class="title">
-                          Create
-                          your own network
-                          in seoul before arriving
+                          Create your 
+                          own network in seoul before arriving<img src="../images/popup-line.png" alt="" srcset="">
                         </div>
                       </div>
                         <div class="right">

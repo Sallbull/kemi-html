@@ -1,5 +1,53 @@
 /* new modal design */
 
+.click-good-kemi .title{
+  color: #ffcc2a!important;
+  width: auto!important;
+  text-align: left!important;
+  font-size: 36px!important;
+  line-height: 50px!important;
+  font-family: 'Urbanist-SemiBold'!important;
+  position: relative;
+
+}
+
+.cross-button-new-popup{
+  position: absolute;
+  top: -35px;
+  right: -25px;
+  width: 34px;
+  height: 34px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.after-when-where .right .subtitle .after-when-where-img{
+
+  width: 226px;
+  float: right;
+  padding-right: 80px;
+  margin-top: 0;
+}
+
+.create-network .left .title{
+  font-size: 36px;
+  line-height: 50px;
+  font-family: 'Urbanist-SemiBold';
+  color: #222222;
+  text-align: left;
+  white-space: pre-line;
+  width: auto;
+}
+
+.create-network .left .title img{
+  width: 330px;
+  margin-top: 0px;
+}
+
 .slot_popup_ok, .lang_popup_ok{
   
   width: 100px;
@@ -17,10 +65,11 @@
 
 .language-level{
   width: 1112px!important;
+  bottom: -30px;
 }
 
 .pop-wrap-event.language-level .body{
-  height: 500px;
+  height: 80vh;
 }
 
 .when-where{
@@ -97,16 +146,7 @@
   padding-bottom: 80px;
 }
 
-.click-good-kemi .title{
-  color: #ffcc2a!important;
-  width: auto!important;
-  text-align: left!important;
-  font-size: 36px;
-  line-height: 50px;
-  font-family: 'Urbanist-SemiBold';
-  position: relative;
 
-}
 .click-good-kemi .title img{
   width: 292px!important;
   position: absolute;
