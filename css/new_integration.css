@@ -568,6 +568,7 @@
 .social-party-flex{
   display: flex;
   padding-right: 164px;
+  padding-top: 20px;
 }
 
 
@@ -590,16 +591,16 @@
   padding-left: 18px;
   padding-right: 18px;
   padding-bottom: 40px;
-  margin-top: 80px;
+  margin-top: 168px;
 }
 
 
 .good-bad-kemi-card .title{
   font-size: 14px!important;
-  line-height: 17px!important;
+  line-height: 24px!important;
   font-family: 'Urbanist-Medium'!important;
   color: #a3a3a3!important;
-  padding-bottom: 10px!important;
+  padding-bottom: 0px!important;
 }
 
 
@@ -619,6 +620,7 @@
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
   
 }
 
@@ -628,26 +630,32 @@
 }
 
 .good-bad-kemi-card .body .sec .img img{
-
   width: 22px;
   height: 22px;
   border-radius: 50%;
   border: 0.5px solid #dadada;
 }
 
-.good-bad-kemi-card .body .sec .title{
-  font-size: 18px;
-  line-height: 22px;
-  font-family: 'Urbanist-Bold';
-  color: #ffffff;
+.good-bad-kemi-card .body .sec .img img + img {
+  margin-left: -7px;
 }
 
+.good-bad-kemi-card .body .sec .title{
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Urbanist-Bold';
+  color: #ffffff;
+  
+}
+.good-bad-kemi-card .body .sec .title span {
+  position: absolute;
+  right: 0;
+}
 .good-bad-kemi-card .body .sec .title span a{
   font-size: 12px;
   line-height: 14px;
   font-family: 'Urbanist-Medium';
   color: #23ffe9;
-  margin-left: 20px;
 }
 
 .bad-kemi{
@@ -671,7 +679,8 @@
   border-bottom: 1px solid #ededed;
   padding-top: 30px;
   padding-bottom: 20px;
-
+  max-height: 270px;
+  overflow-y: auto;
 }
 
 .bad-kemi .footer a{
@@ -726,12 +735,15 @@
   width: 50%;
   height: 64px;
   background-color: #ffcc2a;
+  border: 1px solid ;
+  border-color: #ffcc2a;
 }
 
 .going-link.mobile a.white{
   width: 50%;
   height: 64px;
-  background-color: #535353;
+  background-color: #2b2b2b;
+  border-color: #535353;
 }
 
 .going-link.mobile a{
@@ -1829,6 +1841,7 @@ input[type="radio"]:checked ~ label {
   padding-right: 164px;
   padding-top: 15px;
   padding-bottom: 15px;
+  border-top: 1px solid #535353;
 }
 
 .after-header .left{
@@ -1954,9 +1967,12 @@ input[type="radio"]:checked ~ label {
 
 }
 
-.images .left img{
+.images .left .img-wrap{
   height: 353px;
-  padding-right: 8px;
+  width: 353px;
+  margin-right: 8px;
+  border-radius: 10px 0 0 10px;
+  overflow: hidden;
 }
 
 .right-flex{
@@ -1976,11 +1992,20 @@ input[type="radio"]:checked ~ label {
   font-size: 48px;
   line-height: 58px;
   font-family: 'Urbanist-Medium';
-  padding-bottom: 30px;
+  padding-bottom: 60px
 }
-
+.page-item .date-redir {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.page-item .date-redir a {
+  padding-right: 22px;
+  background: url(../images/icon_arrow.png) no-repeat right 54%/ 15px;
+}
 .page-item .subtitle{
-  color: #a3a3a3;
+  color: #fff;
   font-size: 20px;
   line-height: 24px;
   font-family: 'Urbanist-Bold';
@@ -2192,6 +2217,7 @@ input[type="radio"]:checked ~ label {
   .pop-wrap-event.language-level .body{
     height: 880px;
   }
+
 
 
   .after-when-where{
@@ -2424,10 +2450,61 @@ input[type="radio"]:checked ~ label {
   .tab-cont-wrp {
     margin-bottom: 50px;
   }
+  .after-header .left{
+    border-bottom: 1px solid#3c3c3c;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+  }
+
+  .after-header .left div{
+    padding-left: 15px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .after-header .left {
+    font-size: 13px;
+  }
+
+  .after-header {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-top: 1px solid #222222;
+    border-bottom: 1px solid #535353;
+    text-align: left;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .owl-carousel.owl-drag .owl-item {
+    border-radius: 22px;
+    overflow: hidden;
+  }
+
+  .after-header .right{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .after-header .right .edit {
+    height: 20px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
+  .social-party-flex {
+    padding-top: 10px;
+  }
 
+
+  .page-item .date-redir a{
+    font-size: 14px;
+    background-size: 12px;
+    padding-right: 20px;
+  }
 
   /* new role base pop up design responsive */
 
@@ -2497,12 +2574,14 @@ input[type="radio"]:checked ~ label {
   /*  */
 
   /* social party new design */
-
+  .after-gallery {
+    margin-bottom: 0;
+  }
   .after-gallery .text {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 0;
-    font-size: 18px;
+    font-size: 16px;
   }
 
 
@@ -2837,31 +2916,7 @@ input[type="radio"]:checked ~ label {
     line-height: 17px;
   }
 
-  .after-header{
-    padding-left: 0;
-    padding-right: 0;
-    text-align: left;
-    flex-direction: column;
-  }
 
-  .after-header .left{
-    border-bottom: 1px solid#3c3c3c;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-  }
-
-  .after-header .left div{
-    padding-left: 15px;
-
-  }
-
-  .after-header .right{
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    /* padding-bottom: 10px; */
-  }
 
   .page-item-wrap-new{
     /* margin-top: 0px; */
@@ -2903,6 +2958,7 @@ input[type="radio"]:checked ~ label {
   .page-item .title{
     font-size: 30px;
     line-height: 36px;
+    padding-bottom: 30px;
   }
 
   .page-item .subtitle{
@@ -2918,6 +2974,7 @@ input[type="radio"]:checked ~ label {
   .page-item .google-link a{
     font-size: 14px;
     line-height: 17px;
+    width: calc( 100% + 8px );
   }
   
 
@@ -2936,6 +2993,7 @@ input[type="radio"]:checked ~ label {
 
   .page-item .subtitle::before {
     margin-left: 0em;
+    width: 0.6em;
   }
 
   .row{
@@ -2975,7 +3033,7 @@ input[type="radio"]:checked ~ label {
 
   .owl-carousel.owl-loaded {
     /* display: block; */
-    height: 300px;
+    height: 220px;
   }
 
   #header .gnb ul.mobile_list.type01 li a{
@@ -3016,8 +3074,15 @@ input[type="radio"]:checked ~ label {
     padding-right: 10px;
   }
 
+  .after-header .right .edit span {
+    font-size: 14px;
+    vertical-align: top;
+  }
+  .after-header .right .edit img {
+    width: 17px;
+  }
   #after-header {
-    padding-top: 55px;
+    padding-top: 60px;
   }
 
   #container {
@@ -3283,9 +3348,7 @@ input[type="radio"]:checked ~ label {
     height: auto;
   }
 
-  .after-header .left {
-    font-size: 13px;
-  }
+
 
   .after-header .right .edit span {
    font-size: 13px;
