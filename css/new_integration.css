@@ -1,5 +1,13 @@
 /* new modal design */
 
+.language-level .body .subtitle{
+  font-size: 30px;
+  line-height: 36px;
+  font-family: 'Urbanist-SemiBold';
+  color: #222222;
+  padding-top: 80px;
+}
+
 .click-good-kemi .title{
   color: #ffcc2a!important;
   width: auto!important;
@@ -10,6 +18,16 @@
   position: relative;
 
 }
+
+.click-good-kemi .subtitle-cl-good{
+  font-size: 36px;
+  line-height: 50px;
+  font-family: 'Urbanist-SemiBold';
+  color: #ffffff;
+  padding-bottom: 30px;
+  padding-top: 5px;
+}
+
 
 .cross-button-new-popup{
   position: absolute;
@@ -63,8 +81,8 @@
 
 
 
-.language-level{
-  width: 1112px!important;
+.pop-wrap-event.language-level{
+  width: 1112px;
   bottom: -30px;
 }
 
@@ -134,6 +152,7 @@
   line-height: 29px;
   font-family: 'Urbanist-Medium';
   color: #222222;
+  padding-top: 20px;
 }
 
 .click-good-kemi{
@@ -2201,9 +2220,17 @@ input[type="radio"]:checked ~ label {
 
 
   /* new popup design mobile responsive */
-  .language-level {
-    /* width: 100%!important; */
+  .pop-wrap-event.language-level {
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
   }
+
+  .after-when-where .right .subtitle .after-when-where-img {
+    
+      padding-right: 0px;
+        
+    }
 
   .pop-wrap-event .pop-body img{
     width: 100%!important;
@@ -2214,9 +2241,7 @@ input[type="radio"]:checked ~ label {
     width: 300px!important;
   }
 
-  .pop-wrap-event.language-level .body{
-    height: 880px;
-  }
+ 
 
 
 
@@ -2508,10 +2533,69 @@ input[type="radio"]:checked ~ label {
 
   /* new role base pop up design responsive */
 
-  .pop-wrap-event.language-level .body{
-    height: 575px;
+  .cross-button-new-popup {
+    /* position: absolute; */
+    top: -44px;
+    right: -5px;
+   
+  }
+  .pop-wrap-event.language-level{
+    width: 95%;
   }
 
+  .after-when-where .right .subtitle span img{
+    height: 27px;
+  }
+
+  .after-when-where .right .title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .click-good-kemi .title{
+    font-size: 18px!important;
+    line-height: 22px!important;
+    padding-bottom: 10px;
+  }
+
+  .create-network .left .title{
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+
+  .arrival-pop .text{
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .after-when-where{
+    padding-top: 30px;
+  }
+
+  .pop-wrap-event .body .pop-body .arrival-pop .arr-image {
+    width: 145px!important;
+    height: 145px;
+    padding-bottom: 15px;
+  }
+
+  .last-image img{
+    width: 200px!important;
+  }
+
+  .create-network .left{
+    width: 75%;
+  }
+
+  .click-good-kemi .subtitle-cl-good{
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .after-when-where .right .subtitle {
+    font-size: 14px;
+    line-height: 17px;
+  }
   .after-when-where .right{
     width: 100%;
   }
