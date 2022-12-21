@@ -2552,6 +2552,19 @@ input[type="radio"]:checked ~ label {
 
   /* new role base pop up design responsive */
 
+  .click .text{
+    font-size: 12px;
+  }
+
+  .click{
+    bottom: 13%;
+    right: 46%;
+  }
+
+  .pop-wrap-event .sub-subtitle{
+    font-size: 12px;
+  }
+
   .cross-button-new-popup {
     /* position: absolute; */
     top: -44px;
@@ -3303,6 +3316,29 @@ input[type="radio"]:checked ~ label {
 }
 
 @media screen and (max-width: 323px) {
+
+  /* new popup design reponsive */
+
+  .start-role-button a{
+    font-size: 14px;
+  }
+
+  .after-when-where .right{
+    width: 75%;
+  }
+
+  #last_image_popup{
+    width: 300px!important;
+  }
+
+  .create-network .left{
+    width: 50%;
+  }
+
+  .click-good-kemi {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 
   /* premium user */
   .premium-user-cards .row-card .user-card {
