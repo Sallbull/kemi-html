@@ -695,10 +695,10 @@
 .good-bad-kemi-card .body .sec .title span {
   position: absolute;
   right: 0;
-  top: 15px;
+  top: 16px;
 }
 .good-bad-kemi-card .body .sec .title span a{
-  font-size: 12px;
+  font-size: 14px;
   line-height: 14px;
   font-family: 'Urbanist-Medium';
   color: #23ffe9;
@@ -791,14 +791,17 @@
   height: 64px;
   background-color: #2b2b2b;
   border-color: #535353;
+  text-align: center;
+  
 }
 
 .going-link.mobile a{
   width: auto;
   margin-bottom: 0;
   border-radius: 0;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 15px;
+
 }
 
 
@@ -2551,7 +2554,13 @@ input[type="radio"]:checked ~ label {
   .social-party-flex {
     padding-top: 10px;
   }
+  .good-bad-kemi-card .body .sec .title span a {
+    font-size: 12px;
+  }
 
+  .good-bad-kemi-card .body .sec .title span {
+    top: 18px;
+  }
 
   .page-item .date-redir a{
     font-size: 14px;
@@ -3087,13 +3096,13 @@ input[type="radio"]:checked ~ label {
   }
 
   .page-item .subtitle{
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .page-item .info{
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 14px;
+    line-height: 18px;
   }
 
   .page-item .google-link a{
