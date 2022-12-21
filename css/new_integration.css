@@ -603,23 +603,24 @@
 
 .good-bad-kemi-card{
   background-color: #2b2b2b;
-  border: 1 px solid #535353;
+  border: 1px solid #535353;
   margin-left: 60px;
   border-radius: 8px;
   padding-top: 40px;
   padding-left: 18px;
   padding-right: 18px;
-  padding-bottom: 40px;
-  margin-top: 168px;
+  padding-bottom: 20px;
+  margin-top: 171px;
 }
 
 
-.good-bad-kemi-card .title{
+.good-bad-kemi-card > .title{
   font-size: 14px!important;
   line-height: 24px!important;
   font-family: 'Urbanist-Medium'!important;
   color: #a3a3a3!important;
   padding-bottom: 0px!important;
+  margin-bottom: 5px;
 }
 
 
@@ -640,12 +641,20 @@
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
-  
+}
+.good-bad-kemi-card .body .sec:last-child {
+  border-bottom: none;
 }
 
 .good-bad-kemi-card .body .sec .img{
-  margin-right: 20px;
+  margin-right: 10px;
   display: flex;
+}
+.good-bad-kemi-card .body .sec .title {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  padding-bottom: 0;
 }
 
 .good-bad-kemi-card .body .sec .img img{
@@ -654,9 +663,18 @@
   border-radius: 50%;
   border: 0.5px solid #dadada;
 }
+.good-bad-kemi-card .body .sec .img img:nth-of-type(1){
+  z-index: 3;
+}
+.good-bad-kemi-card .body .sec .img img:nth-of-type(2){
+  z-index: 2;
+}
+.good-bad-kemi-card .body .sec .img img:nth-of-type(3){
+  z-index: 1;
+}
 
 .good-bad-kemi-card .body .sec .img img + img {
-  margin-left: -7px;
+  margin-left: -10px;
 }
 
 .good-bad-kemi-card .body .sec .title{
@@ -675,6 +693,7 @@
   line-height: 14px;
   font-family: 'Urbanist-Medium';
   color: #23ffe9;
+  text-decoration: underline;
 }
 
 .bad-kemi{
@@ -2076,14 +2095,12 @@ input[type="radio"]:checked ~ label {
 }
 
 .going-link a{
-  width: 305px;
+  width: 100%;
   height: 62px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 31px;
-  
-  margin: auto;
   font-size: 18px;
   line-height: 22px;
   font-family: 'Urbanist-Bold';
@@ -2103,8 +2120,8 @@ input[type="radio"]:checked ~ label {
 
 .going-link{
     margin-bottom: 20px;
-    margin-left: 40px;
-    margin-top: 40px;
+    margin-left: 60px;
+    margin-top: 30px;
     
 }
 .group-link a{
@@ -2217,7 +2234,9 @@ input[type="radio"]:checked ~ label {
 }
 
 @media only screen and (max-width: 850px) {
-
+  .good-bad-kemi-card .body .sec .title {
+    font-size: 14px;
+  }
 
   /* new popup design mobile responsive */
   .pop-wrap-event.language-level {
